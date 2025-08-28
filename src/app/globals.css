@@ -24,8 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-.dashboard-bg-img{
+.dashboard-bg-img {
   background-image: url("../assets/images/main-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.family-reemkufi{
+  font-family: 'Reem Kufi ';
+}
+.family-TwCenMT{
+  font-family: 'Tw Cen Mt' ;
+}
+@media screen and (max-device-width: 991px) {
+  .dashboard-bg-img {
+    background-image: url("../assets/images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 992px) {
+  .dashboard-bg-img {
+    background-image: url("../assets/images/main-bg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+  }
 }
