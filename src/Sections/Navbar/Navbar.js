@@ -20,7 +20,7 @@ export default function Navbar() {
           />
         </div>
         {/* navigation */}
-        <div className="hidden lg:flex text-white text-[14px] family-reemkufi xl:text-[16px] 2xl:text-[18px] font-[500]">
+        <div className="hidden lg:flex text-white text-[14px] family-reemkufi xl:text-[17px] 2xl:text-[18px] font-[500]">
           <ul className="flex gap-[1.5rem] cursor-pointer">
             <a className="lg:text-[#EF3672] text-white">Home</a>
             <select
