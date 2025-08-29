@@ -10,13 +10,13 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="ml-[1rem] lg:ml-[3rem] mr-[1rem] py-[1.5rem] flex items-center justify-between">
+      <div className="mx-[10px] lg:ml-[3rem] py-[1.5rem] flex items-center justify-between">
         {/* Logo */}
         <div>
           <Image
             src={hukuplogo}
             alt="HukupLogo"
-            className="lg:w-[200px] lg:h-[57px] w-[140px] h-[40px]"
+            className="lg:w-[200px] lg:h-[57px] w-[120px] h-[32px]"
           />
         </div>
         {/* navigation */}
@@ -65,14 +65,14 @@ export default function Navbar() {
         </div>
 
         {/* offcanvas */}
-        <div className="hidden lg:block p-[4px] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] cursor-pointer">
-          <div className="text-[14px] xl:text-[16px] 2xl:text-[18px] font-[500] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
+        <div className="hidden lg:block p-[4px] rounded-4xl bg-gradient-to-br  from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] cursor-pointer">
+          <div className="text-[14px] xl:text-[16px] family-reemkufi 2xl:text-[18px] font-[500] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
             Get App
             <div className="flex items-center gap-[7px]">
               <Image
                 src={appstore}
                 alt="appstorelink"
-                className="lg:w-[12px] lg:h-[15px] xl:w-[13px] xl:h-[18px]"
+                className="lg:w-[13px] lg:h-[15px] xl:w-[14px] xl:h-[18px]"
               />
               <Image
                 src={playstore}
@@ -98,7 +98,7 @@ export default function Navbar() {
             <Image
               src={hukuplogo}
               alt="HukupLogo"
-              className=" w-[140px] h-[40px]"
+              className="w-[120px] h-[32px]"
             />
           </div>
           <button
@@ -108,7 +108,7 @@ export default function Navbar() {
             ✕
           </button>
         </div>
-        <ul className="flex flex-col gap-4 p-4 text-white">
+        <ul className="flex flex-col gap-4 p-4 text-white family-reemkufi">
           <a className="hover:text-[#EF3672]">Home</a>
           <select
             name="activity"
@@ -150,7 +150,7 @@ export default function Navbar() {
           <a className="hover:text-[#EF3672]">Group Profiles</a>
 
           <div className="mt-6 p-[4px] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] cursor-pointer w-[51%]">
-            <div className="text-[13px] font-[500] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
+            <div className="text-[13px] family-reemkufi font-[500] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
               Get App
               <div className="flex items-center gap-[7px]">
                 <Image

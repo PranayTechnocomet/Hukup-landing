@@ -29,11 +29,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.family-prompt{
+  font-family: 'Prompt';
+}
 .family-reemkufi{
   font-family: 'Reem Kufi ';
 }
 .family-TwCenMT{
   font-family: 'Tw Cen Mt' ;
+}
+.dashboard-content{
+  justify-content: right;
 }
 @media screen and (max-device-width: 991px) {
   .dashboard-bg-img {
@@ -42,10 +48,11 @@ body {
     background-size: contain;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-device-width:1280px) {
   .dashboard-bg-img {
     background-image: url("../assets/images/main-bg.png");
     background-repeat: no-repeat;
     /* background-size: contain; */
+    background-position: center;
   }
 }
