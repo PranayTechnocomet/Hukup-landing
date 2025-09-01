@@ -17,13 +17,13 @@ export default function Dashboard() {
   return (
     <>
       <div>
-        <div className="w-full h-[100vh] dashboard-bg-img text-white relative">
+        <div className="w-full lg:h-[100vh] h-[265px] dashboard-bg-img text-white relative">
           <Navbar />
           {/* text */}
-          <div className="flex absolute left-[13%]">
-            <div className=" mt-[2rem] ">
+          <div className="flex absolute lg:left-[13%] left-[3%]">
+            <div className="lg:mt-[2rem] ">
               <div>
-                <div className="text-[35px] w-[55%] xl:text-[45px] xl:w-[65%] font-[600] leading-[44px] family-TwCenMT">
+                <div className="w-[100%] text-[19px] lg:text-[35px] lg:w-[55%] xl:text-[45px] xl:w-[65%] font-[600] lg:leading-[44px] family-TwCenMT">
                   When You Would Like To Go On A Date?
                 </div>
               </div>
@@ -32,7 +32,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="flex gap-[14px] items-center">
-              <div className="family-reemkufi flex items-center justify-center w-[13%] xl:w-[16%] bg-[#7546DC] px-[17px] text-[17px] text-center h-[70px] rounded-2xl">
+              <div className="family-reemkufi flex items-center justify-center lg:w-[13%] w-[40%] xl:w-[16%] bg-[#7546DC] px-[2px] lg:px-[17px] lg:text-[17px] text-[11px] text-center lg:h-[70px] h-[40px] rounded-2xl">
                 <div>8.6M</div>
               </div>
               <div className="">
@@ -40,20 +40,20 @@ export default function Dashboard() {
                   <Image
                     src={user_girl}
                     alt="reviewgirl"
-                    className="w-[35px] h-[35px]"
+                    className="lg:w-[35px] lg:h-[35px] w-[30px] h-[30px]"
                   />
                   <Image
                     src={user_man}
                     alt="reviewboy"
-                    className="w-[35px] h-[35px]"
+                    className="lg:w-[35px] lg:h-[35px] w-[30px] h-[30px]"
                   />
                   <Image
                     src={user_boy}
                     alt="reviewboy"
-                    className="w-[35px] h-[35px]"
+                    className="lg:w-[35px] lg:h-[35px] w-[30px] h-[30px]"
                   />
                 </div>
-                <div className="family-prompt text-[12px] w-[51%] xl:w-[60%]">
+                <div className="family-prompt lg:text-[12px] text-[9px] lg:w-[51%] w-[100%] xl:w-[60%]">
                   There are 8.6 million user in the world everyone is happy with
                   our services.
                 </div>
@@ -61,7 +61,7 @@ export default function Dashboard() {
             </div>
           </div>
           {/* social-media-logos */}
-          <div className="ml-[2.5rem] absolute bottom-[3%]">
+          {/* <div className="ml-[2.5rem] absolute bottom-[3%]">
             <Image
               src={facebook}
               alt="Facebooklink"
@@ -82,16 +82,16 @@ export default function Dashboard() {
               alt="emaillink"
               className="w-[22px] xl:w-[28px] mb-[5px]"
             />
-          </div>
+          </div> */}
           {/* video */}
-          <div className="absolute left-[10%] xl:bottom-[15%] bottom-[18%] flex items-center gap-[10px]">
+          {/* <div className="absolute left-[10%] xl:bottom-[15%] bottom-[18%] flex items-center gap-[10px]">
             <div className="bg-[#D9D9D9] rounded-full py-[13px] px-[14px] ">
               <Image src={introicon} alt="Introvideo" className="w-[22px]" />
             </div>
             <div className="family-prompt w-[42%] font-[600] text-[13px]">
               Watch Intro Video
             </div>
-          </div>
+          </div> */}
           {/* couple-image-bg */}
           {/* <div className="absolute bottom-[0%] right-[46%]">
             <Image

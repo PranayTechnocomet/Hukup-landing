@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[2000px]">
-        <Dashboard />
-        <div className="bg-[#F7E7E8]">
+        {/* <Dashboard /> */}
+        <div className="bg-[#F7E7E8] ">
            <HowItWork />
         </div>
       </div>
