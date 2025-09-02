@@ -38,27 +38,42 @@ export default function HowItWork() {
   return (
     <>
       <div className="how-it-work-bg">
-        <div className="grid grid-cols-6 ">
+        <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
+          How It Works
+        </div>
+        <div className="grid lg:grid-cols-6 2xl:grid-cols-6 grid-cols-1 howitwork-container">
           {/* image-iphone */}
-          <div className="py-[4rem] col-span-3 mx-auto relative">
+          <div className="py-[2rem] lg:py-[4rem] col-span-3 lg:mx-auto 2xl:col-span-3  relative mx-auto">
             <Image
               src={iphoneimg}
               alt="phone-image"
-              className="w-[300px] h-[610px] "
+              className="lg:w-[300px] lg:h-[610px] md:w-[300px] md:h-[610px] 2xl:w-[350px] 2xl:h-[700px] howitwork-img"
             />
 
-            <div className="absolute  bottom-[65%] right-[-19%] family-trirong flex gap-[12px] items-center gradient-button w-[45%] justify-center">
-              <Image src={music} alt="Musicicon" className="w-[18%] h-[18%]" />
-              <span className="text-[20px]">Music</span>
+            <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
+              <Image
+                src={music}
+                alt="Musicicon"
+                className="lg:w-[18%] lg:h-[18%] w-[15%] h-[15%] "
+              />
+              <span className="lg:text-[20px] text-[15px] font-[600]">
+                Music
+              </span>
             </div>
 
-            <div className="absolute bottom-[23%] left-[-28%] family-trirong flex gap-[12px] items-center gradient-button w-[55%] justify-center">
-              <Image src={dining} alt="diningcon" className="w-[15%] h-[15%]" />
-              <span className="text-[20px]">Fine Dining</span>
+            <div className="absolute bottom-[23%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-17%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
+              <Image
+                src={dining}
+                alt="diningcon"
+                className="lg:w-[15%] lg:h-[15%] w-[13%] h-[13%]"
+              />
+              <span className="lg:text-[20px] text-[15px] font-[600]">
+                Fine Dining
+              </span>
             </div>
           </div>
-          <div className="py-[4rem] col-span-3 relative">
-            <div className="family-reemkufi font-[600] text-[40px] mt-[3rem]">
+          <div className="lg:py-[4rem] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container">
+            <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
             {/* without position */}
@@ -82,14 +97,14 @@ export default function HowItWork() {
             </div> */}
 
             {/* with position */}
-            <div>
-              <div className="absolute top-[12%] right-[10%]">
+            <div className="howitwork-cards ">
+              <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
-              <div className="absolute top-[34%]">
+              <div className="lg:absolute lg:top-[34%] lg:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="absolute bottom-[-6%]  right-[10%]">
+              <div className="lg:absolute lg:bottom-[-6%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={people} customewidth={`175px`} />
               </div>
             </div>

@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="max-w-[2000px]">
+      <div className="max-w-[2000px] Hukup-page">
         {/* <Dashboard /> */}
-        <div className="bg-[#F7E7E8] ">
+        <div >
            <HowItWork />
         </div>
       </div>

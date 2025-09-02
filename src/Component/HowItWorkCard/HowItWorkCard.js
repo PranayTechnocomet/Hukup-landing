@@ -22,10 +22,10 @@ export default function Card({ CardData, customewidth }) {
             />
           </div>
           <div style={{marginTop:CardData.margin}}>
-            <div className="family-reemkufi font-[600] text-[15px] text-center">
+            <div className="family-reemkufi font-[600] xl:text-[16px] text-[15px] text-center">
               {CardData.heading}
             </div>
-            <div className="text-center w-[100%] family-prompt text-[13px]">
+            <div className="text-center w-[100%] family-prompt xl:text-[14px] text-[13px]">
               {CardData.text}
             </div>
           </div>
