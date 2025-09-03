@@ -37,7 +37,7 @@ export default function HowItWork() {
   };
   return (
     <>
-      <div className="how-it-work-bg">
+      <div className="how-it-work-bg mb-[3rem]">
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
         </div>
@@ -49,7 +49,18 @@ export default function HowItWork() {
               alt="phone-image"
               className="lg:w-[300px] lg:h-[610px] md:w-[300px] md:h-[610px] 2xl:w-[350px] 2xl:h-[700px] howitwork-img"
             />
-
+             <div className="mt-6 p-[4px] rounded-2xl bg-gradient-to-br from-[#F75685] to-[#FFFFFF00] cursor-pointer w-[40%]">
+                        <div className="text-[13px] family-reemkufi font-[500] rounded-xl bg-gradient-to-br from-[#F75685] to-[#FFFFFF00] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
+                          Get App
+                          <div className="flex items-center gap-[7px]">
+                            <Image
+                              src={music}
+                              alt="appstorelink"
+                              className="w-[12px] h-[15px]"
+                            />
+                          </div>
+                        </div>
+                      </div>
             <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
               <Image
                 src={music}
@@ -72,7 +83,7 @@ export default function HowItWork() {
               </span>
             </div>
           </div>
-          <div className="lg:py-[4rem] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container">
+          <div className="lg:py-[4rem] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container lg:mb-[3rem]">
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
@@ -104,7 +115,7 @@ export default function HowItWork() {
               <div className="lg:absolute lg:top-[34%] lg:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="lg:absolute lg:bottom-[-6%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
+              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[3%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={people} customewidth={`175px`} />
               </div>
             </div>
