@@ -12,7 +12,11 @@ export default function Card({ CardData, customewidth }) {
       <div className="">
         <div
           className="absolute"
-          style={{ top: CardData.top, left: CardData.left,right:CardData.right }}
+          style={{
+            top: CardData.top,
+            left: CardData.left,
+            right: CardData.right,
+          }}
         >
           <div>
             <Image
@@ -21,7 +25,7 @@ export default function Card({ CardData, customewidth }) {
               style={{ width: customewidth }}
             />
           </div>
-          <div style={{marginTop:CardData.margin}}>
+          <div style={{ marginTop: CardData.margin }}>
             <div className="family-reemkufi font-[600] xl:text-[16px] text-[15px] text-center">
               {CardData.heading}
             </div>

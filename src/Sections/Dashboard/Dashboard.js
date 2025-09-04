@@ -18,10 +18,42 @@ export default function Dashboard() {
     <>
       <div>
         <div className="w-full lg:h-[100vh] h-[265px] dashboard-bg-img text-white relative">
-          <Navbar />
+          {/* <Navbar /> */}
           {/* text */}
           <div className="flex absolute lg:left-[13%] left-[3%]">
             <div className="lg:mt-[2rem] ">
+              <button
+                className="
+    flex items-center gap-3 px-6 py-3
+    rounded-full font-semibold text-white
+    [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
+    border: 6px solid;
+border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%);
+    [backdrop-filter:blur(42px)]
+    [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
+  "
+              >
+                {/* Pink circle with heart */}
+                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#F75685]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="black"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+        2 6 3.99 4 6.5 4c1.74 0 3.41 1.01 
+        4.22 2.61h.56C14.09 5.01 15.76 4 
+        17.5 4 20.01 4 22 6 22 8.5c0 3.78-3.4 
+        6.86-8.55 11.54L12 21.35z"
+                    />
+                  </svg>
+                </span>
+
+                <span className="text-lg">Liked</span>
+              </button>
+
               <div>
                 <div className="w-[100%] text-[19px] lg:text-[35px] lg:w-[55%] xl:text-[45px] xl:w-[65%] font-[600] lg:leading-[44px] family-TwCenMT">
                   When You Would Like To Go On A Date?
@@ -123,3 +155,34 @@ export default function Dashboard() {
     </>
   );
 }
+//  <button
+//                 className="
+//     flex items-center gap-3 px-6 py-3
+//     rounded-full font-semibold text-white
+//     [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
+//     border: 6px solid;
+// border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%);
+//     [backdrop-filter:blur(42px)]
+//     [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
+//   "
+//               >
+//                 {/* Pink circle with heart */}
+//                 <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#F75685]">
+//                   <svg
+//                     xmlns="http://www.w3.org/2000/svg"
+//                     viewBox="0 0 24 24"
+//                     fill="black"
+//                     className="w-5 h-5"
+//                   >
+//                     <path
+//                       d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+//         2 6 3.99 4 6.5 4c1.74 0 3.41 1.01 
+//         4.22 2.61h.56C14.09 5.01 15.76 4 
+//         17.5 4 20.01 4 22 6 22 8.5c0 3.78-3.4 
+//         6.86-8.55 11.54L12 21.35z"
+//                     />
+//                   </svg>
+//                 </span>
+
+//                 <span className="text-lg">Liked</span>
+//               </button>

@@ -49,18 +49,6 @@ export default function HowItWork() {
               alt="phone-image"
               className="lg:w-[300px] lg:h-[610px] md:w-[300px] md:h-[610px] 2xl:w-[350px] 2xl:h-[700px] howitwork-img"
             />
-             <div className="mt-6 p-[4px] rounded-2xl bg-gradient-to-br from-[#F75685] to-[#FFFFFF00] cursor-pointer w-[40%]">
-                        <div className="text-[13px] family-reemkufi font-[500] rounded-xl bg-gradient-to-br from-[#F75685] to-[#FFFFFF00] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
-                          Get App
-                          <div className="flex items-center gap-[7px]">
-                            <Image
-                              src={music}
-                              alt="appstorelink"
-                              className="w-[12px] h-[15px]"
-                            />
-                          </div>
-                        </div>
-                      </div>
             <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
               <Image
                 src={music}
