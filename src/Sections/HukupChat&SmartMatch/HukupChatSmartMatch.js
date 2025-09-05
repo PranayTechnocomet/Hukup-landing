@@ -10,53 +10,67 @@ export default function HukupChatSmartMatch() {
   return (
     <>
       <div className="hukupChat&SmartMatch lg:my-[4rem] my-[2rem]">
-        <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:text-[40px] block text-center">
+        <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px] mt-[3rem] lg:text-[40px] block text-center">
           Hukup Chat & Smart Match
         </div>
-        <div className="family-reemkufi mx-auto w-[98%] text-[12px] font-[600]  lg:w-[46%] text-center lg:text-[13px] mt-[8px]">
+        <div className="family-reemkufi mx-auto w-[98%] md:text-[17px] md:w-[80%] text-[12px] font-[600]  lg:w-[46%] text-center lg:text-[13px] mt-[8px]">
           A smart dating app that connects you with like-minded people through
           real-time chat and AI-based matching for fun and meaningful
           connections.
         </div>
         {/*  hukupChatSmartMatch-container */}
-        <div className="relative">
-          <div className="absolute lg:top-[30%] lg:left-[16%] left-[3%]">
+        <div className="relative max-w-[400px] h-[335px] mx-auto md:max-w-[752px] md:mx-auto md:h-[450px] lg:mx-auto lg:max-w-[100%]">
+          {/* card1 */}
+          <div className="absolute lg:top-[25%] lg:left-[16%] left-[3%] top-[20%] md:top-[20%] md:left-[9%]">
             <Image
               src={hukupChatSmartMatchcard}
               alt="hukupChatSmartMatchcard.."
-              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px]"
+              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
             />
           </div>
-          <div className="absolute lg:top-[30%] lg:right-[16%] right-[3%] ">
+          {/* card2 */}
+          <div className="absolute lg:top-[25%] top-[20%] lg:right-[16%] right-[3%] md:top-[20%] md:right-[9%] ">
             <Image
               src={hukupChatSmartMatchcard2}
               alt="hukupChatSmartMatchcard.."
-              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px]"
+              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
             />
           </div>
-          <div className="absolute lg:top-[35%] lg:left-[18%] top-[11%] left-[6%]">
-            <Image src={girl} alt="Girl" className="lg:w-[315px] lg:h-[420px] w-[130px] h-[240px]" />
+          {/* girlimg */}
+          <div className="absolute md:top-[24%] md:left-[13%] lg:top-[30%] lg:left-[18%] top-[27%] left-[7%]">
+            <Image
+              src={girl}
+              alt="Girl"
+              className="lg:w-[315px] lg:h-[420px] w-[130px] h-[240px] md:w-[215px] md:h-[320px]"
+            />
           </div>
-          <div className="absolute lg:top-[33%] lg:right-[16%] right-[1%] top-[13%]">
-            <Image src={boy} alt="Boy" className="lg:w-[390px] lg:h-[495px] w-[165px] h-[245px]" />
+          {/* boyimg */}
+          <div className="absolute lg:top-[26%] lg:right-[15.5%] right-[2%] top-[23%] md:right-[9%] md:top-[21%]">
+            <Image
+              src={boy}
+              alt="Boy"
+              className="lg:w-[390px] lg:h-[495px] w-[165px] h-[285px] md:w-[260px] md:h-[355px]"
+            />
           </div>
-          {/* <div
-            className="absolute top-[37%] left-[9%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
-             text-center family-reemkufi text-[15px] w-[15%] bg-white py-[14px] px-[5px] rounded-[19px]"
+          {/* text1 */}
+          <div
+            className="absolute sm:top-[17%] sm:left-[-21%] sm:w-[37%] sm:text-[11px] top-[17%] lg:left-[9%] font-[700] lg:top-[28%] lg:w-[13%] md:text-[12px] md:top-[20%] md:left-[1%] left-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
+             text-center family-reemkufi text-[9px] md:w-[20%] w-[14%] bg-white py-[14px] px-[5px] rounded-[19px]"
           >
             Thanks! <br /> You seem really cool too😉
-          </div> */}
-          {/* <div
-            className="absolute top-[74%] right-[10%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
-             text-center family-reemkufi text-[15px] w-[15%] bg-white py-[14px] px-[5px] rounded-[19px]"
+          </div>
+          {/* text2 */}
+          <div
+            className="absolute sm:top-[41%] sm:right-[-21%] sm:w-[37%] sm:text-[11px] font-[700] lg:top-[58%] lg:right-[11%] md:right-[0%] lg:w-[13%] md:text-[12px] md:top-[39%] top-[36%] md:w-[20%]  right-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
+             text-center family-reemkufi text-[9px] w-[15%] bg-white py-[14px] px-[5px] rounded-[19px]"
           >
             Hey! <br /> Your profile looks fun ☺️
-          </div> */}
-          <div className="">
+          </div>
+          <div className="heart-card-con absolute md:top-[27%] md:left-[39%] lg:top-[29%] lg:left-[40.5%] top-[6%] left-[37%] sm:top-[25%]">
             <Image
               src={heartcard}
               alt="heartcard"
-              className="lg:w-[20%] lg:h-[250px] mx-auto w-[20%] h-[150px]"
+              className="lg:w-[100%] lg:h-[230px] md:w-[39%] w-[43%] "
             />
           </div>
         </div>

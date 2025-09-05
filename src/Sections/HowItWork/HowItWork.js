@@ -41,7 +41,7 @@ export default function HowItWork() {
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
         </div>
-        <div className="grid lg:grid-cols-6 2xl:grid-cols-6 grid-cols-1 howitwork-container">
+        <div className="grid lg:grid-cols-6 2xl:grid-cols-6 grid-cols-1 howitwork-container lg:h-[800px]">
           {/* image-iphone */}
           <div className="py-[2rem] lg:py-[4rem] col-span-3 lg:mx-auto 2xl:col-span-3  relative mx-auto">
             <Image

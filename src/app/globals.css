@@ -93,7 +93,15 @@ body {
     )
     1;
 }
-
+/* @media screen and (max-device-width:365px) {
+  .heart-card-con{
+        left: 41% !important;
+            top: 30% !important;
+  }
+  .heart-card-con img{
+        width: 32% !important; 
+  }
+} */
 @media screen and (max-device-width: 575px) {
   .howitwork-img {
     width: 240px !important;
