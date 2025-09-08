@@ -93,7 +93,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
             </div>
           </div>
           {/* social-media-logos */}
-          <div className="ml-[2.5rem] absolute bottom-[3%]">
+          {/* <div className="ml-[2.5rem] absolute bottom-[3%]">
             <Image
               src={facebook}
               alt="Facebooklink"
@@ -114,18 +114,18 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               alt="emaillink"
               className="w-[22px] xl:w-[28px] mb-[5px]"
             />
-          </div>
+          </div> */}
           {/* video */}
-          <div className="absolute left-[10%] xl:bottom-[15%] bottom-[18%] flex items-center gap-[10px]">
+          {/* <div className="absolute left-[10%] xl:bottom-[15%] bottom-[18%] flex items-center gap-[10px]">
             <div className="bg-[#D9D9D9] rounded-full py-[13px] px-[14px] ">
               <Image src={introicon} alt="Introvideo" className="w-[22px]" />
             </div>
             <div className="family-prompt w-[42%] font-[600] text-[13px]">
               Watch Intro Video
             </div>
-          </div>
+          </div> */}
           {/* couple-image-bg */}
-          <div className="absolute bottom-[0%] right-[46%]">
+          {/* <div className="absolute bottom-[0%] right-[46%]">
             <Image
               src={couple_bgsec}
               alt="bg-image"
@@ -138,18 +138,18 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               alt="bg-image"
               className="w-[250px] h-[280px] xl:w-[350px] xl:h-[500px]"
             />
-          </div>
+          </div> */}
           {/* couple-pic */}
-          <div className="absolute bottom-[0%] right-[2px] xl:right-[1%]">
+          {/* <div className="absolute bottom-[0%] right-[2px] xl:right-[1%]">
             <Image src={couple_pic} alt="couple_pic" className="w-[500px] xl:w-[90%] xl:h-[560px]" />
-          </div>
+          </div> */}
           {/* heart */}
-          <div className="absolute right-[46.5%] bottom-[44%] xl:left-[45%] xl:bottom-[54%]">
+          {/* <div className="absolute right-[46.5%] bottom-[44%] xl:left-[45%] xl:bottom-[54%]">
             <Image src={heart} alt="heartimg" className="w-[32px] h-[35px] xl:w-[40px] xl:h-[46px]" />
           </div>
           <div className="absolute right-[21.5%] bottom-[51%] xl:right-[12%] xl:bottom-[61%]">
             <Image src={heart} alt="heartimg" className="w-[32px] h-[35px]  xl:w-[40px] xl:h-[46px]" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -1,6 +1,5 @@
 import Carousel from "@/Sections/Carousel/Carousel";
 import Dashboard from "@/Sections/Dashboard/Dashboard";
-import GetintouchwithhukupPerks from "@/Sections/GetintouchwithhukupPerks/GetintouchwithhukupPerks";
 import HowItWork from "@/Sections/HowItWork/HowItWork";
 import HukupChatSmartMatch from "@/Sections/HukupChat&SmartMatch/HukupChatSmartMatch";
 import Swipe_chat_connect from "@/Sections/Swipe_chat_connect/Swipe_chat_connect";
@@ -15,7 +14,6 @@ export default function Home() {
         <Carousel/>
         <HukupChatSmartMatch />
         {/* <Swipe_chat_connect /> */}
-        {/* <GetintouchwithhukupPerks/> */}
       </div>
     </>
   );
