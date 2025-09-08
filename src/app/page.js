@@ -13,7 +13,7 @@ export default function Home() {
         <HowItWork />
         <Carousel/>
         <HukupChatSmartMatch />
-        {/* <Swipe_chat_connect /> */}
+        <Swipe_chat_connect />
       </div>
     </>
   );
