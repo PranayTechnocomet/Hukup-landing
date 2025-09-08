@@ -145,12 +145,7 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
-  .heading-howitwork {
-    display: none;
-  }
-  .heading-howitwork-md {
-    display: block;
-  }
+
   .howitworkcard-container {
     position: relative;
   }

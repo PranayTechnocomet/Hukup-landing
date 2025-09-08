@@ -15,6 +15,7 @@ export default function Home() {
         <Carousel/>
         <HukupChatSmartMatch />
         <Swipe_chat_connect />
+        <GetintouchwithhukupPerks/>
       </div>
     </>
   );
