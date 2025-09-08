@@ -25,7 +25,7 @@ export default function HukupChatSmartMatch() {
             <Image
               src={hukupChatSmartMatchcard}
               alt="hukupChatSmartMatchcard.."
-              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
+              className="xl:w-[357px] xl:h-[450px] lg:w-[330px] lg:h-[420px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
             />
           </div>
           {/* card2 */}
@@ -33,7 +33,7 @@ export default function HukupChatSmartMatch() {
             <Image
               src={hukupChatSmartMatchcard2}
               alt="hukupChatSmartMatchcard.."
-              className="lg:w-[357px] lg:h-[450px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
+              className="xl:w-[357px] xl:h-[450px] lg:w-[330px] lg:h-[420px] w-[150px] h-[270px] md:w-[255px] md:h-[345px]"
             />
           </div>
           {/* girlimg */}
@@ -41,7 +41,7 @@ export default function HukupChatSmartMatch() {
             <Image
               src={girl}
               alt="Girl"
-              className="lg:w-[315px] lg:h-[420px] w-[130px] h-[240px] md:w-[215px] md:h-[320px]"
+              className="xl:w-[315px] xl:h-[420px] lg:w-[300px] lg:h-[400px] w-[130px] h-[240px] md:w-[215px] md:h-[320px]"
             />
           </div>
           {/* boyimg */}
@@ -49,7 +49,7 @@ export default function HukupChatSmartMatch() {
             <Image
               src={boy}
               alt="Boy"
-              className="lg:w-[390px] lg:h-[495px] w-[165px] h-[285px] md:w-[260px] md:h-[355px]"
+              className="lg:w-[355px] lg:h-[467px] xl:w-[390px] xl:h-[495px] w-[165px] h-[285px] md:w-[260px] md:h-[355px]"
             />
           </div>
           {/* text1 */}
@@ -66,7 +66,7 @@ export default function HukupChatSmartMatch() {
           >
             Hey! <br /> Your profile looks fun ☺️
           </div>
-          <div className="heart-card-con absolute md:top-[27%] md:left-[39%] lg:top-[29%] lg:left-[40.5%] top-[6%] left-[37%] sm:top-[25%]">
+          <div className="heart-card-con lg:w-[20%] absolute md:top-[27%] md:left-[39%] lg:top-[29%] lg:left-[40.5%] top-[6%] left-[37%] sm:top-[25%]">
             <Image
               src={heartcard}
               alt="heartcard"
@@ -78,4 +78,3 @@ export default function HukupChatSmartMatch() {
     </>
   );
 }
-// box-shadow: 0px 0px 57.7px 25px #FC72924D;
