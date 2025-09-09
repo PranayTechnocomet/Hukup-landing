@@ -3,14 +3,14 @@ import Image from "next/image";
 
 import circle from "../../assets/images/circle.png";
 import circlegirl from "../../assets/images/circlewomen.png";
-import CloudImg from "../../assets/images/clouds.png";
-
+// import CloudImg from "../../assets/images/clouds.png";
+import CloudImg from "../../assets/images/cloud2.png";
 export default function Swipe_chat_connect() {
   return (
     <>
-      <div className="relative lg:h-[560px] h-[650px] 2xl:h-[580px] xl:h-[470px]">
+      <div className="relative lg:h-[560px] sm:h-[345px] h-[650px] 2xl:h-[580px] xl:h-[470px]">
         <div
-          className="w-full bg-cover bg-center md:top-[-35%] lg:bg-top 2xl:h-[900px] md:h-[575px] xl:top-[-44%] xl:h-[720px] lg:top-[-31%] absolute top-[-40%] sm:top-[-28%] lg:h-[660px] sm:h-[525px] h-[900px]"
+          className="w-full bg-cover bg-center md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px] xl:top-[-44%] xl:h-[815px] lg:top-[-31%] absolute top-[-40%] sm:top-[-54%] lg:h-[660px] sm:h-[525px] h-[900px]"
           style={{ backgroundImage: `url(${CloudImg.src})` }}
         >
           {/* <Image src={clouds} alt="clouds.." className="w-[100%]" /> */}

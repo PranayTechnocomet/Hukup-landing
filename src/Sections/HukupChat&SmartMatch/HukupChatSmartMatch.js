@@ -54,15 +54,15 @@ export default function HukupChatSmartMatch() {
           </div>
           {/* text1 */}
           <div
-            className="absolute 2xl:left-[7%] 2xl:w-[14%] sm:top-[17%] sm:left-[-21%] sm:w-[37%] sm:text-[11px] top-[17%] lg:left-[7%] font-[700] lg:top-[25%] lg:w-[15%] md:text-[11px] md:top-[20%] md:left-[1%] left-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
-             text-center family-reemkufi text-[9px] md:w-[20%] w-[14%] bg-white py-[14px] px-[5px] rounded-[19px]"
+            className="absolute 2xl:left-[7%] 2xl:w-[14%] sm:top-[17%] sm:left-[-21%] sm:w-[37%] sm:text-[11px] top-[11%] lg:left-[7%] font-[700] lg:top-[25%] lg:w-[15%] md:text-[11px] md:top-[20%] md:left-[1%] left-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
+             text-center family-reemkufi text-[9px] md:w-[20%] w-[22%] bg-white py-[14px] px-[5px] rounded-[19px]"
           >
             Thanks! <br /> You seem really cool too😉
           </div>
           {/* text2 */}
           <div
-            className="absolute 2xl:right-[8%] sm:top-[41%] sm:right-[-21%] sm:w-[37%] sm:text-[11px] font-[700] lg:top-[54%] lg:right-[9%] md:right-[0%] lg:w-[15%] md:text-[11px] md:top-[39%] top-[36%] md:w-[20%]  right-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
-             text-center family-reemkufi text-[9px] w-[15%] bg-white py-[14px] px-[5px] rounded-[19px]"
+            className="absolute 2xl:right-[8%] sm:top-[41%] sm:right-[-21%] sm:w-[37%] sm:text-[11px] font-[700] lg:top-[54%] lg:right-[9%] md:right-[0%] lg:w-[15%] md:text-[11px] md:top-[39%] top-[15%] md:w-[20%]  right-[1%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] 
+             text-center family-reemkufi text-[9px] w-[22%] bg-white py-[14px] px-[5px] rounded-[19px]"
           >
             Hey! <br /> Your profile looks fun ☺️
           </div>
