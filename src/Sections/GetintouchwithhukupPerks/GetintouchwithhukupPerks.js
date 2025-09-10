@@ -10,7 +10,7 @@ import Viewandshare from "../../assets/images/Viewandshare.png";
 import { LuDot } from "react-icons/lu";
 export default function GetintouchwithhukupPerks() {
   return (
-    <div className="xl:my-20">
+    <div className="xl:mt-34 xl:mb-25 mb-15">
       <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-center text-[25px] lg:text-[40px]">
         Get In Touch With Hukup Perks
       </div>
