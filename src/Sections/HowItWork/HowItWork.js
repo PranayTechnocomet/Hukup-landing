@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import iphoneimg from "../../assets/images/iphone-img.png";
@@ -7,6 +8,10 @@ import card2 from "../../assets/images/card2.png";
 import card3 from "../../assets/images/card3.png";
 import music from "../../assets/images/Music.png";
 import dining from "../../assets/images/dining.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation"; // If using navigation
+import "swiper/css/pagination"; // If using pagination
 export default function HowItWork() {
   const Benefits = {
     img: card1,
@@ -60,7 +65,7 @@ export default function HowItWork() {
               </span>
             </div>
 
-            <div className="absolute bottom-[23%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-17%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
+            <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-17%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
               <Image
                 src={dining}
                 alt="diningcon"
@@ -71,7 +76,7 @@ export default function HowItWork() {
               </span>
             </div>
           </div>
-          <div className="lg:py-[4rem] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container lg:mb-[3rem]">
+          <div className="lg:py-[4rem] lg:max-w-[520px] xl:max-w-[100%] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container lg:mb-[3rem]">
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
@@ -96,16 +101,65 @@ export default function HowItWork() {
             </div> */}
 
             {/* with position */}
-            <div className="howitwork-cards ">
-              <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
+            {/* large screen */}
+            <div className="howitwork-cards md:block hidden ">
+              <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
-              <div className="lg:absolute lg:top-[34%] lg:left-[0%]">
+              <div className="lg:absolute lg:top-[34%] lg:left-[-8%] 2xl:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[3%] xl:right-[15%] lg:right-[10%] 2xl:right-[22%] first-card">
+              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={people} customewidth={`175px`} />
               </div>
+            </div>
+            {/*small screen */}
+            <div className="block md:hidden ml-[1rem]">
+              <Swiper
+                slidesPerView={3}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 23,
+                  },
+                  375: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 25,
+                  },
+                  426: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 30,
+                  },
+                  520: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 30,
+                  },
+                  575: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 25,
+                  },
+
+                  690: {
+                    spaceBetween: 25,
+                    slidesPerView: 2.5,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <HowItWorkCard
+                    CardData={relatioship}
+                    customewidth={`153px`}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <HowItWorkCard CardData={people} customewidth={`175px`} />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>

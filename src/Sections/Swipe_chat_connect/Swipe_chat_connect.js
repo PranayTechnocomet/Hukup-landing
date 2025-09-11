@@ -14,55 +14,57 @@ export default function Swipe_chat_connect() {
           style={{ backgroundImage: `url(${CloudImg.src})` }}
         >
           {/* <Image src={clouds} alt="clouds.." className="w-[100%]" /> */}
-          <div className="grid grid-cols-1 sm:grid-cols-6  absolute top-[38%] lg:top-[43%] md:top-[37%] sm:top-[36%]">
-            <div className="col-span-3 mx-auto lg:hidden md:hidden sm:hidden block">
-              <div className="relative">
-                <Image
-                  src={circle}
-                  alt="circle"
-                  className=" w-[230px] lg:w-[410px] md:w-[325px] sm:w-[270px]"
-                />
-                <div className="absolute md:top-[-25%] top-[-26%] left-[-13%] lg:w-[500px] lg:left-[-11%] w-[285px] sm:top-[-23%] sm:w-[325px] md:w-[400px] md:left-[-13%]">
+          <div className="2xl:max-w-[1565px] mx-auto"> 
+            <div className="grid grid-cols-1 sm:grid-cols-6  absolute top-[38%] lg:top-[43%] md:top-[37%] sm:top-[36%]">
+              <div className="col-span-3 mx-auto lg:hidden md:hidden sm:hidden block">
+                <div className="relative">
                   <Image
-                    src={circlegirl}
-                    alt="circlegirl"
-                    className="  w-[100%]"
+                    src={circle}
+                    alt="circle"
+                    className=" w-[230px] lg:w-[410px] md:w-[325px] sm:w-[270px]"
                   />
+                  <div className="absolute  md:top-[-25%] top-[-26%] left-[-13%] lg:w-[500px] lg:left-[-11%] w-[285px] sm:top-[-23%] sm:w-[325px] md:w-[400px] md:left-[-13%]">
+                    <Image
+                      src={circlegirl}
+                      alt="circlegirl"
+                      className="  w-[100%]"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="col-span-3 flex flex-col justify-center md:mx-auto md:w-[85%] xl:w-[65%] lg:w-[77%] w-[77%] mx-auto sm:mx-auto sm:w-[85%] ">
-              <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px]">
-                Swipe, chat & connect
+              <div className="col-span-3 flex flex-col justify-center md:mx-auto md:w-[85%] xl:w-[65%] lg:w-[77%] w-[77%] mx-auto sm:mx-auto sm:w-[85%] ">
+                <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px]">
+                  Swipe, chat & connect
+                </div>
+                <div className="text-[#00000080] 2xl:w-[100%] md:w-[100%] 2xl:text-[17px] family-prompt xl:w-[100%]  text-[12px] lg:text-[13px] md:text-[14px]  lg:mt-[20px] mt-[1rem]">
+                  Meeting someone new should feel exciting—not overwhelming. Our
+                  app keeps it simple so you can focus on what really matters:
+                  connection. Create a profile in minutes, explore matches
+                  instantly, and chat effortlessly. Everything is built with
+                  ease in mind, no learning curve required. It’s online dating,
+                  made refreshingly simple.
+                </div>
+                <div className="lg:mt-[25px] mt-[1.5rem]">
+                  <button className="bg-[#FC7292] 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
+                    Download Now
+                  </button>
+                </div>
               </div>
-              <div className="text-[#00000080] 2xl:w-[100%] md:w-[100%] 2xl:text-[17px] family-prompt xl:w-[100%]  text-[12px] lg:text-[13px] md:text-[14px]  lg:mt-[20px] mt-[1rem]">
-                Meeting someone new should feel exciting—not overwhelming. Our
-                app keeps it simple so you can focus on what really matters:
-                connection. Create a profile in minutes, explore matches
-                instantly, and chat effortlessly. Everything is built with ease
-                in mind, no learning curve required. It’s online dating, made
-                refreshingly simple.
-              </div>
-              <div className="lg:mt-[25px] mt-[1.5rem]">
-                <button className="bg-[#FC7292] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
-                  Download Now
-                </button>
-              </div>
-            </div>
-            <div className="col-span-3 mx-auto lg:block md:block sm:block hidden">
-              <div className="relative">
-                <Image
-                  src={circle}
-                  alt="girl"
-                  className="w-[410px] md:w-[325px] sm:w-[270px]"
-                />
-                <div className="absolute top-[-25%] left-[-11%] w-[500px] sm:top-[-23%] lg:top-[-26%] sm:w-[325px] md:w-[400px] md:left-[-13%]">
+              <div className="col-span-3 mx-auto lg:block md:block sm:block hidden">
+                <div className="relative">
                   <Image
-                    src={circlegirl}
-                    alt="circlegirl"
-                    className="  w-[100%]"
+                    src={circle}
+                    alt="girl"
+                    className="w-[410px] 2xl:w-[410px]  md:w-[325px] sm:w-[270px]"
                   />
+                  <div className="absolute top-[-25%] 2xl:w-[507px] left-[-11%] w-[500px] sm:top-[-23%] lg:top-[-26%] sm:w-[325px] md:w-[400px] md:left-[-13%]">
+                    <Image
+                      src={circlegirl}
+                      alt="circlegirl"
+                      className="  w-[100%]"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

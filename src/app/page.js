@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[2000px] Hukup-page">
-        {/* <Dashboard /> */}
+        <Dashboard />
         <HowItWork />
         <Carousel/>
         <HukupChatSmartMatch />
         <Swipe_chat_connect />
         <GetintouchwithhukupPerks/>
         <Meetsomeonespecial />
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   );

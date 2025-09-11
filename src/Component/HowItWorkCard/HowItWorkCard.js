@@ -3,7 +3,7 @@ import Image from "next/image";
 import card_bg from "../../assets/images/card-bg.png";
 export default function Card({ CardData, customewidth }) {
   return (
-    <div className="relative">
+    <div className="relative ">
       <Image
         src={card_bg}
         alt="Background-card"
