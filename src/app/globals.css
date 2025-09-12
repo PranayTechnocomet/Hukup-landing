@@ -114,6 +114,11 @@ body {
     align-items: center;
     flex-direction: column;
   } */
+  .dashboard-bg-img {
+    background-image: url("../assets/images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover !important;
+  }
 }
 @media (min-width: 576px) and (max-device-width: 767px) {
   .howitwork-img {
@@ -121,11 +126,11 @@ body {
     height: 610px !important;
   }
 }
-@media screen and (max-device-width: 991px) {
+@media (min-width: 577px) and (max-device-width: 991px) {
   .dashboard-bg-img {
     background-image: url("../assets/images/main-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
   }
   /* .howitwork-cards {
     display: flex;

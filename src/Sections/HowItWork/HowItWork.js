@@ -65,7 +65,7 @@ export default function HowItWork() {
               </span>
             </div>
 
-            <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-17%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
+            <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-15%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
               <Image
                 src={dining}
                 alt="diningcon"
@@ -102,7 +102,7 @@ export default function HowItWork() {
 
             {/* with position */}
             {/* large screen */}
-            <div className="howitwork-cards md:block hidden ">
+            <div className="howitwork-cards lg:block hidden ">
               <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
@@ -114,7 +114,7 @@ export default function HowItWork() {
               </div>
             </div>
             {/*small screen */}
-            <div className="block md:hidden ml-[1rem]">
+            <div className=" lg:hidden ml-[1rem]">
               <Swiper
                 slidesPerView={3}
                 onSlideChange={() => console.log("slide change")}
@@ -145,6 +145,18 @@ export default function HowItWork() {
                     spaceBetween: 25,
                     slidesPerView: 2.5,
                   },
+                  768: {
+                    spaceBetween: 25,
+                    slidesPerView: 2.7,
+                  },
+                  820: {
+                    spaceBetween: 25,
+                    slidesPerView: 2.9,
+                  },
+                  991:{
+                    spaceBetween: 25,
+                    slidesPerView: 3,
+                  }
                 }}
               >
                 <SwiperSlide>

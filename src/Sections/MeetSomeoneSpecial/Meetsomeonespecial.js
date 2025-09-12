@@ -5,28 +5,46 @@ import shadow from "../../assets/images/shadow_halfcircle.png";
 import group from "../../assets/images/group.png";
 import girl from "../../assets/images/user-img1.png";
 import ReviewsFromUsers from "../ReviewsFromUsers/ReviewsFromUsers";
+import footer_appstore from "../../assets/images/footer_apple.png"; 
+import footer_playstore from "../../assets/images/footer_store.png"; 
 export default function Meetsomeonespecial() {
   return (
     <>
       <div className="xl:max-w-[1140px] 2xl:max-w-[1400px] w-[90%] mx-auto">
         <div className="rounded-[1rem] w-[15%] overflow-hidden">
-          {/* <div className="flex items-center gap-3 px-7 py-3 rounded-2xl w-[100%] bg-white/50 border-[6px] [border-image-source:linear-gradient(178.15deg,#FC7292_0%,rgba(238,237,237,0.5)_96.79%)] [border-image-slice:1] cursor-pointer">
-            <div className="text-left">
-              <span className="block text-sm text-gray-700">
+          <div className="flex items-center gap-3 px-[7px] py-[3px] rounded-2xl w-[100%] bg-white/50 border-[6px] [border-image-source:linear-gradient(178.15deg,#FC7292_0%,rgba(238,237,237,0.5)_96.79%)] [border-image-slice:1] cursor-pointer">
+            <div className="">
+              <span className="block text-[10px] text-gray-700">
                 Download it for
               </span>
-              <span className="block text-2xl font-semibold text-black">
+              <span className="block text-[16px] font-semibold text-black">
                 ios
               </span>
             </div>
-          </div> */}
+          </div>
+        </div>
+        <div className="rounded-[1rem] w-[15%] overflow-hidden">
+          <div className="flex items-center gap-3 px-[7px] py-[3px] rounded-2xl w-[100%] bg-white/50 border-[6px] [border-image-source:linear-gradient(178.15deg,#FC7292_0%,rgba(238,237,237,0.5)_96.79%)] [border-image-slice:1] cursor-pointer">
+            <div className="">
+              <span className="block text-[10px] text-gray-700">
+                Download it for
+              </span>
+              <span className="block text-[16px] font-semibold text-black">
+               Android
+              </span>
+            </div>
+          </div>
         </div>
         <div className="lg:text-[24px] 2xl:text-[34px] font-[800] md:w-[65%] lg:font-[700] md:text-[25px] sm:w-[50%] family-reemkufi lg:w-[40%] w-[75%] text-[19px]">
           Meet Someone Special — Download HukUp Today!
         </div>
         <div className="relative h-[740px] md:h-[630px] lg:h-[740px]">
           <div className="relative xl:w-[70%] 2xl:w-[65%] max-w-[300px] md:max-w-[605px] sm:max-w-[410px] lg:max-w-[730px] xl:max-w-[100%] w-[100%] mx-auto mt-[4rem]">
-            <Image src={halfcircle} alt="..." className="lg:w-[800px] 2xl:w-[900px] md:h-[300px] sm:h-[200px] w-[900px] h-[170px] lg:h-auto" />
+            <Image
+              src={halfcircle}
+              alt="..."
+              className="lg:w-[800px] 2xl:w-[900px] md:h-[300px] sm:h-[200px] w-[900px] h-[170px] lg:h-auto"
+            />
             <Image
               src={shadow}
               alt="shadow"
@@ -46,7 +64,11 @@ export default function Meetsomeonespecial() {
               </div>
               <div className="border-1 my-[3px] w-[88%]  border-indigo mx-auto"></div>
               <div className="flex justify-center items-center ">
-                <Image src={girl} alt="girl" className="w-[30px] md:w-[40px] sm:w-[35px] lg:w-[40px]" />
+                <Image
+                  src={girl}
+                  alt="girl"
+                  className="w-[30px] md:w-[40px] sm:w-[35px] lg:w-[40px]"
+                />
                 <div className="text-[#00000080] 2xl:text-[15px] md:text-[11px] text-center sm:w-[55%] w-[50%] family-prompt lg:text-[12px] text-[10px]">
                   Bella Sangawan 27 km Away
                 </div>
