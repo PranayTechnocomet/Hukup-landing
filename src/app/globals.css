@@ -51,34 +51,7 @@ body {
   background-size: cover;
   /* background-position: center; */
 }
-/* .gradient-button {
-  background-image: linear-gradient(
-    169.15deg,
-     rgba(252, 114, 146, 0.4) 0%,
-     rgba(238, 237, 237, 0.2) 96.79%,
-    rgba(238, 237, 237, 0.2) 96.79%);
 
-
-  padding:10px 0;
-  font-weight: 500;
-  border: 2px ;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-/* .gradient-button {
-  background: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-  border-radius: 10px;
-  cursor: pointer;
-  color: black;
-  border-image: linear-gradient(
-      169.15deg,
-      rgba(252, 114, 146, 0.8) 0%,
-      rgba(238, 237, 237, 0.4) 100%
-    )
-    1;
-  border: 2px solid transparent;
-} */
 .gradient-button {
   font-weight: 500;
   border-radius: 10px;
@@ -93,27 +66,11 @@ body {
     )
     1;
 }
-/* @media screen and (max-device-width:365px) {
-  .heart-card-con{
-        left: 41% !important;
-            top: 30% !important;
-  }
-  .heart-card-con img{
-        width: 32% !important; 
-  }
-} */
 @media screen and (max-device-width: 575px) {
   .howitwork-img {
     width: 240px !important;
     height: 500px !important;
   }
-  /* .howitwork-cards {
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
   .dashboard-bg-img {
     background-image: url("../assets/images/main-bg.png");
     background-repeat: no-repeat;
@@ -130,20 +87,15 @@ body {
   .dashboard-bg-img {
     background-image: url("../assets/images/main-bg.png");
     background-repeat: no-repeat;
-    /* background-size: contain; */
+    
   }
-  /* .howitwork-cards {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  } */
+ 
 }
 @media (min-width: 992px) and (max-device-width: 1023px) {
   .dashboard-bg-img {
     background-image: url("../assets/images/main-bg.png");
     background-repeat: no-repeat;
-    /* background-size: contain; */
+
     background-position: center;
   }
   .howitwork-container {
@@ -155,12 +107,7 @@ body {
     position: relative;
   }
 }
-@media screen and (min-device-width: 1200px) {
-  /* .howitwork-img {
-    margin-left: auto;
-    margin-right: auto;
-  } */
-}
+
 @media screen and (min-device-width: 1281px) {
   .dashboard-bg-img {
     background-position: center;

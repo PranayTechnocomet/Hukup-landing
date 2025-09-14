@@ -28,10 +28,10 @@ export default function ReviewsFromUsers() {
             <div className="family-reemkufi text-[19px] font-[600]">
               Bella Sangawan
             </div>
-            <div className="family-prompt my-[12px] text-[13px] text-[#FFFFFF80]">
+            <div className="family-prompt my-[5px] text-[13px] text-[#FFFFFF80]">
               Australia
             </div>
-            <div className="family-prompt w-[100%] text-[12px]  text-[#FFFFFF80]">
+            <div className="family-prompt w-[100%] text-[11px]  text-[#FFFFFF80]">
               I’ve tried so many dating apps, but HukUp truly stands out. The
               Smart Match feature introduced me to people who actually matched
               my vibe and interests. Within days, I was having genuine

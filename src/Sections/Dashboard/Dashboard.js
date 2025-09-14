@@ -29,7 +29,7 @@ export default function Dashboard() {
                   When You Would Like To Go On A Date?
                 </div>
               </div>
-              <div className="text-[10px] md:text-[13px] lg:text-[13px] font-[400] mt-[10px] lg:mt-[1.5rem] family-prompt">
+              <div className="text-[9px] md:text-[13px] lg:text-[13px] font-[400] mt-[10px] lg:mt-[1.5rem] family-prompt">
                 Application aimed at singles looking for a relationship.
               </div>
             </div>
