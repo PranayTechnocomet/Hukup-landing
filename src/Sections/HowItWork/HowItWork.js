@@ -54,7 +54,38 @@ export default function HowItWork() {
               alt="phone-image"
               className="lg:w-[300px] lg:h-[610px] md:w-[300px] md:h-[610px] 2xl:w-[350px] 2xl:h-[700px] howitwork-img"
             />
-            <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
+            {/* new */}
+            {/* <div
+              className="w-[50%] absolute lg:py-[7px]  top-[28%] lg:right-[-26%] right-[-14%] family-trirong  
+    inline-block p-[6px] rounded-[12px]
+   background: radial-gradient(100% 268.25% at 0% 0%, rgba(247, 86, 133, 0.25) 0%, rgba(255, 255, 255, 0) 100%) 
+
+    backdrop-blur-[12px]"
+            >
+              <div
+                className=" 
+      flex items-center gap-[12px] px-[10px] py-[4px]
+      rounded-[7px]
+      font-semibold text-black
+
+    background: radial-gradient(100% 268.25% at 0% 0%, rgba(247, 86, 133, 0.25) 0%, rgba(255, 255, 255, 0) 100%) 
+
+      backdrop-blur-[42px]
+      shadow-[inset_-5px_-5px_250px_0px_rgba(255,255,255,0.05)]
+    "
+              >
+                <Image
+                  src={music}
+                  alt="Musicicon"
+                  className="lg:w-[18%] lg:h-[18%] w-[15%] h-[15%] "
+                />
+                <span className="lg:text-[20px] text-[15px] font-[600]">
+                  Music
+                </span>
+              </div>
+            </div> */}
+
+            {/* <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
               <Image
                 src={music}
                 alt="Musicicon"
@@ -63,6 +94,26 @@ export default function HowItWork() {
               <span className="lg:text-[20px] text-[15px] font-[600]">
                 Music
               </span>
+            </div> */}
+            <div
+              className="absolute top-[25%] right-[-29%] inline-block rounded-[20px] 
+    [background:radial-gradient(100%_268.25%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)100%)]
+    backdrop-blur-[42px] 
+    shadow-[inset-5px_-5px_250px_rgba(255,255,255,0.05)]
+    p-[6px]"
+              style={{
+                border: "6px solid transparent",
+                borderImage:
+                  "linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%) 1",
+                borderRadius: "20px",
+                boxShadow:
+                  "0 0 25px rgba(252,114,146,0.35), inset -5px -5px 250px rgba(255,255,255,0.05)",
+              }}
+            >
+              <div className="flex items-center gap-3 px-6 py-3 rounded-[16px] font-semibold text-black">
+                <Image src={music} alt="music" className="w-[27px]" />
+                <span className="text-[18px]">Music</span>
+              </div>
             </div>
 
             <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-15%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
@@ -153,10 +204,10 @@ export default function HowItWork() {
                     spaceBetween: 25,
                     slidesPerView: 2.9,
                   },
-                  991:{
+                  991: {
                     spaceBetween: 25,
                     slidesPerView: 3,
-                  }
+                  },
                 }}
               >
                 <SwiperSlide>

@@ -154,7 +154,11 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
     [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
   "
             >
-              <Image src={round_heart} alt="round_heart" className="w-[14px] lg:w-[27px]" />
+              <Image
+                src={round_heart}
+                alt="round_heart"
+                className="w-[14px] lg:w-[27px]"
+              />
               <span className="text-[10px] lg:text-[15px]">Matched</span>
             </button>
           </div>
@@ -171,7 +175,11 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
     [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
   "
             >
-              <Image src={round_heart} alt="round_heart" className="w-[14px] lg:w-[27px]" />
+              <Image
+                src={round_heart}
+                alt="round_heart"
+                className="w-[14px] lg:w-[27px]"
+              />
               <span className="text-[10px] lg:text-[15px]">Liked</span>
             </button>
           </div>

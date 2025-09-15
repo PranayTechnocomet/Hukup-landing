@@ -14,6 +14,7 @@ export default function Meetsomeonespecial() {
         <div className="lg:text-[24px] mb-[7rem] md:mb-0 2xl:text-[34px] font-[800] md:w-[65%] lg:font-[700] md:text-[25px] sm:w-[50%] family-reemkufi lg:w-[40%] w-[75%] text-[19px]">
           Meet Someone Special — Download HukUp Today!
         </div>
+
         <div className="relative h-[700px] md:h-[630px] lg:h-[740px]">
           <div className="relative xl:w-[70%] 2xl:w-[65%] max-w-[300px] md:max-w-[605px] sm:max-w-[410px] lg:max-w-[730px] xl:max-w-[100%] w-[100%] mx-auto mt-[4rem]">
             <Image
@@ -52,47 +53,46 @@ export default function Meetsomeonespecial() {
               </div>
             </div>
           </div>
-          <div
-            className='absolute md:w-[22%] md:top-[-9%] w-[51%] top-[-13%] lg:top-[-3%] xl:top-[-2%] rounded-[1rem] lg:w-[20%] xl:w-[15%] sm:w-[27%] overflow-hidden'
-          >
-            <div className="flex items-center gap-3 px-[7px] pt-[3px] pb-[7px] rounded-2xl w-[100%] bg-white/50 border-[6px] [border-image-source:linear-gradient(176.15deg,#FC7292_0%,rgba(238,237,237,0.5)_96.79%)] [border-image-slice:1] cursor-pointer">
-              <div>
+          {/* firstbtn */}
+          <div className="app-btn absolute w-[48%] top-[-15%] 2xl:w-[14%] xl:w-[15%] xl:top-[-1%] md:top-[-8%] md:w-[22%] lg:w-[20%] lg:top-[-6%] sm:top-[-14%] sm:w-[28%] p-[6px] rounded-[1rem] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
+            <div className="bg-[rgba(255,255,255,0.9)] rounded-[11px] p-[5px] text-center">
+              <div className="flex items-center gap-[4px] sm:gap-3">
                 <Image
                   src={footer_appstore}
                   alt="appstore"
                   className="w-[27px]"
                 />
-              </div>
-              <div className="leading-[19px]">
-                <span className="family-reemkufi block text-[12px] text-gray-700">
-                  Download it for
-                </span>
-                <span className="family-reemkufi block text-black text-[21px] lg:text-[24px] font-[700]">
-                  ios
-                </span>
+                <div className="text-left leading-[18px]">
+                  <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                    Download it for
+                  </span>
+                  <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                    ios
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="md:w-[22%] md:top-[2%] md:left-0 absolute top-[-13%] right-[-5%] lg:top-[7%] xl:top-[8%] rounded-[1rem] sm:w-[27%] lg:w-[20%] xl:w-[15%] overflow-hidden">
-            <div className="flex items-center gap-3 px-[7px] pt-[3px] pb-[7px] rounded-2xl w-[100%] bg-white/50 border-[6px] [border-image-source:linear-gradient(176.15deg,#FC7292_0%,rgba(238,237,237,0.5)_96.79%)] [border-image-slice:1] cursor-pointer">
-              <div>
+          {/* second btn */}
+          <div className="app-btn play-btn absolute sm:left-0 2xl:top-[9%] 2xl:w-[14%] xl:w-[15%] xl:top-[8%] md:top-[3%] md:w-[22%] lg:w-[20%] sm:top-[-4%] sm:w-[28%] p-[6px] rounded-[1rem] w-[48%] right-[1%] top-[-15%] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
+            <div className="bg-[rgba(255,255,255,0.9)] rounded-[11px] p-[5px] text-center">
+              <div className="flex items-center gap-[4px] sm:gap-3">
                 <Image
                   src={footer_playstore}
-                  alt="appstore"
+                  alt="playstore"
                   className="w-[27px]"
                 />
-              </div>
-              <div className="leading-[19px]">
-                <span className="family-reemkufi block text-[12px] text-gray-700">
-                  Download it for
-                </span>
-                <span className="family-reemkufi block text-[21px] lg:text-[24px] font-[700] text-black">
-                  Android
-                </span>
+                <div className="text-left leading-[18px]">
+                  <span className="block app-text family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                    Download it for
+                  </span>
+                  <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                    Android
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-
           <div className="w-[100%] lg:w-[90%] lg:top-[34%] lg:left-[4.5%] xl:w-[85%] md:top-[33%] sm:top-[25%] mx-auto absolute top-[21%] left-[0.5%] xl:top-[40%] xl:left-[7.5%]">
             <ReviewsFromUsers />
           </div>
