@@ -30,7 +30,7 @@ body {
   background-position: center;
   background-size: cover;
   /* background-color: ; */
-  background-color: rgba(30, 30, 94, .3);
+  background-color: rgba(30, 30, 94, .3) !important;
  /* Semi-transparent color */
   background-blend-mode: overlay;
 }
@@ -50,10 +50,12 @@ body {
   font-family: "Trirong";
 }
 .how-it-work-bg {
-  /* background-image: url("../assets/images/arrow.png"); */
+  background-image: url("../assets/images/arrow.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
+      background-position: bottom;
+
 }
 
 .gradient-button {

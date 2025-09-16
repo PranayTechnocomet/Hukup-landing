@@ -95,26 +95,87 @@ export default function HowItWork() {
                 Music
               </span>
             </div> */}
-            <div
-              className="absolute top-[25%] right-[-29%] inline-block rounded-[20px] 
+            <div className="rounded-[12px] absolute top-[25%] right-[-16%] overflow-hidden">
+              <div
+                className="inline-block rounded-[20px] 
     [background:radial-gradient(100%_268.25%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)100%)]
     backdrop-blur-[42px] 
     shadow-[inset-5px_-5px_250px_rgba(255,255,255,0.05)]
-    p-[6px]"
-              style={{
-                border: "6px solid transparent",
-                borderImage:
-                  "linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%) 1",
-                borderRadius: "20px",
-                boxShadow:
-                  "0 0 25px rgba(252,114,146,0.35), inset -5px -5px 250px rgba(255,255,255,0.05)",
-              }}
-            >
-              <div className="flex items-center gap-3 px-6 py-3 rounded-[16px] font-semibold text-black">
-                <Image src={music} alt="music" className="w-[27px]" />
-                <span className="text-[18px]">Music</span>
+    "
+                style={{
+                  border: "6px solid transparent",
+                  borderImage:
+                    "linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%) 1",
+                  borderRadius: "20px",
+                  boxShadow:
+                    "0 0 25px rgba(252,114,146,0.35), inset -5px -5px 250px rgba(255,255,255,0.05)",
+                }}
+              >
+                <div className="flex items-center gap-3 px-[10px] py-[5px] rounded-[16px] font-semibold text-black family-trirong">
+                  <Image src={music} alt="music" className="w-[20px]" />
+                  <span className="text-[18px]">Music</span>
+                </div>
               </div>
             </div>
+            {/* <div className="app-btn absolute w-[48%] top-[35%] 2xl:w-[14%] xl:w-[50%] xl:top-[-1%] md:top-[-8%] md:w-[22%] lg:w-[20%] lg:top-[-6%] sm:top-[-14%] sm:w-[28%] p-[6px] rounded-[1rem] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%)]">
+                       <div className="bg-[radial-gradient(100% 268.25% at 0% 0%, rgba(247,86,133,0.25)0%, rgba(255,255,255,0)100%)] rounded-[11px] p-[5px] text-center">
+                         <div className="flex items-center gap-[4px] sm:gap-3">
+                           <Image
+                             src={music}
+                             alt="appstore"
+                             className="w-[27px]"
+                           />
+                           <div className="text-left leading-[18px]">
+                             <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                               Download it for
+                             </span>
+                             <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                               ios
+                             </span>
+                           </div>
+                         </div>
+                       </div>
+                     </div> */}
+            {/* <div className="app-btn absolute w-[48%] top-[35%] 2xl:w-[14%] xl:w-[50%] xl:top-[-1%] md:top-[-8%] md:w-[22%] lg:w-[20%] lg:top-[-6%] sm:top-[-14%] sm:w-[28%] 
+                px-4 py-2 rounded-[1rem] 
+                bg-gradient-to-r from-pink-300/40 to-gray-200/30 
+                backdrop-blur-md shadow-md">
+  <div className="flex items-center gap-[4px] sm:gap-3">
+    <Image
+      src={music}
+      alt="appstore"
+      className="w-[27px]"
+    />
+    <div className="text-left leading-[18px]">
+      <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+        Download it for
+      </span>
+      <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+        ios
+      </span>
+    </div>
+  </div>
+</div> */}
+
+            {/* <div
+              className=" absolute w-[48%] top-[35%] right-[-26%]   
+                p-[2px] rounded-[1rem] 
+                bg-gradient-to-r from-pink-400/30 to-gray-200/20"
+            >
+              <div className="bg-white/30 backdrop-blur-md rounded-[1rem] p-[6px] text-center">
+                <div className="flex items-center gap-[4px] sm:gap-3">
+                  <Image src={music} alt="Music" className="w-[27px]" />
+                  <div className="text-left leading-[18px]">
+                    <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                      Download it for
+                    </span>
+                    <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                      ios
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div> */}
 
             <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-15%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
               <Image
@@ -131,29 +192,8 @@ export default function HowItWork() {
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
-            {/* without position */}
-            {/* <div className="w-full px-6 py-10">
-              <div className="family-reemkufi font-[600] text-[40px]">
-                How It Works
-              </div>
-              <div className="flex flex-col">
-                <div className="flex justify-end">
-                  <HowItWorkCard CardData={relatioship} customewidth="160px" />
-                </div>
-
-                <div className="flex justify-start -mt-30">
-                  <HowItWorkCard CardData={Benefits} customewidth="200px" />
-                </div>
-
-                <div className="flex justify-end -mt-30">
-                  <HowItWorkCard CardData={people} customewidth="180px" />
-                </div>
-              </div>
-            </div> */}
-
-            {/* with position */}
-            {/* large screen */}
-            <div className="howitwork-cards lg:block hidden ">
+          
+            <div className="howitwork-cards flex lg:block overflow-auto gap-[25px] ml-[1rem] md:justify-evenly ">
               <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
@@ -165,7 +205,7 @@ export default function HowItWork() {
               </div>
             </div>
             {/*small screen */}
-            <div className=" lg:hidden ml-[1rem]">
+            {/* <div className=" lg:hidden ml-[1rem]">
               <Swiper
                 slidesPerView={3}
                 onSlideChange={() => console.log("slide change")}
@@ -204,9 +244,17 @@ export default function HowItWork() {
                     spaceBetween: 25,
                     slidesPerView: 2.9,
                   },
+                  900: {
+                    spaceBetween: 20,
+                    slidesPerView: 3.1,
+                  },
+                  920: {
+                    spaceBetween: 25,
+                    slidesPerView: 3.2,
+                  },
                   991: {
                     spaceBetween: 25,
-                    slidesPerView: 3,
+                    slidesPerView: 3.5,
                   },
                 }}
               >
@@ -223,7 +271,7 @@ export default function HowItWork() {
                   <HowItWorkCard CardData={people} customewidth={`175px`} />
                 </SwiperSlide>
               </Swiper>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
