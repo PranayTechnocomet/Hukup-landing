@@ -97,6 +97,41 @@ body {
     background-size: cover !important;
   }
 }
+@media (min-width:450px) and (max-device-width:500px) {
+  .dashboard-couple-pic{
+    right:12%;
+  }
+}
+@media (min-width:501px) and (max-device-width:575px) {
+  .dashboard-couple-pic{
+    right:12%;
+  }
+  .card-1{
+    right:50%;
+  }
+}
+@media (min-width:576px) and (max-device-width:639px) {
+  .dashboard-couple-pic{
+    right:12%;
+  }
+  .card-1{
+    right:43%;
+  }
+  .card-2{
+    right:4%;
+  }
+}
+@media (min-width:992px) and (max-device-width:1023px) {
+  .dashboard-couple-pic{
+    right:12%;
+  }
+  .card-1{
+    right:43%;
+  }
+  .card-2{
+    right:4%;
+  }
+}
 @media (min-width: 576px) and (max-device-width: 767px) {
   .howitwork-img {
     width: 300px !important;
@@ -116,11 +151,7 @@ body {
 
     background-position: center;
   }
-  .howitwork-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
+ 
   .howitworkcard-container {
     position: relative;
   }

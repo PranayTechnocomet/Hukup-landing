@@ -50,9 +50,9 @@ export default function GetintouchwithhukupPerks() {
         <Image
           src={Blockusers}
           alt="Blockusers"
-          className="lg:w-[150px] md:top-[1%] md:right-[22%] md:h-[60px] md:w-[130px] lg:h-[70px] w-[80px] h-[40px] absolute lg:right-[27%] lg:top-[1%] right-[10%] top-[-1%]"
+          className="lg:w-[150px] items-center md:top-[1%] md:right-[22%] md:h-[60px] md:w-[130px] lg:h-[70px] w-[80px] h-[40px] absolute lg:right-[27%] lg:top-[1%] right-[10%] top-[-1%]"
         />
-        <div className="text-[#FC7292]  lg:text-[19px] md:text-[20px] md:right-[15%] sm:text-[14px] sm:right-[-1%] flex lg:items-center text-[10px] family-reemkufi font-[700] absolute top-[12%] lg:right-[22%] right-[5%]">
+        <div className="text-[#FC7292]  lg:text-[19px] md:text-[20px] md:right-[15%] sm:text-[14px] sm:right-[-1%] flex items-center text-[10px] family-reemkufi font-[700] absolute top-[12%] lg:right-[22%] right-[5%]">
           <span className="text-[30px]">
             <LuDot />
           </span>
