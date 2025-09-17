@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="mx-[10px] 2xl:mr-[2rem] 2xl:ml-[6rem] lg:ml-[3rem] pt-[12px] py-[1.5rem] flex items-center justify-between">
+      <div className="mx-[10px] sm:mx-[17px] 2xl:mr-[2rem] 2xl:ml-[6rem] lg:ml-[3rem] pt-[20px] py-[1.5rem] flex items-center justify-between">
         {/* Logo */}
         <div>
           <Image
