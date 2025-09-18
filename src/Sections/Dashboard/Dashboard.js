@@ -24,7 +24,9 @@ export default function Dashboard() {
           <div className="flex absolute flex-col lg:flex-row gap-[19px] lg:left-[13%] left-[3%] sm:left-[6%] sm:gap-[1rem]">
             <div className="lg:mt-[2rem] ">
               <div>
-                <div className="w-[100%] sm:leading-[24px] md:w-[85%] md:text-[32px] md:leading-[35px] text-[19px] lg:text-[40px] lg:w-[80%] xl:text-[40px] xl:w-[65%] font-[600] lg:leading-[44px] family-TwCenMT">
+                <div className="w-[100%] sm:leading-[24px] md:w-[85%] md:text-[32px] md:leading-[35px] text-[19px] lg:text-[40px] lg:w-[80%] xl:text-[40px] xl:w-[65%] font-[600] lg:leading-[44px] family-TwCenMT"
+                style={{ fontFamily: "Tw Cen MT" }}
+                >
                   When You Would Like To Go On A Date?
                 </div>
               </div>
@@ -33,7 +35,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="flex gap-[14px] items-center">
-              <div className="family-reemkufi sm:w-[62px] md:w-[58px] md:h-[55px] md:text-[15px] flex items-center justify-center lg:w-[16%] w-[65px]  xl:w-[13%] bg-[#7546DC] px-[2px] lg:px-[17px] lg:text-[17px] text-[14px] text-center lg:h-[70px] h-[60px] rounded-2xl">
+              <div className="family-reemkufi xl:h-[60px] sm:w-[62px] md:w-[58px] md:h-[55px] md:text-[15px] flex items-center justify-center lg:w-[16%] w-[65px]  xl:w-[12%] bg-[#7546DC] px-[2px] lg:px-[17px] lg:text-[17px] text-[14px] text-center lg:h-[70px] h-[60px] rounded-2xl">
                 <div>8.6M</div>
               </div>
               <div className="">
@@ -98,7 +100,7 @@ export default function Dashboard() {
             </div>
           </div>
           {/* social-media-logos */}
-          <div className=" lg:ml-[2.5rem] absolute bottom-[3%] left-[6%] hidden sm:block ">
+          <div className=" lg:ml-[0] absolute bottom-[3%] left-[6%] lg:left-[5%] hidden sm:block ">
             <Image
               src={facebook}
               alt="Facebooklink"
@@ -121,8 +123,8 @@ export default function Dashboard() {
             />
           </div>
           {/* video */}
-          {/* <div className="hidden lg:block">
-            <div className="absolute left-[4%] lg:left-[9%] lg:bottom-[14%] xl:bottom-[15%] top-[28.5%] flex items-center gap-[5px] lg:gap-[10px]">
+          <div className="hidden lg:block">
+            <div className="absolute left-[4%] lg:left-[9%] 2xl:bottom-[-35%] xl:left-[13%] lg:bottom-[14%] xl:bottom-[-22%] top-[28.5%] flex items-center gap-[5px] lg:gap-[10px]">
               <div className="bg-[#D9D9D9] rounded-full lg:py-[13px] lg:px-[14px] py-[5px] px-[5px]">
                 <Image
                   src={introicon}
@@ -134,15 +136,15 @@ export default function Dashboard() {
                 Watch Intro Video
               </div>
             </div>
-          </div> */}
+          </div>
           {/* couple-image */}
           {/* card */}
           <div>
-            <div className="absolute card-1 xs:right-[50%] bottom-[0%] sm:right-[52%] md:right-[43%] right-[55%] lg:right-[46%] 2xl:right-[44%]">
+            <div className="absolute card-1 xs:right-[50%] bottom-[0%] sm:right-[52%] md:right-[43%] right-[55%] lg:right-[46%] xl:right-[42%] 2xl:right-[44%]">
               <Image
                 src={couple_bgsec}
                 alt="bg-image"
-                className="w-[140px] h-[187px] sm:w-[97%] sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[290px] lg:h-[395px] xl:w-[265px] xl:h-[255px]"
+                className="w-[140px] h-[187px] sm:w-[97%] sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[290px] lg:h-[395px] xl:w-[220px] xl:h-[245px]"
               />
             </div>
             {/* card */}
@@ -150,7 +152,7 @@ export default function Dashboard() {
               <Image
                 src={couple_bgfir}
                 alt="bg-image"
-                className="w-[150px] h-[216px]  sm:w-[100%] sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[280px] xl:h-[295px]"
+                className="w-[150px] h-[216px]  sm:w-[100%] sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[233px] xl:h-[275px]"
               />
             </div>
             {/* couple-pic */}
@@ -158,7 +160,7 @@ export default function Dashboard() {
               <Image
                 src={couple_pic}
                 alt="couple_pic"
-                className="w-[323px] sm:h-[290px] sm:w-[100%] h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[349px]"
+                className="w-[323px] sm:h-[290px] sm:w-[100%] h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px]"
               />
               {/* heart */}
               <div className="absolute sm:top-[12%] sm:left-[25%] 2xl:bottom-[63%] 2xl:right-[47%] left-[25%] md:bottom-[49%] md:right-[45.5%]  top-[9%] lg:right-[52.5%] lg:bottom-[56%] xl:right-[47%] xl:bottom-[49%]">
@@ -168,7 +170,7 @@ export default function Dashboard() {
                   className="relative lg:w-[32px] lg:h-[35px] md:w-[30px] md:h-[35px] w-[22px] h-[25px]  xl:w-[30px] xl:h-[35px] 2xl:w-[65px] 2xl:h-[75px]"
                 />
               </div>
-              <div className="absolute md:bottom-[55%] 2xl:bottom-[69%] 2xl:right-[8%] right-[6%]  top-[-2%] lg:right-[9.5%] lg:bottom-[62%] xl:right-[19%] xl:bottom-[55%]">
+              <div className="absolute md:bottom-[55%] 2xl:bottom-[69%] 2xl:right-[8%] right-[6%]  top-[-2%] lg:right-[9.5%] lg:bottom-[62%] xl:right-[6%] xl:top-[3%]">
                 <Image
                   src={heart}
                   alt="heartimg"

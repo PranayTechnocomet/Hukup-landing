@@ -46,7 +46,7 @@ export default function HowItWork() {
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
         </div>
-        <div className="grid lg:grid-cols-6 2xl:grid-cols-6 grid-cols-1 howitwork-container lg:h-[800px]">
+        <div className="grid lg:grid-cols-6 2xl:grid-cols-6 grid-cols-1 howitwork-container lg:h-[800px] xl:max-w-[1140px] 2xl:max-w-[1530px] xl:mx-auto">
           {/* image-iphone */}
           <div className="py-[2rem] lg:py-[4rem] col-span-3 lg:mx-auto 2xl:col-span-3  relative mx-auto">
             <Image
@@ -194,13 +194,13 @@ export default function HowItWork() {
             </div>
           
             <div className="howitwork-cards flex lg:block overflow-auto gap-[25px] ml-[1rem] md:justify-evenly ">
-              <div className="lg:absolute lg:top-[12%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
+              <div className="lg:absolute lg:top-[12%] xl:right-[9%] z-10 lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
-              <div className="lg:absolute lg:top-[34%] lg:left-[-8%] 2xl:left-[0%]">
+              <div className="lg:absolute lg:top-[34%] lg:left-[-8%] z-10  2xl:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[15%] lg:right-[4%] 2xl:right-[22%] first-card">
+              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={people} customewidth={`175px`} />
               </div>
             </div>
