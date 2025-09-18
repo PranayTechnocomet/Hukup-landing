@@ -13,7 +13,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="mx-[10px] lg:mx-[5rem] py-[1.5rem] flex items-center justify-between">
+      <div className="mx-[10px] xl:max-w-[1055px] xl:mx-auto 2xl:max-w-[1230px] 2xl:mx-auto lg:mx-[5rem] py-[1.5rem] flex items-center justify-between">
         {/* Logo */}
         <div>
           <Image

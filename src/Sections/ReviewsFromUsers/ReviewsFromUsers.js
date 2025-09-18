@@ -22,7 +22,7 @@ export default function ReviewsFromUsers() {
           <Image
             src={quote}
             alt="quote"
-            className="w-[75px] lg:w-[13%] xl:left-[31%] 2xl:left-[29%] 2xl:w-[12%] lg:top-[4%] md:left-[37%] sm:left-[35%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[33%] left-[40%] "
+            className="w-[75px] xl:w-[11%] lg:w-[13%] xl:left-[31%] 2xl:left-[29%] 2xl:w-[12%] lg:top-[4%] md:left-[37%] sm:left-[35%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[33%] left-[40%] "
           />
           <div className="block sm:hidden w-[50%] text-center mt-[1rem] ml-[1rem]">
             <div className="family-reemkufi text-[19px] font-[600]">

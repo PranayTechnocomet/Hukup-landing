@@ -4,7 +4,12 @@
   --background: #ffffff;
   --foreground: #171717;
 } */
-
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("/fonts/TwCenMT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -162,14 +167,14 @@ body {
     background-position: center;
   }
 }
-@media (min-width: 1440px) and (max-device-width: 1536px) {
+@media (min-width: 1440px) and (max-device-width: 1535px) {
   .first-card {
-    right: 22% !important;
+    right: 9% !important;
   }
 }
 @media (min-device-width: 1699) {
   .first-card {
-    right: 39% !important;
+    right: 20% !important;
   }
 }
 @media (min-device-width: 2000px) {

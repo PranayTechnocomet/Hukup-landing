@@ -10,11 +10,11 @@ export default function Swipe_chat_connect() {
     <>
       <div className="relative lg:h-[560px] sm:h-[345px] h-[650px] 2xl:h-[580px] xl:h-[470px]">
         <div
-          className="w-full bg-cover bg-center md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px] xl:top-[-44%] xl:h-[815px] lg:top-[-31%] absolute top-[-40%] sm:top-[-54%] lg:h-[660px] sm:h-[525px] h-[900px]"
+          className="w-full bg-cover bg-top md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px] xl:top-[-44%] xl:h-[815px] lg:top-[-31%] absolute top-[-26%] sm:top-[-54%] lg:h-[660px] sm:h-[525px] h-[900px]"
           style={{ backgroundImage: `url(${CloudImg.src})` }}
         >
           {/* <Image src={clouds} alt="clouds.." className="w-[100%]" /> */}
-          <div className="2xl:max-w-[1565px] mx-auto"> 
+          <div className="2xl:max-w-[1370px] xl:max-w-[1140px] mx-auto"> 
             <div className="grid grid-cols-1 sm:grid-cols-6  absolute top-[38%] lg:top-[43%] md:top-[37%] sm:top-[36%]">
               <div className="col-span-3 mx-auto lg:hidden md:hidden sm:hidden block">
                 <div className="relative">
