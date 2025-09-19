@@ -5,7 +5,7 @@ import quote from "../../assets/images/quote.png";
 export default function ReviewsFromUsers() {
   return (
     <>
-      <div className="bg-[#1E1F28] text-white pt-[10px] rounded-[17px]">
+      <div className="bg-[#1E1F28] text-white pt-[10px] pb-[10px] rounded-[17px]">
         <div className="text-[22px] lg:text-[30px] family-reemkufi font-[800] lg:font-[700] text-center">
           Reviews From Users
         </div>
@@ -22,9 +22,9 @@ export default function ReviewsFromUsers() {
           <Image
             src={quote}
             alt="quote"
-            className="w-[75px] xl:w-[11%] lg:w-[13%] xl:left-[31%] 2xl:left-[29%] 2xl:w-[12%] lg:top-[4%] md:left-[37%] sm:left-[35%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[33%] left-[40%] "
+            className="w-[55px] xl:w-[11%] quote lg:w-[13%] xl:left-[31%] 2xl:left-[29%] 2xl:w-[12%] lg:top-[4%] md:left-[37%] sm:left-[35%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[33%] left-[44%] "
           />
-          <div className="block sm:hidden w-[50%] text-center mt-[1rem] ml-[1rem]">
+          <div className="block sm:hidden w-[87%] mx-auto text-center mt-[3rem]  ">
             <div className="family-reemkufi text-[19px] font-[600]">
               Bella Sangawan
             </div>
@@ -58,7 +58,7 @@ export default function ReviewsFromUsers() {
             </div>
           </div>
          
-          <div className="absolute xl:top-[12%] sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[3%] right-[-5%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
+          <div className="absolute xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[-2%] right-[-5%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
             <div>
               <div className="lg:text-[28px] text-[20px] font-[700] family-reemkufi">
                 15k<span className="text-[#FC7292]">+</span>
@@ -67,7 +67,7 @@ export default function ReviewsFromUsers() {
                 Dates And Matches Everyday
               </div>
             </div>
-            <div className="my-[10px]">
+            <div className="my-[5px] sm:my-[10px]">
               <div className="lg:text-[28px] text-[20px]  font-[700] family-reemkufi">1458</div>
               <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] w-[75%] lg:w-[45%]">
                 New Member Signup Everyday

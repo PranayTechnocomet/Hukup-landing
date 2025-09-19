@@ -64,9 +64,9 @@ export default function Navbar() {
           </ul>
         </div>
         {/* getapp */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block ">
           <button
-            className="flex items-center  gap-3 px-6 py-3
+            className="flex items-center cursor-pointer gap-3 px-6 py-3
             rounded-full font-semibold text-white
             [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
             border: 6px solid;
@@ -160,7 +160,7 @@ export default function Navbar() {
           <a className="hover:text-[rgb(239,54,114)]">Group Profiles</a>
           <div className="block lg:hidden">
             <button
-              className="flex items-center  gap-3 px-6 py-3
+              className="flex items-center  gap-3 px-6 py-3 cursor-pointer
             rounded-full font-semibold text-white
             [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
             border: 6px solid;

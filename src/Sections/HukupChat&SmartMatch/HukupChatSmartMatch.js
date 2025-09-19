@@ -19,7 +19,7 @@ export default function HukupChatSmartMatch() {
           connections.
         </div>
         {/*  hukupChatSmartMatch-container */}
-        <div className="relative max-w-[400px] xl:max-w-[1280px] h-[195px] mx-auto md:max-w-[752px] 2xl:max-w-[1200px] md:mx-auto md:h-[450px] lg:mx-auto lg:max-w-[1050px]">
+        <div className="relative max-w-[400px] xl:max-w-[1280px] sm:h-[212px] h-[195px] mx-auto md:max-w-[752px] 2xl:max-w-[1200px] md:mx-auto md:h-[450px] lg:mx-auto lg:max-w-[1050px]">
           {/* card1 */}
           <div className="absolute 2xl:left-[13%] lg:top-[25%] lg:left-[14%] left-[3%] top-[39%] md:top-[20%] md:left-[9%]">
             <Image
@@ -45,11 +45,11 @@ export default function HukupChatSmartMatch() {
             />
           </div>
           {/* boyimg */}
-          <div className="absolute 2xl:right-[12%] lg:top-[26%] lg:right-[14%] right-[4%] top-[40%] md:right-[9%] md:top-[21%]">
+          <div className="absolute 2xl:right-[12%] lg:top-[26%] lg:right-[14%] right-[3%] top-[40%] md:right-[9%] md:top-[21%]">
             <Image
               src={boy}
               alt="Boy"
-              className="lg:w-[355px] lg:h-[467px] xl:w-[390px] xl:h-[495px] w-[155px] h-[230px] md:w-[260px] md:h-[355px]"
+              className="lg:w-[355px] lg:h-[467px] xl:w-[390px] xl:h-[495px] w-[163px] h-[250px] md:w-[260px] md:h-[355px]"
             />
           </div>
           {/* text1 */}

@@ -177,7 +177,7 @@ export default function HowItWork() {
               </div>
             </div> */}
 
-            <div className="absolute bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-15%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
+            <div className="absolute 2xl:bottom-[23%] bottom-[23%] xl:bottom-[29%] lg:py-[10px] py-[6px]  lg:left-[-28%] left-[-15%] family-trirong flex gap-[10px] lg:gap-[12px] items-center gradient-button lg:w-[55%] w-[50%] justify-center">
               <Image
                 src={dining}
                 alt="diningcon"
@@ -192,7 +192,7 @@ export default function HowItWork() {
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
-          
+
             <div className="howitwork-cards flex lg:block overflow-auto gap-[25px] ml-[1rem] md:justify-evenly ">
               <div className="lg:absolute lg:top-[12%] xl:right-[9%] z-10 lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />

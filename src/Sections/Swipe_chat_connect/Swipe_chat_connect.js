@@ -10,11 +10,11 @@ export default function Swipe_chat_connect() {
     <>
       <div className="relative lg:h-[560px] sm:h-[345px] h-[650px] 2xl:h-[580px] xl:h-[470px]">
         <div
-          className="w-full bg-cover bg-top md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px] xl:top-[-44%] xl:h-[815px] lg:top-[-31%] absolute top-[-26%] sm:top-[-54%] lg:h-[660px] sm:h-[525px] h-[900px]"
+          className="w-full bg-gradient-to-t from-white to-[#f7e7e8]
+        overflow-hidden bg-cover bg-top md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px]  xl:top-[-37%] xl:h-[700px] lg:top-[-31%] absolute top-[-20%] sm:top-[-22%] lg:h-[660px] sm:h-[525px] h-[785px]"
           style={{ backgroundImage: `url(${CloudImg.src})` }}
         >
-          {/* <Image src={clouds} alt="clouds.." className="w-[100%]" /> */}
-          <div className="2xl:max-w-[1370px] xl:max-w-[1140px] mx-auto"> 
+          <div className="2xl:max-w-[1370px] xl:max-w-[1140px] mx-auto ">
             <div className="grid grid-cols-1 sm:grid-cols-6  absolute top-[38%] lg:top-[43%] md:top-[37%] sm:top-[36%]">
               <div className="col-span-3 mx-auto lg:hidden md:hidden sm:hidden block">
                 <div className="relative">
@@ -32,7 +32,6 @@ export default function Swipe_chat_connect() {
                   </div>
                 </div>
               </div>
-
               <div className="col-span-3 flex flex-col justify-center md:mx-auto md:w-[85%] xl:w-[65%] lg:w-[77%] w-[77%] mx-auto sm:mx-auto sm:w-[85%] ">
                 <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px]">
                   Swipe, chat & connect
@@ -46,7 +45,7 @@ export default function Swipe_chat_connect() {
                   made refreshingly simple.
                 </div>
                 <div className="lg:mt-[25px] mt-[1.5rem]">
-                  <button className="bg-[#FC7292] 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
+                  <button className="bg-[#FC7292] cursor-pointer 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
                     Download Now
                   </button>
                 </div>
@@ -68,6 +67,9 @@ export default function Swipe_chat_connect() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="absolute h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden">
+            
           </div>
         </div>
       </div>
