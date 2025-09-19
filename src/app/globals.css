@@ -84,21 +84,15 @@ body {
     )
     1;
 }
-.gradient-border {
-    display: inline-block;
-    padding: 3px;
-    border-radius: 10px;
-    background: linear-gradient(169.15deg, rgba(252, 114, 146, .8) 0%, rgba(238, 237, 237, .4) 100%);
-}
-
-.gradient-button {
-    cursor: pointer;
-    color: #000;
-    background: rgba(255, 255, 255, .8);
-    border-radius: 10px;
-    font-weight: 500;
-    border: none;
-    padding: 10px 20px;
+@media (min-width: 460px) and (max-device-width: 639px) {
+  .meetsomeone-con {
+    height: 575px;
+  }
+  .quote {
+    width: 90px;
+    left: 38%;
+    top: 3%;
+  }
 }
 @media (min-width: 426px) and (max-device-width: 639px) {
   .app-btn {
@@ -109,6 +103,9 @@ body {
   }
   .play-btn {
     right: 17%;
+  }
+  .users{
+    top: 5%;
   }
 }
 @media screen and (max-device-width: 575px) {
@@ -133,6 +130,9 @@ body {
   }
   .card-1 {
     right: 50%;
+  }
+  .card-2 {
+    right: 5%;
   }
 }
 @media (min-width: 576px) and (max-device-width: 639px) {
@@ -183,34 +183,44 @@ body {
     right: 14%;
   }
 }
-@media (min-width: 1536px) and (max-device-width: 1600px) {
+@media (min-width: 1536px) and (max-device-width: 1599px) {
   .card-1 {
-    right: 38%;
+    right: 37%;
   }
   .card-2 {
     right: 4%;
   }
   .couple-pic-img {
-           width: 100%;
-        height: 460px;
+    width: 100%;
+    height: 453px;
   }
   .card1-img {
-           width: 320px;
-        height: 370px;
+    width: 320px;
+    height: 370px;
   }
   .card2-img {
-           width: 330px;
-        height: 405px;
+    width: 330px;
+    height: 405px;
   }
   .dashboard-couple-pic {
     right: 7%;
   }
-  .heart-img{
-    width: 45px;
-    height: 50px;
+  .heart-img {
+    width: 40px;
+    height: 44px;
   }
 }
-
+@media (min-width: 1600px) and (max-device-width: 1699px) {
+  .dashboard-couple-pic {
+    right: 0%;
+  }
+  .couple-pic-img {
+    width: 92%;
+  }
+  .card-1 {
+    right: 47%;
+  }
+}
 @media (min-width: 1500px) and (max-device-width: 1535px) {
   .card-1 {
     right: 41%;
@@ -223,6 +233,31 @@ body {
   .howitwork-img {
     width: 300px !important;
     height: 610px !important;
+  }
+}
+@media (min-width: 1920px) and (max-device-width: 2000px) {
+  .couple-pic-img {
+    height: 660px;
+  }
+  .card2-img {
+    width: 440px;
+    height: 575px;
+  }
+  .card-2 {
+    right: 10%;
+  }
+  .dashboard-couple-pic {
+    right: 12%;
+  }
+  .card1-img {
+    width: 425px;
+    height: 520px;
+  }
+  .card-1 {
+    right: 49%;
+  }
+  .heart1-con {
+    right: 11%;
   }
 }
 @media (min-width: 577px) and (max-device-width: 991px) {

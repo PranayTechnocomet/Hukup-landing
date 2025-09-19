@@ -164,7 +164,7 @@ export default function Dashboard() {
                 className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px]"
               />
               {/* heart */}
-              <div className="absolute md:top-[10%] sm:top-[12%] sm:left-[25%] 2xl:bottom-[63%] 2xl:right-[47%] left-[25%] md:bottom-[49%] md:right-[45.5%]  top-[9%] lg:right-[52.5%] lg:bottom-[56%] xl:right-[47%] xl:bottom-[49%]">
+              <div className="absolute heart1-con md:top-[10%] 2xl:top-[8%] sm:top-[12%] sm:left-[25%] 2xl:bottom-[63%] 2xl:right-[47%] left-[25%] md:bottom-[49%] md:right-[45.5%]  top-[9%] lg:right-[52.5%] lg:bottom-[56%] xl:right-[47%] xl:bottom-[49%]">
                 <Image
                   src={heart}
                   alt="heartimg"
