@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
 } */
+
 @font-face {
   font-family: "Tw Cen MT";
   src: url("/fonts/TwCenMT.woff2") format("woff2");
@@ -35,8 +36,8 @@ body {
   background-position: center;
   background-size: cover;
   /* background-color: ; */
-  background-color: rgba(30, 30, 94, .3) !important;
- /* Semi-transparent color */
+  background-color: rgba(30, 30, 94, 0.3) !important;
+  /* Semi-transparent color */
   background-blend-mode: overlay;
 }
 .family-inter {
@@ -59,10 +60,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
-      background-position: bottom;
-
+  background-position: bottom;
+}
+.howitwork-cards {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
+.howitwork-cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 .gradient-button {
   font-weight: 500;
   border-radius: 10px;
@@ -77,9 +84,22 @@ body {
     )
     1;
 }
+.gradient-border {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(169.15deg, rgba(252, 114, 146, .8) 0%, rgba(238, 237, 237, .4) 100%);
+}
 
-
-
+.gradient-button {
+    cursor: pointer;
+    color: #000;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+}
 @media (min-width: 426px) and (max-device-width: 639px) {
   .app-btn {
     width: 40%;
@@ -102,39 +122,101 @@ body {
     background-size: cover !important;
   }
 }
-@media (min-width:450px) and (max-device-width:500px) {
-  .dashboard-couple-pic{
-    right:12%;
+@media (min-width: 450px) and (max-device-width: 500px) {
+  .dashboard-couple-pic {
+    right: 12%;
   }
 }
-@media (min-width:501px) and (max-device-width:575px) {
-  .dashboard-couple-pic{
-    right:12%;
+@media (min-width: 501px) and (max-device-width: 575px) {
+  .dashboard-couple-pic {
+    right: 12%;
   }
-  .card-1{
-    right:50%;
-  }
-}
-@media (min-width:576px) and (max-device-width:639px) {
-  .dashboard-couple-pic{
-    right:12%;
-  }
-  .card-1{
-    right:43%;
-  }
-  .card-2{
-    right:4%;
+  .card-1 {
+    right: 50%;
   }
 }
-@media (min-width:992px) and (max-device-width:1023px) {
-  .dashboard-couple-pic{
-    right:12%;
+@media (min-width: 576px) and (max-device-width: 639px) {
+  .dashboard-couple-pic {
+    right: 12%;
   }
-  .card-1{
-    right:43%;
+  .card-1 {
+    right: 43%;
   }
-  .card-2{
-    right:4%;
+  .card-2 {
+    right: 4%;
+  }
+}
+@media (min-width: 850px) and (max-device-width: 940px) {
+  .card-1 {
+    right: 39%;
+  }
+}
+@media (min-width: 941px) and (max-device-width: 991px) {
+  .card-1 {
+    right: 36%;
+  }
+}
+@media (min-width: 992px) and (max-device-width: 1023px) {
+  .dashboard-couple-pic {
+    right: 12%;
+  }
+  .card-1 {
+    right: 39%;
+  }
+  .card-2 {
+    right: 10%;
+  }
+}
+@media (min-width: 1150px) and (max-device-width: 1220px) {
+  .card-1 {
+    right: 41%;
+  }
+  .card-2 {
+    right: 3%;
+  }
+}
+@media (min-width: 1400px) and (max-device-width: 1500px) {
+  .card-1 {
+    right: 40%;
+  }
+  .card-2 {
+    right: 14%;
+  }
+}
+@media (min-width: 1536px) and (max-device-width: 1600px) {
+  .card-1 {
+    right: 38%;
+  }
+  .card-2 {
+    right: 4%;
+  }
+  .couple-pic-img {
+           width: 100%;
+        height: 460px;
+  }
+  .card1-img {
+           width: 320px;
+        height: 370px;
+  }
+  .card2-img {
+           width: 330px;
+        height: 405px;
+  }
+  .dashboard-couple-pic {
+    right: 7%;
+  }
+  .heart-img{
+    width: 45px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1500px) and (max-device-width: 1535px) {
+  .card-1 {
+    right: 41%;
+  }
+  .card-2 {
+    right: 3%;
   }
 }
 @media (min-width: 576px) and (max-device-width: 767px) {
@@ -156,7 +238,7 @@ body {
 
     background-position: center;
   }
- 
+
   .howitworkcard-container {
     position: relative;
   }

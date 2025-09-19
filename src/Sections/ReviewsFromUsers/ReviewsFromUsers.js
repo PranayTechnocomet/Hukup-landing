@@ -5,7 +5,7 @@ import quote from "../../assets/images/quote.png";
 export default function ReviewsFromUsers() {
   return (
     <>
-      <div className="bg-[#1E1F28] text-white pt-[10px] rounded-[17px]">
+      <div className="bg-[#1E1F28] text-white pt-[10px] pb-[10px] rounded-[17px]">
         <div className="text-[22px] lg:text-[30px] family-reemkufi font-[800] lg:font-[700] text-center">
           Reviews From Users
         </div>
