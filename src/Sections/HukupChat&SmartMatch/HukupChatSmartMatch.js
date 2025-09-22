@@ -9,8 +9,8 @@ import girl from "../../assets/images/hukupChat&SmartMatchgirl.png";
 export default function HukupChatSmartMatch() {
   return (
     <>
-      <div className="hukupChat&SmartMatch lg:my-[4rem] my-[2rem]">
-        <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px] mt-[3rem] lg:text-[40px] block text-center">
+      <div className="hukupChat&SmartMatch lg:mb-[4rem] ">
+        <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px] block text-center">
           Hukup Chat & Smart Match
         </div>
         <div className="family-reemkufi 2xl:text-[16px] mx-auto w-[98%] md:text-[17px] md:w-[80%] text-[12px] font-[600]  lg:w-[46%] text-center lg:text-[13px] mt-[8px]">

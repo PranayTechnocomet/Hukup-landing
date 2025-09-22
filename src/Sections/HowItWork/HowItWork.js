@@ -8,6 +8,7 @@ import card2 from "../../assets/images/card2.png";
 import card3 from "../../assets/images/card3.png";
 import music from "../../assets/images/Music.png";
 import dining from "../../assets/images/dining.png";
+import heart from "../../assets/images/card_heart.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation"; // If using navigation
@@ -39,6 +40,7 @@ export default function HowItWork() {
     right: `16%`,
     heading: "Date Beautiful People",
     margin: `0rem`,
+   
   };
   return (
     <>
@@ -117,6 +119,8 @@ export default function HowItWork() {
                 </div>
               </div>
             </div>
+
+         
             {/* <div className="app-btn absolute w-[48%] top-[35%] 2xl:w-[14%] xl:w-[50%] xl:top-[-1%] md:top-[-8%] md:w-[22%] lg:w-[20%] lg:top-[-6%] sm:top-[-14%] sm:w-[28%] p-[6px] rounded-[1rem] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%)]">
                        <div className="bg-[radial-gradient(100% 268.25% at 0% 0%, rgba(247,86,133,0.25)0%, rgba(255,255,255,0)100%)] rounded-[11px] p-[5px] text-center">
                          <div className="flex items-center gap-[4px] sm:gap-3">
@@ -200,8 +204,8 @@ export default function HowItWork() {
               <div className="lg:absolute lg:top-[34%] lg:left-[-8%] z-10  2xl:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
-                <HowItWorkCard CardData={people} customewidth={`175px`} />
+              <div className="mr-[17px] lg:mr-0  lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
+                <HowItWorkCard CardData={people} customewidth={`175px`} heartimg={heart}/>
               </div>
             </div>
             {/*small screen */}

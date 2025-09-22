@@ -43,24 +43,7 @@ export default function Carousel() {
       distance: "4 km away",
       image: profile5,
     },
-    {
-      name: "Sofia Wilson",
-      description: "Cuckolding, Role Play",
-      distance: "3 km away",
-      image: profile3,
-    },
-    {
-      name: "Patricia Jack",
-      description: "Give Oral, Light Kink",
-      distance: "1 km away",
-      image: profile4,
-    },
-    {
-      name: "Ema Johnson",
-      description: "Hotwifing, Receive Oral",
-      distance: "4 km away",
-      image: profile5,
-    },
+  
   ];
   return (
     <>
