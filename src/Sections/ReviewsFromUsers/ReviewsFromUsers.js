@@ -5,11 +5,11 @@ import quote from "../../assets/images/quote.png";
 export default function ReviewsFromUsers() {
   return (
     <>
-      <div className="bg-[#1E1F28] text-white pt-[10px] pb-[10px] rounded-[17px]">
+      <div className="bg-[#1E1F28] text-white pt-[10px] pb-[10px] sm:pb-0 rounded-[17px]">
         <div className="text-[22px] lg:text-[30px] family-reemkufi font-[800] lg:font-[700] text-center">
           Reviews From Users
         </div>
-        <div className="text-[#FFFFFF80] family-prompt text-[11px] lg:text-[13px] text-center">
+        <div className="text-[#FFFFFF80] px-[10px] family-prompt text-[11px] lg:text-[13px] text-center">
           Best Some Profile | Find Near You Create Account & Start Dating With
           Them
         </div>
@@ -58,12 +58,12 @@ export default function ReviewsFromUsers() {
             </div>
           </div>
          
-          <div className="absolute xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[-2%] right-[-5%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
+          <div className="absolute xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[1%] right-[-5%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
             <div>
               <div className="lg:text-[28px] text-[20px] font-[700] family-reemkufi">
                 15k<span className="text-[#FC7292]">+</span>
               </div>
-              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] md:w-[73%] w-[80%] lg:w-[58%]">
+              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] md:w-[73%] w-[83%] lg:w-[58%]">
                 Dates And Matches Everyday
               </div>
             </div>

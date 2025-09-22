@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import card_bg from "../../assets/images/card-bg.png";
-export default function Card({ CardData, customewidth }) {
+export default function Card({ CardData, customewidth, heartimg }) {
   return (
     <div
       className="relative 
@@ -30,6 +30,14 @@ export default function Card({ CardData, customewidth }) {
               style={{ width: customewidth }}
             />
           </div>
+          {heartimg && (
+            <Image
+              src={heartimg}
+              alt="heart"
+              className="absolute top-[16%] right-2 w-[40px] h-auto"
+            />
+          )}
+
           <div style={{ marginTop: CardData.margin }}>
             <div className="family-reemkufi font-[600] xl:text-[16px] text-[15px] text-center">
               {CardData.heading}

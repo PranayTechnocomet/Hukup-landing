@@ -2,6 +2,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import hukuplogo from "../../assets/images/HukupLogo.png";
+import { IoChevronDown } from "react-icons/io5";
+import Link from "next/link";
+
 import appstore from "../../assets/images/appstore.png";
 import playstore from "../../assets/images/playstore.png";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -11,9 +14,16 @@ import twitter from "../../assets/images/twitter.png";
 import email from "../../assets/images/email.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [openMenu, setOpenMenu] = useState(null);
+
+  const toggleDropdown = (menu) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+  };
+
   return (
     <>
-      <div className="mx-[10px] xl:max-w-[1055px] xl:mx-auto 2xl:max-w-[1230px] 2xl:mx-auto lg:mx-[5rem] py-[1.5rem] flex items-center justify-between">
+      <div className="mx-[10px] xl:max-w-[1055px] xl:mx-auto 2xl:max-w-[1230px] 2xl:mx-auto lg:mx-[5rem] pb-[2rem] xl:pb-[1.5rem] pt-[1.5rem] flex items-center justify-between">
         {/* Logo */}
         <div>
           <Image
@@ -26,42 +36,68 @@ export default function Navbar() {
         <div className="hidden lg:flex text-white text-[14px] family-reemkufi xl:text-[17px] 2xl:text-[18px] font-[500]">
           <ul className="flex gap-[1.5rem] cursor-pointer">
             <a className="lg:text-[#EF3672] text-white">Home</a>
-            <select
-              name="activity"
-              id="activity"
-              className="hover:text-[#EF3672] text-black outline-none "
-            >
-              <option value="activity" className="text-black bg-white">
+            <div className="relative">
+              <button
+                onClick={() => toggleDropdown("activity")}
+                className="flex items-center text-black  gap-1 hover:text-[#EF3672]"
+              >
                 Your Activity
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Saab
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Mercedes
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Audi
-              </option>
-            </select>
-            <select
-              name="saved"
-              id="saved"
-              className="hover:text-[#EF3672] text-black outline-none bg-transparent"
-            >
-              <option value="activity" className="text-black bg-white">
+                <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+              </button>
+
+              {openMenu === "activity" && (
+                <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-3 py-2 hover:bg-gray-800"
+                    >
+                      Recent Activity
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-3 py-2 hover:bg-gray-800"
+                    >
+                      Profile Views
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            {/* Saved Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => toggleDropdown("saved")}
+                className="flex items-center text-black gap-1 hover:text-[#EF3672]"
+              >
                 Saved
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Saab
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Mercedes
-              </option>
-              <option value="activity" className="text-black bg-white">
-                Audi
-              </option>
-            </select>
+                <IoChevronDown size={16} />
+              </button>
+
+              {openMenu === "saved" && (
+                <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-3 py-2 hover:bg-gray-800"
+                    >
+                      Saved Profiles
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-3 py-2 hover:bg-gray-800"
+                    >
+                      Favorites
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </div>
             <a className="hover:text-[#EF3672] text-black">Favorites</a>
             <a className="hover:text-[#EF3672] text-black">Group Profiles</a>
           </ul>
@@ -102,50 +138,64 @@ export default function Navbar() {
         </div>
         <ul className="flex flex-col gap-4 p-4 text-white family-reemkufi">
           <a className="hover:text-[#EF3672]">Home</a>
-          <select
-            name="activity"
-            id="activity"
-            className="hover:text-[#EF3672] text-white outline-none bg-transparent"
-          >
-            <option value="activity" className="text-white bg-black">
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown("activity")}
+              className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
+            >
               Your Activity
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Saab
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Mercedes
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Audi
-            </option>
-          </select>
-          <select
-            name="saved"
-            id="saved"
-            className="hover:text-[#EF3672] text-white  outline-none bg-black"
-          >
-            <option value="activity" className="text-white bg-black">
+              <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+            </button>
+
+            {openMenu === "activity" && (
+              <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Recent Activity
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Profile Views
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          {/* Saved Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown("saved")}
+              className="flex items-center text-white gap-1 hover:text-[#EF3672]"
+            >
               Saved
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Saab
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Mercedes
-            </option>
-            <option value="activity" className="text-white bg-black">
-              Audi
-            </option>
-          </select>
+              <IoChevronDown size={16} />
+            </button>
+
+            {openMenu === "saved" && (
+              <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Saved Profiles
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Favorites
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
           <a className="hover:text-[#EF3672]">Favorites</a>
           <a className="hover:text-[rgb(239,54,114)]">Group Profiles</a>
           <div className="flex lg:hidden gap-[12px]">
-          <Image src={insta} alt="insta" className="w-[30px] " />
-          <Image src={twitter} alt="twitter" className="w-[30px] " />
-          <Image src={email} alt="email" className="w-[30px] " />
-          <Image src={facebook} alt="facebook" className="w-[30px]" />
-        </div>
+            <Image src={insta} alt="insta" className="w-[30px] " />
+            <Image src={twitter} alt="twitter" className="w-[30px] " />
+            <Image src={email} alt="email" className="w-[30px] " />
+            <Image src={facebook} alt="facebook" className="w-[30px]" />
+          </div>
         </ul>
       </div>
     </>
