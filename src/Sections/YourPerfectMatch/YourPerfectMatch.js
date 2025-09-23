@@ -141,10 +141,10 @@ export default function YourPerfectMatch() {
 
   return (
     <section className="your-perfect-match-section spacer">
-      <div className="container">
-        <div className="row justify-content-center ">
+      <div className="container mx-auto">
+        <div className="row justify-center ">
           <div className="col-lg-8 text-center">
-            <h2 className="display-4 text-[25px] lg:text-[40px] font-[600] fw-bold family-reemkufi text-dark mb-3">
+            <h2 className="display-4 text-[25px] lg:text-[40px] text-center md:text-[32px] font-[600] fw-bold family-reemkufi text-dark mb-3">
               Your Perfect Match Is Just Around The Corner
             </h2>
           </div>
@@ -152,29 +152,37 @@ export default function YourPerfectMatch() {
       </div>
 
       <div className="margin"></div>
-      <section className="section portfolio" ref={containerRef}>
-        <h2 className="portfolio_title fill parallax">Matches</h2>
-        <h2 className="portfolio_title stroke parallax">Matches</h2>
+      <div
+        // className="section-wrapper"
+        // style={{
+        //   height: "700px",
+        //   overflow: "hidden",
+        // }}
+      >
+        <section className="section portfolio" ref={containerRef}>
+          <h2 className="portfolio_title fill parallax">Matches</h2>
+          <h2 className="portfolio_title stroke parallax">Matches</h2>
 
-        {profiles.map((profile, i) => (
-          <div className="panel" key={i}>
-            <div className="panel_item">
-              <img
-                className={`panel_img ${i < 5 ? "firstAn" : "secondAn"}`}
-                src={profile.img}
-                alt={`portfolio-${i}`}
-              />
-              <div className="profile-info family-inter text-[19px]">
-                <h4>{profile.name}</h4>
-                <div className="text-[#ADADAD] text-[13px] leading-[16px]">
-                  <p>{profile.location}</p>
-                  <span>{profile.km}</span>
+          {profiles.map((profile, i) => (
+            <div className="panel" key={i}>
+              <div className="panel_item">
+                <img
+                  className={`panel_img ${i < 5 ? "firstAn" : "secondAn"}`}
+                  src={profile.img}
+                  alt={`portfolio-${i}`}
+                />
+                <div className="profile-info family-inter text-[19px]">
+                  <h4>{profile.name}</h4>
+                  <div className="text-[#ADADAD] text-[11px] leading-[13px] sm:text-[13px] sm:leading-[16px]">
+                    <p>{profile.location}</p>
+                    <span>{profile.km}</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
+      </div>
 
       <div className="margin"></div>
       <div className="spacer"></div>
