@@ -4,11 +4,14 @@ import card_bg from "../../assets/images/card-bg.png";
 export default function Card({ CardData, customewidth, heartimg }) {
   return (
     <div
-      className="relative 
+      className="relative  feature-block
   bg-gradient-to-t from-white to-transparent
+   background-[linear-gradient(180deg, #F7E7E8 0%, #FFFFFF 100%)]
+
   rounded-[130px] overflow-hidden
   p-4 w-[270px] md:w-[260px] h-[345px] md:h-[330px] "
     >
+     
       {/* <Image
         src={card_bg}
         alt="Background-card"
@@ -28,6 +31,7 @@ export default function Card({ CardData, customewidth, heartimg }) {
               src={CardData.img}
               alt="CasualDating..."
               style={{ width: customewidth }}
+              className="feature-img"
             />
           </div>
           {heartimg && (

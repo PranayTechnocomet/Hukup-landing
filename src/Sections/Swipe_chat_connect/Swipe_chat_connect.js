@@ -11,7 +11,7 @@ export default function Swipe_chat_connect() {
       <div className="relative lg:h-[560px] sm:h-[345px] h-[650px] 2xl:h-[580px] xl:h-[470px]">
         <div
           className="w-full bg-gradient-to-t from-white to-[#f7e7e8]
-        overflow-hidden bg-cover bg-top md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px]  xl:top-[-37%] xl:h-[700px] lg:top-[-31%] absolute top-[-20%] sm:top-[-22%] lg:h-[660px] sm:h-[525px] h-[785px]"
+        overflow-hidden bg-cover bg-top md:top-[-66%] lg:bg-top 2xl:h-[900px] md:h-[575px]  xl:top-[-37%] xl:h-[700px] lg:top-[-31%] absolute top-[-16%] sm:top-[-22%] lg:h-[660px] sm:h-[525px] h-[785px]"
           style={{ backgroundImage: `url(${CloudImg.src})` }}
         >
           <div className="2xl:max-w-[1370px] xl:max-w-[1140px] mx-auto ">
@@ -68,7 +68,7 @@ export default function Swipe_chat_connect() {
               </div>
             </div>
           </div>
-          <div className="absolute h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden">
+          <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden">
             
           </div>
         </div>

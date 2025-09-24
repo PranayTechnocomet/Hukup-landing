@@ -98,7 +98,8 @@ export default function HowItWork() {
               </span>
             </div> */}
             <div className="rounded-[12px] absolute top-[25%] right-[-16%] overflow-hidden">
-              <div
+              <div className="">
+                <div
                 className="inline-block rounded-[20px] 
     [background:radial-gradient(100%_268.25%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)100%)]
     backdrop-blur-[42px] 
@@ -117,6 +118,7 @@ export default function HowItWork() {
                   <Image src={music} alt="music" className="w-[20px]" />
                   <span className="text-[18px]">Music</span>
                 </div>
+              </div>
               </div>
             </div>
 
