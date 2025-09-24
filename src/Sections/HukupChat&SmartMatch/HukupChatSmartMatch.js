@@ -70,7 +70,7 @@ export default function HukupChatSmartMatch() {
             <Image
               src={heartcard}
               alt="heartcard"
-              className="lg:w-[100%] xl:h-[210px] lg:h-[185px] md:w-[39%] w-[43%] "
+              className="lg:w-[100%] xl:h-[220px] lg:h-[185px] md:w-[39%] w-[43%] "
             />
           </div>
         </div>

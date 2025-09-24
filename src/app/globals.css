@@ -25,6 +25,10 @@
   }
 } */
 
+:root {
+  --arrow-color: rgba(0, 0, 0, 0.03);
+}
+
 body {
   background: #f7e7e8;
   color: var(--foreground);
@@ -84,6 +88,17 @@ body {
     )
     1;
 }
+.feature-img:hover{
+  transform: scale(1.1);
+}
+.feature-block:hover {
+    border-color: rgba(247, 231, 232, .5);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}.feature-img{
+  transition:transform  0.3s !important;
+}
+
 @media (min-width: 460px) and (max-device-width: 639px) {
   .meetsomeone-con {
     height: 575px;
@@ -104,7 +119,7 @@ body {
   .play-btn {
     right: 17%;
   }
-  .users{
+  .users {
     top: 5%;
   }
 }
@@ -218,7 +233,18 @@ body {
     width: 92%;
   }
   .card-1 {
-    right: 47%;
+    right: 44%;
+  }
+  .couple-pic-img {
+    height: 660px;
+  }
+  .card1-img {
+    width: 420px;
+    height: 519px;
+  }
+  .card2-img {
+    height: 570px;
+    width: 437px;
   }
 }
 @media (min-width: 1500px) and (max-device-width: 1535px) {

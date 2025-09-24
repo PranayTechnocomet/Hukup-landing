@@ -16,7 +16,7 @@ export default function Home() {
       <div className="max-w-[2000px] Hukup-page">
         <Dashboard />
         <HowItWork />
-        <YourPerfectMatch />
+        {/* <YourPerfectMatch /> */}
         {/* <Carousel/> */}
         <HukupChatSmartMatch />
         <Swipe_chat_connect />

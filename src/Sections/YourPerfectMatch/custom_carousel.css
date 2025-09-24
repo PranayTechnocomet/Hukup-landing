@@ -400,7 +400,7 @@
   justify-content: center;
   height: 74%;
   width: 50%;
-  margin-top: 16%;
+  margin-top: auto;
   padding: 3rem 1rem 2rem;
   background-color: transparent;
   overflow: hidden;
@@ -861,7 +861,7 @@
   .portfolio_title {
     font-size: 16rem;
     position: absolute;
-    top: -8%;
+    top: 0;
     left: -5rem;
   }
   .panel {
@@ -874,7 +874,8 @@
     align-items: center;
     width: 50%;
     height: 62%;
-    margin-top: 8%;
+    /* margin-top: 8%; */
+    margin-top: auto;
     padding: 3rem 1rem 2rem;
     display: flex;
     overflow: hidden;
@@ -905,9 +906,9 @@
 }
 @media (min-width: 1441px) and (max-device-width: 1536px) {
   .portfolio_title {
-    font-size: 18rem;
+    font-size: 15rem;
     position: absolute;
-    top: 2%;
+    top: -6%;
     left: -4rem;
   }
   .panel {
@@ -920,7 +921,7 @@
     align-items: center;
     width: 50%;
     height: 74%;
-    margin-top: 16%;
+    margin-top: 7%;
     padding: 3rem 1rem 2rem;
     display: flex;
     overflow: hidden;

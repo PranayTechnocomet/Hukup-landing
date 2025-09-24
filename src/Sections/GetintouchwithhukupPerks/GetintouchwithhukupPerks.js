@@ -10,7 +10,7 @@ import Viewandshare from "../../assets/images/Viewandshare.png";
 import { LuDot } from "react-icons/lu";
 export default function GetintouchwithhukupPerks() {
   return (
-    <div className="xl:mt-[4rem] lg:mt-[-4rem] 2xl:mt-[7rem] xl:mb-25 mb-15 mt-[9%] sm:mt-[6rem] md:mt-[2rem]">
+    <div className="xl:mt-[4rem] lg:mt-[-4rem] 2xl:mt-[7rem] xl:mb-25 mb-15 mt-[15%] sm:mt-[6rem] md:mt-[2rem]">
       <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-center text-[25px] lg:text-[40px]">
         Get In Touch With Hukup Perks
       </div>
@@ -71,7 +71,7 @@ export default function GetintouchwithhukupPerks() {
         </div>
         <Image
           src={Viewandshare}
-          alt="Viewandshare" 
+          alt="Viewandshare"
           className="lg:w-[160px] md:h-[130px] md:w-[135px] md:right-[13%] sm:right-[4%] sm:h-[72px] sm:w-[75px] lg:h-[150px] w-[50px] h-[65px] absolute bottom-[6%] lg:right-[20%] right-[10%]"
         />
         <div className="text-[#FC7292]  lg:text-[19px] sm:w-[65%] md:w-[30%] md:right-[1%] md:text-[20px] sm:bottom-[31%] sm:right-[-38%] sm:text-[14px] flex  family-reemkufi lg:font-[700] absolute text-[9px] bottom-[29%] lg:bottom-[33%] right-[2%] font-[800]  lg:right-[5%]  w-[26%]">
