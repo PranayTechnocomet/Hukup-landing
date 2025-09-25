@@ -188,67 +188,55 @@ export default function Navbar() {
         <ul className="flex flex-col gap-4 p-4 text-white family-reemkufi">
           <a className="hover:text-[#EF3672]">Home</a>
           <div className="relative">
-              <button
-                onClick={() => toggleDropdown("activity")}
-                className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
-              >
-                Your Activity
-                <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
-              </button>
+            <button
+              onClick={() => toggleDropdown("activity")}
+              className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
+            >
+              Your Activity
+              <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+            </button>
 
-              {openMenu === "activity" && (
-                <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
-                      Recent Activity
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
-                      Profile Views
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </div>
+            {openMenu === "activity" && (
+              <ul className="relative mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Recent Activity
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Profile Views
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
 
-            {/* Saved Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => toggleDropdown("saved")}
-                className="flex items-center text-white gap-1 hover:text-[#EF3672]"
-              >
-                Saved
-                <IoChevronDown size={16} />
-              </button>
+          {/* Saved Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown("saved")}
+              className="flex items-center text-white gap-1 hover:text-[#EF3672]"
+            >
+              Saved
+              <IoChevronDown size={16} />
+            </button>
 
-              {openMenu === "saved" && (
-                <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
-                      Saved Profiles
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
-                      Favorites
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </div>
+            {openMenu === "saved" && (
+              <ul className="relative mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Saved Profiles
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                    Favorites
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
           <a className="hover:text-[#EF3672]">Favorites</a>
           <a className="hover:text-[rgb(239,54,114)]">Group Profiles</a>
           <div className="block lg:hidden">
