@@ -56,16 +56,16 @@
 /* Feature Blocks */
 
 .feature-block {
-  background: linear-gradient(to bottom, #f7e7e8 0%, #ffffff 100%);
+  /* background: linear-gradient(to bottom, #f7e7e8 0%, #ffffff 100%); */
   /* border-radius: 47%; */
   border-radius: 141px 141px 141px 141px;
   -webkit-border-radius: 141px 141px 141px 141px;
   -moz-border-radius: 141px 141px 141px 141px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
-  border: 1px solid rgba(247, 231, 232, 0.3);
+  /* border: 1px solid rgba(247, 231, 232, 0.3); */
   position: relative;
   overflow: hidden;
 }
@@ -92,7 +92,7 @@
 
 .feature-block:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); */
   border-color: rgba(247, 231, 232, 0.5);
 }
 
@@ -254,11 +254,11 @@
 /* Responsive adjustments */
 
 @media (max-width: 768px) {
-  .feature-block {
+  /* .feature-block {
     padding: 1.25rem;
     border-radius: 25%;
     margin-bottom: 1rem;
-  }
+  } */
   .feature-block-middle {
     min-height: 180px;
     padding: 1.5rem;
@@ -271,10 +271,10 @@
 }
 
 @media (max-width: 576px) {
-  .feature-block {
+  /* .feature-block {
     padding: 1rem;
     border-radius: 20%;
-  }
+  } */
   .feature-block-middle {
     min-height: 160px;
     padding: 1.25rem;

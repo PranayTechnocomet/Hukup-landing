@@ -180,8 +180,9 @@ export default function Dashboard() {
               </div>
               {/* matchedbtn */}
               <div className="absolute 2xl:right-[11%]  2xl:px-[20px] 2xl:py-[15px] sm:right-[12%]  bottom-[12%] right-[3%] lg:bottom-[10%] lg:right-[6%] ">
-                <button
-                  className="
+                <div className="stat-card-1">
+                  <button
+                    className="
     flex items-center lg:gap-[8px] gap-[5px] lg:px-[15px] lg:py-[8px] px-[12px] py-[6px]
     rounded-full font-semibold text-white
     [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
@@ -190,20 +191,22 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
     [backdrop-filter:blur(42px)]
     [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
   "
-                >
-                  <Image
-                    src={round_heart}
-                    alt="round_heart"
-                    className="w-[14px] lg:w-[20px] 2xl:w-[30px]"
-                  />
-                  <span className="text-[10px] 2xl:text-[25px] lg:text-[17px] family-reemkufi">
-                    Matched
-                  </span>
-                </button>
+                  >
+                    <Image
+                      src={round_heart}
+                      alt="round_heart"
+                      className="w-[14px] lg:w-[20px] 2xl:w-[30px]"
+                    />
+                    <span className="text-[10px] 2xl:text-[25px] lg:text-[17px] family-reemkufi">
+                      Matched
+                    </span>
+                  </button>
+                </div>
               </div>
               {/* likebtn */}
               <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] sm:left-[11%] sm:bottom-[7%]  bottom-[5%]  lg:bottom-[3%] lg:left-[2%] ">
-                <button
+                <div className="stat-card-2">
+                  <button
                   className="
     flex items-center lg:gap-[8px] gap-[5px] lg:px-[15px] lg:py-[8px] px-[12px] py-[6px]
     rounded-full font-semibold text-white
@@ -223,6 +226,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
                     Liked
                   </span>
                 </button>
+                </div>
               </div>
             </div>
           </div>

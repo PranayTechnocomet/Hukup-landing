@@ -53,42 +53,50 @@ export default function Meetsomeonespecial() {
             </div>
           </div>
           {/* firstbtn */}
-          <div className="cursor-pointer 2xl:left-[6%] xl:left-[6.5%] app-btn absolute w-[48%] top-[-15%] 2xl:w-[14%] xl:w-[15%] xl:top-[-1%] md:top-[-8%] md:w-[22%] lg:w-[20%] lg:top-[-6%] sm:top-[-18%] sm:w-[28%] p-[6px] rounded-[1rem] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
-            <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
-              <div className="flex items-center gap-[4px] sm:gap-3">
-                <Image
-                  src={footer_appstore}
-                  alt="appstore"
-                  className="w-[27px]"
-                />
-                <div className="text-left leading-[18px]">
-                  <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
-                    Download it for
-                  </span>
-                  <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
-                    ios
-                  </span>
+          <div className="cursor-pointer app-btn   w-[48%] sm:w-[28%] xl:w-[15%] 2xl:left-[6%] 2xl:w-[14%] md:w-[22%] lg:w-[20%]  top-[-15%] absolute xl:top-[-1%] md:top-[-8%] xl:left-[6.5%] lg:top-[-6%] sm:top-[-18%]">
+            <div className="btn-dow">
+              <div className="      p-[6px] rounded-[1rem] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
+                <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
+                  <div className="flex items-center gap-[4px] sm:gap-3">
+                    <Image
+                      src={footer_appstore}
+                      alt="appstore"
+                      className="w-[27px]"
+                    />
+                    <div className="text-left leading-[18px]">
+                      <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                        Download it for
+                      </span>
+                      <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                        ios
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           {/* second btn */}
-          <div className="cursor-pointer lg:top-[6%]  2xl:left-[6%] xl:left-[6.5%] app-btn play-btn absolute sm:left-0 2xl:top-[9%] 2xl:w-[14%] xl:w-[15%] xl:top-[10%] md:top-[3%] md:w-[22%] lg:w-[20%] sm:top-[-4%] sm:w-[28%] p-[6px] rounded-[1rem] w-[48%] right-[1%] top-[-15%] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
-            <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
-              <div className="flex items-center gap-[4px] sm:gap-3">
-                <Image
-                  src={footer_playstore}
-                  alt="playstore"
-                  className="w-[27px]"
-                />
-                <div className="text-left leading-[18px]">
-                  <span className="block app-text family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
-                    Download it for
-                  </span>
-                  <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
-                    Android
-                  </span>
+          <div className="cursor-pointer app-btn lg:top-[6%]  2xl:left-[6%] xl:left-[6.5%] absolute sm:left-0 2xl:top-[11%] 2xl:w-[14%] xl:w-[15%] xl:top-[10%] md:top-[3%] md:w-[22%] lg:w-[20%] sm:top-[-4%] sm:w-[28%]  w-[48%] right-[1%] top-[-15%] ">
+            <div className="btn-dow">
+              <div className=" play-btn bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))] p-[6px] rounded-[1rem]">
+                <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
+                <div className="flex items-center gap-[4px] sm:gap-3">
+                  <Image
+                    src={footer_playstore}
+                    alt="playstore"
+                    className="w-[27px]"
+                  />
+                  <div className="text-left leading-[18px]">
+                    <span className="block app-text family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
+                      Download it for
+                    </span>
+                    <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
+                      Android
+                    </span>
+                  </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>

@@ -88,17 +88,40 @@ body {
     )
     1;
 }
-.feature-img:hover{
+/* card animation */
+.feature-card-img:hover {
   transform: scale(1.1);
 }
 .feature-block:hover {
-    border-color: rgba(247, 231, 232, .5);
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
-}.feature-img{
-  transition:transform  0.3s !important;
+  border-color: rgba(247, 231, 232, 0.5);
+  transform: translateY(-8px);
+  /* /* box-shadow: 0 15px 35px rgba(0, 0, 0, .15); */
 }
-
+.feature-card-img {
+  transition: transform 0.5s !important;
+}
+/* button animation */
+.stat-card-1 {
+  animation: 3s ease-in-out infinite float;
+}
+/* other card  */
+.stat-card-2 {
+  animation: floatUp 3s ease-in-out forwards;
+}
+/* heart cards animation */
+.heart-card-con img {
+  transition: transform 0.7s !important;
+}
+.heart-card-con img:hover {
+  transform: scale(1.1);
+}
+/* meet someone btn */
+.btn-dow {
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn-dow:hover{
+transform: translateY(-6px);   
+}
 @media (min-width: 460px) and (max-device-width: 639px) {
   .meetsomeone-con {
     height: 575px;
