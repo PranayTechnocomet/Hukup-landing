@@ -1,3 +1,4 @@
+'use client';
 import Carousel from "@/Sections/Carousel/Carousel";
 import Dashboard from "@/Sections/Dashboard/Dashboard";
 import Footer from "@/Sections/Footer/Footer";
@@ -7,10 +8,13 @@ import HukupChatSmartMatch from "@/Sections/HukupChat&SmartMatch/HukupChatSmartM
 import Meetsomeonespecial from "@/Sections/MeetSomeoneSpecial/Meetsomeonespecial";
 import Swipe_chat_connect from "@/Sections/Swipe_chat_connect/Swipe_chat_connect";
 import YourPerfectMatch from "@/Sections/YourPerfectMatch/YourPerfectMatch";
-
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
+  // const containerRef = useRef(null);
+
   return (
     <>
       <div className="max-w-[2000px] Hukup-page">

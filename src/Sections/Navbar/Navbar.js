@@ -38,7 +38,12 @@ export default function Navbar() {
                 className="flex items-center gap-1 hover:text-[#EF3672]"
               >
                 Your Activity
-                <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+                <IoChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    openMenu === "activity" ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {openMenu === "activity" && (
@@ -70,7 +75,12 @@ export default function Navbar() {
                 className="flex items-center gap-1 hover:text-[#EF3672]"
               >
                 Saved
-                <IoChevronDown size={16} />
+                <IoChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    openMenu === "saved" ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {openMenu === "saved" && (
@@ -193,7 +203,12 @@ export default function Navbar() {
               className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
             >
               Your Activity
-              <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+              <IoChevronDown
+                size={16}
+                className={`transition-transform duration-300 ${
+                  openMenu === "activity" ? "rotate-180" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "activity" && (
@@ -219,7 +234,12 @@ export default function Navbar() {
               className="flex items-center text-white gap-1 hover:text-[#EF3672]"
             >
               Saved
-              <IoChevronDown size={16} />
+              <IoChevronDown
+                size={16}
+                className={`transition-transform duration-300 ${
+                  openMenu === "saved" ? "rotate-180" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "saved" && (

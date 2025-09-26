@@ -13,7 +13,7 @@ export default function HukupChatSmartMatch() {
         <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px] block text-center">
           Hukup Chat & Smart Match
         </div>
-        <div className="family-reemkufi 2xl:text-[16px] mx-auto w-[98%] md:text-[17px] md:w-[80%] text-[12px] font-[600]  lg:w-[46%] text-center lg:text-[13px] mt-[8px]">
+        <div className="family-reemkufi 2xl:text-[16px] mx-auto w-[98%] md:text-[17px] md:w-[80%] text-[12px] font-[500]  lg:w-[46%] text-center lg:text-[13px] mt-[8px]">
           A smart dating app that connects you with like-minded people through
           real-time chat and AI-based matching for fun and meaningful
           connections.

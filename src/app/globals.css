@@ -117,18 +117,59 @@ body {
 }
 /* meet someone btn */
 .btn-dow {
-transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.btn-dow:hover{
-transform: translateY(-6px);   
+.btn-dow:hover {
+  transform: translateY(-6px);
 }
+/* download btn */
+.swipe-dow-btn {
+  border-radius: 141px 141px 141px 141px;
+  -webkit-border-radius: 141px 141px 141px 141px;
+  -moz-border-radius: 141px 141px 141px 141px;
+  text-align: center;
+  transition: all 0.5s ease;
+  /* border: 1px solid rgba(247, 231, 232, 0.3); */
+  position: relative;
+  overflow: hidden;
+}
+.swipe-dow-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+.swipe-dow-btn:hover::before {
+  left: 100%;
+}
+.swipe-dow-btn:hover {
+  border-color: rgba(247, 231, 232, 0.5);
+  transform: translateY(-8px);
+}
+/* mobile image */
+.mobile-con {
+  transition: transform 0.7s !important;
+}
+.mobile-con:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 460px) and (max-device-width: 639px) {
   .meetsomeone-con {
-    height: 575px;
+    height: 725px;
   }
   .quote {
     width: 90px;
-    left: 38%;
+    left: 77%;
     top: 3%;
   }
 }

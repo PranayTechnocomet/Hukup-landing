@@ -43,7 +43,6 @@ export default function Carousel() {
       distance: "4 km away",
       image: profile5,
     },
-  
   ];
   return (
     <>
