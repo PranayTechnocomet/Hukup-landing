@@ -36,7 +36,7 @@ export default function Swipe_chat_connect() {
                 <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-[25px]  lg:text-[40px]">
                   Swipe, chat & connect
                 </div>
-                <div className="text-[#00000080] 2xl:w-[100%] md:w-[100%] 2xl:text-[17px] family-prompt xl:w-[100%]  text-[12px] lg:text-[13px] md:text-[14px]  lg:mt-[20px] mt-[1rem]">
+                <div className="text-[#00000080] 2xl:w-[100%] md:w-[100%] 2xl:text-[17px] family-prompt xl:w-[100%] font-[300]  text-[12px] lg:text-[13px] md:text-[14px]  lg:mt-[20px] mt-[1rem]">
                   Meeting someone new should feel exciting—not overwhelming. Our
                   app keeps it simple so you can focus on what really matters:
                   connection. Create a profile in minutes, explore matches
@@ -45,8 +45,8 @@ export default function Swipe_chat_connect() {
                   made refreshingly simple.
                 </div>
                 <div className="lg:mt-[25px] mt-[1.5rem]">
-                  <button className="bg-[#FC7292] cursor-pointer 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
-                    Download Now
+                  <button className="bg-[#FC7292] swipe-dow-btn cursor-pointer 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
+                   <span> Download Now</span>
                   </button>
                 </div>
               </div>

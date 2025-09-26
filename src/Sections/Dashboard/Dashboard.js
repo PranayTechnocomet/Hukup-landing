@@ -138,6 +138,16 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+          {/* <div class="absolute bottom-[3%] md:bottom-85 lg:bottom-5 xl:bottom-5 2xl:bottom-5 left-[30%] md:left-[15%] lg:left-[41%] xl:left-[41%] 2xl:left-[41%] -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
+            <button class="flex items-center md:px-6 py-2 md:py-[3px] px-[28px]    rounded-full text-white font-medium text-sm md:text-base  border-6 border-t-[#6d3a48] border-l-[#69364a] border-r-[#69364a] border-b-[#3a3a45] 
+             background-[radial-gradient(100% 100% at 0 0, rgba(247, 86, 133, .25) 0%, rgba(255, 255, 255, 0) 100%)]
+            backdrop-blur-lg bg-[#422430]/60 transition gap-2 cursor-pointer">
+              <div class="md:w-8 md:h-8 rounded-full bg-[#fc7494]/80 flex justify-center items-center pl-1">
+                <i class="fa-solid fa-heart mr-1 text-[#40232e]"></i>
+              </div>
+              Liked
+            </button>
+          </div> */}
           {/* couple-image */}
           {/* card */}
           <div>
@@ -207,7 +217,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] sm:left-[11%] sm:bottom-[7%]  bottom-[5%]  lg:bottom-[3%] lg:left-[2%] ">
                 <div className="stat-card-2">
                   <button
-                  className="
+                    className="
     flex items-center lg:gap-[8px] gap-[5px] lg:px-[15px] lg:py-[8px] px-[12px] py-[6px]
     rounded-full font-semibold text-white
     [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
@@ -216,16 +226,16 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
     [backdrop-filter:blur(42px)]
     [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
   "
-                >
-                  <Image
-                    src={round_heart}
-                    alt="round_heart"
-                    className="w-[14px] lg:w-[20px] 2xl:w-[30px]"
-                  />
-                  <span className="text-[10px] 2xl:text-[25px] lg:text-[17px] family-reemkufi">
-                    Liked
-                  </span>
-                </button>
+                  >
+                    <Image
+                      src={round_heart}
+                      alt="round_heart"
+                      className="w-[14px] lg:w-[20px] 2xl:w-[30px]"
+                    />
+                    <span className="text-[10px] 2xl:text-[25px] lg:text-[17px] family-reemkufi">
+                      Liked
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>

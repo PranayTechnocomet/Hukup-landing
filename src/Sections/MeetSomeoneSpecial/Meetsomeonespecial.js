@@ -11,11 +11,11 @@ export default function Meetsomeonespecial() {
   return (
     <>
       <div className="xl:max-w-[1140px] lg:max-w-[1024px] 2xl:max-w-[1400px] w-[90%] mx-auto">
-        <div className="lg:text-[24px] xl:ml-[4.5rem] 2xl:ml-[5rem] mb-[7rem] md:mb-0 2xl:text-[34px] font-[800] md:w-[65%] lg:font-[700] md:text-[25px] sm:w-[50%] family-reemkufi lg:w-[40%] w-[75%] text-[19px]">
+        <div className="lg:text-[24px] tracking-[2px] xl:ml-[4.5rem] 2xl:ml-[5rem] mb-[7rem] md:mb-0 2xl:text-[34px] font-[800] md:w-[65%] lg:font-[700] md:text-[25px] sm:w-[50%] family-reemkufi lg:w-[40%] w-[100%] text-[19px]">
           Meet Someone Special — Download HukUp Today!
         </div>
-        <div className="relative meetsomeone-con h-[630px] sm:h-[500px] md:h-[630px] lg:h-[650px] xl:h-[730px]">
-          <div className="relative xl:w-[70%] 2xl:w-[65%] max-w-[300px] md:max-w-[605px] sm:max-w-[410px] lg:max-w-[730px] xl:max-w-[100%] w-[100%] mx-auto mt-[4rem]">
+        <div className="relative meetsomeone-con h-[755px] sm:h-[500px] md:h-[630px] lg:h-[650px] xl:h-[730px]">
+          <div className="relative xl:w-[70%] 2xl:w-[65%] max-w-[300px] md:max-w-[577px] sm:max-w-[410px] lg:max-w-[730px] xl:max-w-[100%] w-[100%] mx-auto mt-[4rem]">
             <Image
               src={halfcircle}
               alt="..."
@@ -53,7 +53,7 @@ export default function Meetsomeonespecial() {
             </div>
           </div>
           {/* firstbtn */}
-          <div className="cursor-pointer app-btn   w-[48%] sm:w-[28%] xl:w-[15%] 2xl:left-[6%] 2xl:w-[14%] md:w-[22%] lg:w-[20%]  top-[-15%] absolute xl:top-[-1%] md:top-[-8%] xl:left-[6.5%] lg:top-[-6%] sm:top-[-18%]">
+          <div className="cursor-pointer app-btn   w-[48%] sm:w-[28%] xl:w-[15%] 2xl:left-[6%] 2xl:w-[14%] md:w-[22%] lg:w-[20%]  top-[-12%] absolute xl:top-[-1%] md:top-[-8%] xl:left-[6.5%] lg:top-[-6%] sm:top-[-18%]">
             <div className="btn-dow">
               <div className="      p-[6px] rounded-[1rem] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
                 <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
@@ -77,30 +77,30 @@ export default function Meetsomeonespecial() {
             </div>
           </div>
           {/* second btn */}
-          <div className="cursor-pointer app-btn lg:top-[6%]  2xl:left-[6%] xl:left-[6.5%] absolute sm:left-0 2xl:top-[11%] 2xl:w-[14%] xl:w-[15%] xl:top-[10%] md:top-[3%] md:w-[22%] lg:w-[20%] sm:top-[-4%] sm:w-[28%]  w-[48%] right-[1%] top-[-15%] ">
+          <div className="cursor-pointer app-btn lg:top-[6%]  2xl:left-[6%] xl:left-[6.5%] absolute sm:left-0 2xl:top-[11%] 2xl:w-[14%] xl:w-[15%] xl:top-[10%] md:top-[3%] md:w-[22%] lg:w-[20%] sm:top-[-4%] sm:w-[28%]  w-[48%] right-[1%] top-[-12%] ">
             <div className="btn-dow">
               <div className=" play-btn bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))] p-[6px] rounded-[1rem]">
                 <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[6px] px-[5px] text-center">
-                <div className="flex items-center gap-[4px] sm:gap-3">
-                  <Image
-                    src={footer_playstore}
-                    alt="playstore"
-                    className="w-[27px]"
-                  />
-                  <div className="text-left leading-[18px]">
-                    <span className="block app-text family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
-                      Download it for
-                    </span>
-                    <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
-                      Android
-                    </span>
+                  <div className="flex items-center gap-[4px] sm:gap-3">
+                    <Image
+                      src={footer_playstore}
+                      alt="playstore"
+                      className="w-[27px]"
+                    />
+                    <div className="text-left leading-[18px]">
+                      <span className="block app-text family-reemkufi text-[12px] sm:text-[11px] text-gray-600">
+                        Download it for
+                      </span>
+                      <span className="block family-reemkufi sm:text-[24px] font-bold text-black">
+                        Android
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
           </div>
-          <div className="w-[100%] lg:w-[90%] lg:top-[35%] lg:left-[4.5%] xl:w-[85%] md:top-[33%] sm:top-[34%] mx-auto absolute top-[21%] left-[0.5%] xl:top-[40%] xl:left-[7.5%]">
+          <div className="w-[100%] lg:w-[90%] lg:top-[35%] lg:left-[4.5%] xl:w-[85%] md:top-[33%] sm:top-[34%] mx-auto absolute top-[18%] left-[0.5%] xl:top-[40%] xl:left-[7.5%]">
             <ReviewsFromUsers />
           </div>
         </div>

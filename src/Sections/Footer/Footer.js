@@ -42,11 +42,16 @@ export default function Navbar() {
                 className="flex items-center text-black  gap-1 hover:text-[#EF3672]"
               >
                 Your Activity
-                <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+                <IoChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    openMenu === "activity" ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {openMenu === "activity" && (
-                <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0 bottom-full mb-2 w-48 bg-black rounded-lg shadow-lg p-2">
                   <li>
                     <Link
                       href="#"
@@ -74,11 +79,16 @@ export default function Navbar() {
                 className="flex items-center text-black gap-1 hover:text-[#EF3672]"
               >
                 Saved
-                <IoChevronDown size={16} />
+                <IoChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    openMenu === "saved" ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {openMenu === "saved" && (
-                <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0 bottom-full mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
                   <li>
                     <Link
                       href="#"
@@ -112,9 +122,9 @@ export default function Navbar() {
         </div>
         <button
           onClick={() => setIsOpen(true)}
-          className="lg:hidden text-black md:px-2 md:py-1 p-1 border border-white rounded"
+          className="lg:hidden text-black md:px-2 md:py-1 py-[2px] px-[3px] border border-white rounded"
         >
-          <RxHamburgerMenu className="md:w-[32px] md:h-[32px] w-[20px] h-[20px]" />
+          <RxHamburgerMenu className="md:w-[32px] md:h-[32px] w-[15px] h-[15px]" />
         </button>
       </div>
       <div
@@ -144,11 +154,16 @@ export default function Navbar() {
               className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
             >
               Your Activity
-              <IoChevronDown size={16} /> {/* 👈 Arrow sits next to text */}
+              <IoChevronDown
+                size={16}
+                className={`transition-transform duration-300 ${
+                  openMenu === "activity" ? "rotate-180" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "activity" && (
-              <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+              <ul className="relative mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
                 <li>
                   <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
                     Recent Activity
@@ -170,11 +185,16 @@ export default function Navbar() {
               className="flex items-center text-white gap-1 hover:text-[#EF3672]"
             >
               Saved
-              <IoChevronDown size={16} />
+              <IoChevronDown
+                size={16}
+                className={`transition-transform duration-300 ${
+                  openMenu === "saved" ? "rotate-180" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "saved" && (
-              <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+              <ul className="relative mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
                 <li>
                   <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
                     Saved Profiles
