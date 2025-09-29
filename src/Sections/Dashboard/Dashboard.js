@@ -189,7 +189,7 @@ export default function Dashboard() {
                 />
               </div>
               {/* matchedbtn */}
-              <div className="absolute 2xl:right-[11%]  2xl:px-[20px] 2xl:py-[15px] sm:right-[12%]  bottom-[12%] right-[3%] lg:bottom-[10%] lg:right-[6%] ">
+              {/* <div className="absolute 2xl:right-[11%]  2xl:px-[20px] 2xl:py-[15px] sm:right-[12%]  bottom-[12%] right-[3%] lg:bottom-[10%] lg:right-[6%] ">
                 <div className="stat-card-1">
                   <button
                     className="
@@ -212,9 +212,36 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
                     </span>
                   </button>
                 </div>
+              </div> */}
+              <div className="absolute   2xl:px-[20px] 2xl:py-[15px]  bottom-[6%] left-[79%] lg:bottom-[10%] lg:left-[69%] -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
+                <div className=" stat-card-1">
+                  <div
+                    className="p-[6px] rounded-full backdrop-blur-[4px]"
+                    style={{
+                      background:
+                        "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
+                    }}
+                  >
+                    <button
+                      className="flex family-reemkufi items-center gap-2 lg:px-[19px] pl-[11px] pr-[27px] py-[6px] rounded-full text-white font-medium text-sm md:text-base backdrop-blur-lg"
+                      style={{
+                        background:
+                          "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
+                      }}
+                    >
+                      <Image
+                        src={round_heart}
+                        alt="round_heart"
+                        className="w-[19px] lg:w-[20px] 2xl:w-[30px]"
+                      />
+                      Matched
+                    </button>
+                  </div>
+                </div>
               </div>
+
               {/* likebtn */}
-              <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] sm:left-[11%] sm:bottom-[7%]  bottom-[5%]  lg:bottom-[3%] lg:left-[2%] ">
+              {/* <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] sm:left-[11%] sm:bottom-[7%]  bottom-[5%]  lg:bottom-[3%] lg:left-[2%] ">
                 <div className="stat-card-2">
                   <button
                     className="
@@ -237,29 +264,35 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
                     </span>
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className=" absolute w-[15%] top-[15%] p-[6px] rounded-[1rem] bg-[linear-gradient(178deg,#FC7292,rgba(238,237,237,0.5))]">
-            <div className="bg-[rgba(255,255,255,0.9)] md:py-[7px] rounded-[11px] lg:py-[10px] py-[10px] px-[5px] text-center">
-              <div className="flex items-center gap-[4px] sm:gap-3">
-                <Image
-                  src={couple_pic}
-                  alt="appstore"
-                  className="w-[27px]"
-                />
-                <div className="text-left leading-[18px]">
-                  <span className="app-text block family-reemkufi text-[12px] sm:text-[13px] text-gray-600">
-                    Download it for
-                  </span>
-                  <span className="block family-reemkufi sm:text-[22px] font-bold text-black">
-                    ios
-                  </span>
+              </div> */}
+              <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] left-[17%] sm:left-[11%] sm:bottom-[7%]  bottom-[1%]  lg:bottom-[3%] lg:left-[2%]  -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
+                <div className=" stat-card-2">
+                  <div
+                    className="p-[6px] rounded-full backdrop-blur-[4px]"
+                    style={{
+                      background:
+                        "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
+                    }}
+                  >
+                    <button
+                      className="flex family-reemkufi items-center gap-2 lg:px-[19px] px-[11px] py-[6px] rounded-full text-white font-medium text-sm md:text-base backdrop-blur-lg"
+                      style={{
+                        background:
+                          "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
+                      }}
+                    >
+                      <Image
+                        src={round_heart}
+                        alt="round_heart"
+                        className="w-[19px] lg:w-[20px] 2xl:w-[30px]"
+                      />
+                      Liked
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
