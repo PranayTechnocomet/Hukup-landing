@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import iphoneimg from "../../assets/images/iphone-img.png";
 import HowItWorkCard from "../../Component/HowItWorkCard/HowItWorkCard";
@@ -41,6 +41,7 @@ export default function HowItWork() {
     heading: "Date Beautiful People",
     margin: `0rem`,
   };
+
   return (
     <>
       <div className="how-it-work-bg mb-[3rem]">
@@ -161,6 +162,26 @@ export default function HowItWork() {
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
+            {/* <div
+              className="howitwork-cards flex lg:hidden overflow-auto gap-[25px] ml-[1rem] md:justify-evenly"
+              ref={containerRef}
+            >
+              {repeatedCards.map((card, idx) => (
+                <div key={idx} className="lg:absolute mt-[10px] md:mt-0">
+                  <HowItWorkCard
+                    CardData={card}
+                    customewidth={
+                      card === Benefits
+                        ? "200px"
+                        : card === relatioship
+                        ? "153px"
+                        : "175px"
+                    }
+                    heartimg={card.heartimg}
+                  />
+                </div>
+              ))}
+            </div> */}
 
             <div className="howitwork-cards flex lg:block overflow-auto gap-[25px] ml-[1rem] md:justify-evenly ">
               <div className="lg:absolute mt-[10px] md:mt-0 lg:top-[12%] xl:right-[9%] z-10 lg:right-[4%] 2xl:right-[22%] first-card">
@@ -177,74 +198,6 @@ export default function HowItWork() {
                 />
               </div>
             </div>
-            {/*small screen */}
-            {/* <div className=" lg:hidden ml-[1rem]">
-              <Swiper
-                slidesPerView={3}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 1.3,
-                    spaceBetween: 23,
-                  },
-                  375: {
-                    slidesPerView: 1.4,
-                    spaceBetween: 25,
-                  },
-                  426: {
-                    slidesPerView: 1.6,
-                    spaceBetween: 30,
-                  },
-                  520: {
-                    slidesPerView: 1.7,
-                    spaceBetween: 30,
-                  },
-                  575: {
-                    slidesPerView: 2.2,
-                    spaceBetween: 25,
-                  },
-
-                  690: {
-                    spaceBetween: 25,
-                    slidesPerView: 2.5,
-                  },
-                  768: {
-                    spaceBetween: 25,
-                    slidesPerView: 2.7,
-                  },
-                  820: {
-                    spaceBetween: 25,
-                    slidesPerView: 2.9,
-                  },
-                  900: {
-                    spaceBetween: 20,
-                    slidesPerView: 3.1,
-                  },
-                  920: {
-                    spaceBetween: 25,
-                    slidesPerView: 3.2,
-                  },
-                  991: {
-                    spaceBetween: 25,
-                    slidesPerView: 3.5,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <HowItWorkCard
-                    CardData={relatioship}
-                    customewidth={`153px`}
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <HowItWorkCard CardData={people} customewidth={`175px`} />
-                </SwiperSlide>
-              </Swiper>
-            </div> */}
           </div>
         </div>
       </div>
