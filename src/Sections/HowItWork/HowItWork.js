@@ -43,7 +43,6 @@ export default function HowItWork() {
   };
 
   return (
-    <>
       <div className="how-it-work-bg mb-[3rem]">
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
@@ -118,12 +117,37 @@ export default function HowItWork() {
                   >
                     <div className="flex items-center gap-3 px-[10px] py-[5px] rounded-[16px] font-semibold text-black family-trirong">
                       <Image src={music} alt="music" className="w-[20px]" />
-                      <span className="text-[18px]">Music</span>
+                      <span className="text-[15px] sm:text-[18px]">Music</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* 
+            <div className="absolute   2xl:px-[20px] 2xl:py-[15px]  top-[6%] left-[79%] lg:top-[16%] lg:left-[79%] -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
+              <div className=" stat-card-1">
+                <div
+                  className="p-[5px] rounded-[11px] backdrop-blur-[30px]"
+                  style={{
+                    background:
+                      "linear-gradient(169.15deg, rgb(252 114 146 / 48%) 0%, rgba(238, 237, 237, 0.2) 100.79%);",
+                  }}
+                >
+                  <button
+                    className="flex backdrop-blur-[4px] family-reemkufi items-center gap-2 lg:px-[19px] pl-[11px] pr-[27px] py-[6px] rounded-[8px] text-black font-medium text-sm md:text-base"
+                    style={{
+
+                      background:
+                        "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
+                    }}
+                  >
+                    
+                    Matched
+                  </button>
+                </div>
+              </div>
+            </div> */}
+
             {/* second btn */}
             <div className="absolute bottom-[28%] left-[-23%]">
               <div className="stat-card-1">
@@ -201,6 +225,5 @@ export default function HowItWork() {
           </div>
         </div>
       </div>
-    </>
   );
 }

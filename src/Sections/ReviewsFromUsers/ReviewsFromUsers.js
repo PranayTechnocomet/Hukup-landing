@@ -35,7 +35,7 @@ export default function ReviewsFromUsers() {
   ];
   return (
     <>
-      <div className="bg-[#1E1F28] text-white pt-[10px] pb-[10px] sm:pb-0 sm:rounded-[36px] rounded-[25px] lg:rounded-[40px]">
+      <div className="bg-[#1E1F28] text-white py-[18px]  sm:pb-0 sm:rounded-[36px] rounded-[25px] lg:rounded-[40px]">
         <div className="text-[22px] lg:text-[30px] family-reemkufi font-[800] lg:font-[700] text-center">
           Reviews From Users
         </div>
@@ -46,6 +46,7 @@ export default function ReviewsFromUsers() {
         <div className="relative">
           {/* slider */}
           <Swiper
+            className="sm:max-w-[80%]"
             // spaceBetween={50}
             modules={[Autoplay]}
             slidesPerView={1}
@@ -57,7 +58,7 @@ export default function ReviewsFromUsers() {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <div>
+            <div className="">
               {review.map((data, index) => (
                 <SwiperSlide key={index}>
                   <div>
@@ -69,14 +70,14 @@ export default function ReviewsFromUsers() {
                     <Image
                       src={quote}
                       alt="quote"
-                      className="w-[55px] xl:w-[11%] quote lg:w-[13%] xl:left-[31%] 2xl:left-[29%] 2xl:w-[12%] lg:top-[4%] md:left-[37%] sm:left-[35%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[33%] left-[74%] "
+                      className="w-[55px] xl:w-[11%] quote lg:w-[13%] xl:left-[42%] 2xl:left-[36%] 2xl:w-[12%] lg:top-[4%] md:left-[46%] sm:left-[42%] sm:top-[9%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[42%] left-[74%] "
                     />
                     {/* mobilescreen text */}
                     <div className="block sm:hidden w-[87%] mx-auto mt-[1rem]  ">
                       <div className="family-reemkufi text-[19px] font-[600]">
                         {data.name}
                       </div>
-                      <div className="family-prompt my-[5px] text-[13px] text-[#FFFFFF80]">
+                      <div className="family-prompt my-[1px] text-[13px] text-[#FFFFFF80]">
                         {data.city}
                       </div>
                       <div className="family-prompt w-[100%] text-[11px]  text-[#FFFFFF80]">
@@ -84,14 +85,23 @@ export default function ReviewsFromUsers() {
                       </div>
                     </div>
                     {/* lg */}
-                    <div className="absolute left-[47%] top-[14%] sm:block hidden">
+                    <div className="absolute  2xl:left-[55%] left-[59%] top-[14%] sm:block hidden">
                       <div className="family-reemkufi text-[19px] font-[600]">
                         {data.name}
                       </div>
-                      <div className="family-prompt my-[12px] text-[13px] text-[#FFFFFF80]">
+                      <div className="family-prompt my-[3px] lg:my-[12px] text-[13px] text-[#FFFFFF80]">
                         {data.city}
                       </div>
-                      <div className="family-prompt w-[57%] md:text-[12px] sm:text-[9px] text-[#FFFFFF80]">
+                      <div
+                        className="family-prompt sm:w-[82%] md:w-[85%] lg:w-[85%] xl:w-[100%] 2xl:w-[80%] md:text-[13px] sm:text-[12px] text-[#FFFFFF80]"
+                        style={{
+                          display: "-webkit-box",
+                          WebkitLineClamp: 8, // number of lines
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
                         {data.reviewtext}
                       </div>
                     </div>
@@ -128,12 +138,12 @@ export default function ReviewsFromUsers() {
             </div>
           </div>
           {/* sm */}
-          <div className="absolute sm:block hidden xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[1%] right-[-5%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
+          <div className="absolute sm:block hidden xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[1%] right-[-3%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
             <div>
               <div className="lg:text-[28px] text-[20px] font-[700] family-reemkufi">
                 15k<span className="text-[#FC7292]">+</span>
               </div>
-              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] md:w-[73%] w-[83%] lg:w-[58%]">
+              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] md:w-[73%] w-[71%] lg:w-[58%]">
                 Dates And Matches Everyday
               </div>
             </div>
@@ -149,7 +159,7 @@ export default function ReviewsFromUsers() {
               <div className="lg:text-[28px] text-[20px]  font-[700] family-reemkufi">
                 30k<span className="text-[#FC7292]">+</span>
               </div>
-              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] w-[80%] lg:w-[60%]">
+              <div className="family-prompt md:text-[13px] text-[11px] text-[#FFFFFF80] w-[78%] lg:w-[60%]">
                 Member From Around The World
               </div>
             </div>

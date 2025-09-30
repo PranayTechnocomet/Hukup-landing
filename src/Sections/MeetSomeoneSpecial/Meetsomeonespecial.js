@@ -14,7 +14,7 @@ export default function Meetsomeonespecial() {
         <div className="lg:text-[24px] tracking-[2px] xl:ml-[4.5rem] 2xl:ml-[5rem] mb-[7rem] md:mb-0 2xl:text-[34px] font-[800] md:w-[65%] lg:font-[700] md:text-[25px] sm:w-[50%] family-reemkufi lg:w-[40%] w-[100%] text-[19px]">
           Meet Someone Special — Download HukUp Today!
         </div>
-        <div className="relative meetsomeone-con h-[755px] sm:h-[500px] md:h-[630px] lg:h-[650px] xl:h-[730px]">
+        <div className="relative meetsomeone-con h-[770px] sm:h-[500px] md:h-[630px] lg:h-[650px] xl:h-[730px]">
           <div className="relative xl:w-[70%] 2xl:w-[65%] max-w-[300px] md:max-w-[577px] sm:max-w-[410px] lg:max-w-[730px] xl:max-w-[100%] w-[100%] mx-auto mt-[4rem]">
             <Image
               src={halfcircle}
