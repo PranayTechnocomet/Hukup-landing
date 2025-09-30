@@ -141,7 +141,7 @@ export default function Navbar() {
           </ul>
         </div>
         {/* getapp */}
-        <div className="hidden lg:block ">
+        {/* <div className="hidden lg:block ">
           <button
             className="flex items-center cursor-pointer gap-3 px-6 py-3
             rounded-full font-semibold text-white
@@ -166,8 +166,38 @@ export default function Navbar() {
               />
             </div>
           </button>
+        </div> */}
+        <div className="hidden lg:block -translate-x-1/2 md:translate-x-0 z-30 ">
+          <div
+            className="p-[5px] rounded-full backdrop-blur-[4px] cursor-pointer"
+            style={{
+              background:
+                "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
+            }}
+          >
+            <button
+              className="flex  family-reemkufi items-center gap-2 lg:px-[10px] px-[11px] py-[6px] rounded-full text-white font-medium text-sm md:text-base backdrop-blur-lg"
+              style={{
+                background:
+                  "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
+              }}
+            >
+              Get App
+              <div className="flex items-center gap-[7px]">
+                <Image
+                  src={appstore}
+                  alt="appstorelink"
+                  className="lg:w-[13px] lg:h-[15px] xl:w-[14px] xl:h-[18px]"
+                />
+                <Image
+                  src={playstore}
+                  alt="playstorelink"
+                  className="lg:w-[12px] lg:h-[15px] xl:w-[13px] xl:h-[18px]"
+                />
+              </div>
+            </button>
+          </div>
         </div>
-
         {/* offcanvasbtn */}
         <button
           onClick={() => setIsOpen(true)}
@@ -259,7 +289,7 @@ export default function Navbar() {
           </div>
           <a className="hover:text-[#EF3672]">Favorites</a>
           <a className="hover:text-[rgb(239,54,114)]">Group Profiles</a>
-          <div className="block lg:hidden">
+          {/* <div className="block lg:hidden">
             <button
               className="flex items-center  gap-3 px-6 py-3 cursor-pointer
             rounded-full font-semibold text-white
@@ -284,6 +314,38 @@ export default function Navbar() {
                 />
               </div>
             </button>
+          </div> */}
+
+          <div className="block lg:hidden">
+            <div
+              className="p-[5px] w-[58%] sm:w-[61%] rounded-full backdrop-blur-[4px] cursor-pointer"
+              style={{
+                background:
+                  "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
+              }}
+            >
+              <button
+                className="flex w-[100%] family-reemkufi items-center gap-2 lg:px-[10px] px-[11px] py-[6px] rounded-full text-white font-medium text-sm md:text-base backdrop-blur-lg"
+                style={{
+                  background:
+                    "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
+                }}
+              >
+                Get App
+                <div className="flex items-center gap-[7px]">
+                  <Image
+                    src={appstore}
+                    alt="appstorelink"
+                    className="w-[13px] h-[15px] "
+                  />
+                  <Image
+                    src={playstore}
+                    alt="playstorelink"
+                    className="w-[13px] h-[15px] "
+                  />
+                </div>
+              </button>
+            </div>
           </div>
 
           {/* <div className="mt-6 p-[4px] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] cursor-pointer w-[51%]">

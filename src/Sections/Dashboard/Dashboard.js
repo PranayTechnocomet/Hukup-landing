@@ -216,7 +216,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               <div className="absolute   2xl:px-[20px] 2xl:py-[15px]  bottom-[6%] left-[79%] lg:bottom-[10%] lg:left-[69%] -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
                 <div className=" stat-card-1">
                   <div
-                    className="p-[6px] rounded-full backdrop-blur-[4px]"
+                    className="p-[5px] rounded-full backdrop-blur-[4px]"
                     style={{
                       background:
                         "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
@@ -268,7 +268,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               <div className="absolute 2xl:bottom-[4%] 2xl:left-[8%] 2xl:px-[20px] 2xl:py-[15px] left-[17%] sm:left-[11%] sm:bottom-[7%]  bottom-[1%]  lg:bottom-[3%] lg:left-[2%]  -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
                 <div className=" stat-card-2">
                   <div
-                    className="p-[6px] rounded-full backdrop-blur-[4px]"
+                    className="p-[5px] rounded-full backdrop-blur-[4px]"
                     style={{
                       background:
                         "linear-gradient(169.15deg, rgba(252, 114, 146, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%)",
