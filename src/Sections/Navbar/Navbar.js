@@ -11,10 +11,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [openMenu, setOpenMenu] = useState(null);
-
   const toggleDropdown = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
+    setActiveLink(menu);
   };
+  const [activeLink, setActiveLink] = useState("Home");
+
+  console.log("activeLink", activeLink);
 
   return (
     <>
@@ -30,12 +33,23 @@ export default function Navbar() {
         {/* navigation */}
         <div className="hidden lg:flex text-white text-[14px] family-reemkufi xl:text-[17px] 2xl:text-[18px] font-[500]">
           <ul className="flex gap-[1.5rem] cursor-pointer">
-            <a className="lg:text-[#EF3672] text-white">Home</a>
+            <a
+              onClick={() => setActiveLink("Home")}
+              className={`${
+                activeLink === "Home" ? "text-[#EF3672]" : "text-white"
+              }`}
+            >
+              Home
+            </a>
 
-            <div className="relative">
+            {/* Your Activity Dropdown */}
+
+            <div className="relative  ">
               <button
                 onClick={() => toggleDropdown("activity")}
-                className="flex items-center gap-1 hover:text-[#EF3672]"
+                className={`flex cursor-pointer items-center gap-1 ${
+                  activeLink === "activity" ? "text-[#EF3672]" : "text-white"
+                }`}
               >
                 Your Activity
                 <IoChevronDown
@@ -47,32 +61,34 @@ export default function Navbar() {
               </button>
 
               {openMenu === "activity" && (
-                <ul className="absolute left-0 mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0  text-white mb-2 w-48 bg-black rounded-lg shadow-lg p-2">
                   <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
+                    <button
+                      onClick={() => handleActivitySelect("Recent Activity")}
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
                     >
                       Recent Activity
-                    </Link>
+                    </button>
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
+                    <button
+                      onClick={() => handleActivitySelect("Profile Views")}
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
                     >
                       Profile Views
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               )}
             </div>
 
             {/* Saved Dropdown */}
-            <div className="relative">
+            <div className="relative  ">
               <button
                 onClick={() => toggleDropdown("saved")}
-                className="flex items-center gap-1 hover:text-[#EF3672]"
+                className={`flex cursor-pointer items-center gap-1 ${
+                  activeLink === "saved" ? "text-[#EF3672]" : "text-white"
+                }`}
               >
                 Saved
                 <IoChevronDown
@@ -84,89 +100,40 @@ export default function Navbar() {
               </button>
 
               {openMenu === "saved" && (
-                <ul className="absolute left-0 mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0  text-white mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
                   <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
+                    <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
                       Saved Profiles
-                    </Link>
+                    </button>
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="block px-3 py-2 hover:bg-gray-800"
-                    >
+                    <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
                       Favorites
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               )}
             </div>
-            {/* <select
-              name="activity"
-              id="activity"
-              className="hover:text-[#EF3672] text-white outline-none "
+
+            <a
+              onClick={() => setActiveLink("Favorites")}
+              className={` ${
+                activeLink === "Favorites" ? "text-[#EF3672]" : "text-white"
+              }`}
             >
-              <option value="activity" className="text-white bg-black">
-                Your Activity
-              </option>
-              <option value="activity" className="text-white bg-black">
-                Recent Activity
-              </option>
-              <option value="activity" className="text-white bg-black">
-                Profile Views
-              </option>
-             
-            </select>
-            <select
-              name="saved"
-              id="saved"
-              className="hover:text-[#EF3672] text-white outline-none bg-transparent"
+              Favorites
+            </a>
+            <a
+              onClick={() => setActiveLink("GroupProfiles")}
+              className={` ${
+                activeLink === "GroupProfiles" ? "text-[#EF3672]" : "text-white"
+              }`}
             >
-              <option value="activity" className="text-white bg-black">
-                Saved
-              </option>
-              <option value="activity" className="text-white bg-black">
-               Saved Profiles
-              </option>
-              <option value="activity" className="text-white bg-black">
-                Favorites
-              </option>
-              
-            </select> */}
-            <a className="hover:text-[#EF3672]">Favorites</a>
-            <a className="hover:text-[#EF3672]">Group Profiles</a>
+              Group Profiles
+            </a>
           </ul>
         </div>
-        {/* getapp */}
-        {/* <div className="hidden lg:block ">
-          <button
-            className="flex items-center cursor-pointer gap-3 px-6 py-3
-            rounded-full font-semibold text-white
-            [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
-            border: 6px solid;
-        border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%);
-            [backdrop-filter:blur(42px)]
-            [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
-          "
-          >
-            Get App
-            <div className="flex items-center gap-[7px]">
-              <Image
-                src={appstore}
-                alt="appstorelink"
-                className="lg:w-[13px] lg:h-[15px] xl:w-[14px] xl:h-[18px]"
-              />
-              <Image
-                src={playstore}
-                alt="playstorelink"
-                className="lg:w-[12px] lg:h-[15px] xl:w-[13px] xl:h-[18px]"
-              />
-            </div>
-          </button>
-        </div> */}
+
         <div className="hidden lg:block -translate-x-1/2 md:translate-x-0 z-30 ">
           <div
             className="p-[5px] rounded-full backdrop-blur-[4px] cursor-pointer"
@@ -226,11 +193,23 @@ export default function Navbar() {
           </button>
         </div>
         <ul className="flex flex-col gap-4 p-4 text-white family-reemkufi">
-          <a className="hover:text-[#EF3672]">Home</a>
-          <div className="relative">
+          <a
+            onClick={() => setActiveLink("Home")}
+            className={`${
+              activeLink === "Home" ? "text-[#EF3672]" : "text-white"
+            }`}
+          >
+            Home
+          </a>
+
+          {/* Your Activity Dropdown */}
+
+          <div className="relative ">
             <button
               onClick={() => toggleDropdown("activity")}
-              className="flex items-center text-white  gap-1 hover:text-[#EF3672]"
+              className={`flex cursor-pointer items-center gap-1 ${
+                activeLink === "activity" ? "text-[#EF3672]" : "text-white"
+              }`}
             >
               Your Activity
               <IoChevronDown
@@ -242,26 +221,28 @@ export default function Navbar() {
             </button>
 
             {openMenu === "activity" && (
-              <ul className="relative mt-2 w-48 bg-black rounded-lg shadow-lg p-2">
+              <ul className="relative left-0 text-white mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
                 <li>
-                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
-                    Recent Activity
-                  </Link>
+                  <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
+                    Profiles
+                  </button>
                 </li>
                 <li>
-                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
-                    Profile Views
-                  </Link>
+                  <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
+                    Favorites
+                  </button>
                 </li>
               </ul>
             )}
           </div>
 
           {/* Saved Dropdown */}
-          <div className="relative">
+          <div className="relative  ">
             <button
               onClick={() => toggleDropdown("saved")}
-              className="flex items-center text-white gap-1 hover:text-[#EF3672]"
+              className={`flex cursor-pointer items-center gap-1  ${
+                activeLink === "saved" ? "text-[#EF3672]" : "text-white"
+              }`}
             >
               Saved
               <IoChevronDown
@@ -273,48 +254,37 @@ export default function Navbar() {
             </button>
 
             {openMenu === "saved" && (
-              <ul className="relative mt-2 w-40 bg-black rounded-lg shadow-lg p-2">
+              <ul className="relative left-0 text-white mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
                 <li>
-                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                  <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
                     Saved Profiles
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link href="#" className="block px-3 py-2 hover:bg-gray-800">
+                  <button className="block w-full text-left px-3 py-2 hover:bg-gray-800">
                     Favorites
-                  </Link>
+                  </button>
                 </li>
               </ul>
             )}
           </div>
-          <a className="hover:text-[#EF3672]">Favorites</a>
-          <a className="hover:text-[rgb(239,54,114)]">Group Profiles</a>
-          {/* <div className="block lg:hidden">
-            <button
-              className="flex items-center  gap-3 px-6 py-3 cursor-pointer
-            rounded-full font-semibold text-white
-            [background:radial-gradient(100%_100%_at_0%_0%,rgba(247,86,133,0.25)_0%,rgba(255,255,255,0)_100%)]
-            border: 6px solid;
-        border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(238,237,237,0.2) 96.79%);
-            [backdrop-filter:blur(42px)]
-            [box-shadow:-5px_-5px_250px_0px_#FFFFFF05_inset]
-          "
-            >
-              Get App
-              <div className="flex items-center gap-[7px]">
-                <Image
-                  src={appstore}
-                  alt="appstorelink"
-                  className="lg:w-[13px] lg:h-[15px] w-[15px] xl:w-[14px] xl:h-[18px]"
-                />
-                <Image
-                  src={playstore}
-                  alt="playstorelink"
-                  className="lg:w-[12px] lg:h-[15px] w-[15px] xl:w-[13px] xl:h-[18px]"
-                />
-              </div>
-            </button>
-          </div> */}
+
+          <a
+            onClick={() => setActiveLink("Favorites")}
+            className={`${
+              activeLink === "Favorites" ? "text-[#EF3672]" : "text-white"
+            }`}
+          >
+            Favorites
+          </a>
+          <a
+            onClick={() => setActiveLink("GroupProfiles")}
+            className={` ${
+              activeLink === "GroupProfiles" ? "text-[#EF3672]" : "text-white"
+            }`}
+          >
+            Group Profiles
+          </a>
 
           <div className="block lg:hidden">
             <div
@@ -347,24 +317,6 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-
-          {/* <div className="mt-6 p-[4px] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] cursor-pointer w-[51%]">
-            <div className="text-[13px] family-reemkufi font-[500] rounded-4xl bg-gradient-to-br from-[rgba(252,114,146,0.4)] to-[rgba(238,237,237,0.2)] py-[9px] px-[10px] text-white flex items-center gap-[7px]">
-              Get App
-              <div className="flex items-center gap-[7px]">
-                <Image
-                  src={appstore}
-                  alt="appstorelink"
-                  className="w-[12px] h-[15px]"
-                />
-                <Image
-                  src={playstore}
-                  alt="playstorelink"
-                  className="w-[12px] h-[15px]"
-                />
-              </div>
-            </div>
-          </div> */}
         </ul>
       </div>
     </>

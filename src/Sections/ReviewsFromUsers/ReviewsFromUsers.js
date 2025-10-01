@@ -46,7 +46,7 @@ export default function ReviewsFromUsers() {
         <div className="relative">
           {/* slider */}
           <Swiper
-            className="sm:max-w-[80%]"
+            className="sm:max-w-[77%]"
             // spaceBetween={50}
             modules={[Autoplay]}
             slidesPerView={1}
@@ -70,7 +70,7 @@ export default function ReviewsFromUsers() {
                     <Image
                       src={quote}
                       alt="quote"
-                      className="w-[55px] xl:w-[11%] quote lg:w-[13%] xl:left-[42%] 2xl:left-[36%] 2xl:w-[12%] lg:top-[4%] md:left-[46%] sm:left-[42%] sm:top-[9%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[42%] left-[74%] "
+                      className="w-[55px] xl:w-[11%] quote lg:w-[13%] xl:left-[42%] 2xl:left-[36%] 2xl:w-[12%] lg:top-[4%] md:left-[48%] sm:left-[46%] sm:top-[9%] sm:w-[60px] md:w-[60px] absolute top-[1%] lg:left-[42%] left-[74%] "
                     />
                     {/* mobilescreen text */}
                     <div className="block sm:hidden w-[87%] mx-auto mt-[1rem]  ">
@@ -85,8 +85,8 @@ export default function ReviewsFromUsers() {
                       </div>
                     </div>
                     {/* lg */}
-                    <div className="absolute  2xl:left-[55%] left-[59%] top-[14%] sm:block hidden">
-                      <div className="family-reemkufi text-[19px] font-[600]">
+                    <div className="absolute  2xl:left-[55%] left-[63%] top-[14%] sm:block hidden">
+                      <div className="family-reemkufi sm:text-[17px] md:text-[19px] font-[600]">
                         {data.name}
                       </div>
                       <div className="family-prompt my-[3px] lg:my-[12px] text-[13px] text-[#FFFFFF80]">
@@ -137,8 +137,8 @@ export default function ReviewsFromUsers() {
               </div>
             </div>
           </div>
-          {/* sm */}
-          <div className="absolute sm:block hidden xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[1%] right-[-3%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
+          {/* lg */}
+          <div className="absolute sm:block hidden xl:top-[12%] users sm:w-[24%] sm:top-[13%] xl:right-[-6%] top-[1%] right-[-3%] lg:top-[9%] md:top-[14%] md:w-[24%] w-[40%] xl:w-[21%]">
             <div>
               <div className="lg:text-[28px] text-[20px] font-[700] family-reemkufi">
                 15k<span className="text-[#FC7292]">+</span>
