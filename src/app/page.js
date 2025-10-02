@@ -27,10 +27,9 @@ export default function Home() {
         {/* <Carousel/> */}
         <FadeInSection>
           <HukupChatSmartMatch />
-        </FadeInSection>
-        <FadeInSection>
           <Swipe_chat_connect />
         </FadeInSection>
+
         <FadeInSection>
           <GetintouchwithhukupPerks />
         </FadeInSection>

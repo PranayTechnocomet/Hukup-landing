@@ -180,15 +180,11 @@ body {
   }
 }
 @media (min-width: 426px) and (max-device-width: 639px) {
-  .app-btn {
-    width: 40%;
-  }
+ 
   .app-text {
     font-size: 14px;
   }
-  .play-btn {
-    right: 17%;
-  }
+  
   .users {
     top: 5%;
   }
