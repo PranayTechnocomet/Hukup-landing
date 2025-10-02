@@ -155,10 +155,10 @@ export default function Navbar() {
 
       {/* Socials */}
       <div className="flex gap-[5px] lg:gap-[12px]">
-        <Image src={insta} alt="insta" className="w-[30px]" />
-        <Image src={twitter} alt="twitter" className="w-[30px]" />
-        <Image src={email} alt="email" className="w-[30px]" />
-        <Image src={facebook} alt="facebook" className="w-[30px]" />
+        <Image src={insta} alt="insta" className="w-[30px] cursor-pointer" />
+        <Image src={twitter} alt="twitter" className="w-[30px] cursor-pointer" />
+        <Image src={email} alt="email" className="w-[30px] cursor-pointer" />
+        <Image src={facebook} alt="facebook" className="w-[30px] cursor-pointer" />
       </div>
     </div>
   );

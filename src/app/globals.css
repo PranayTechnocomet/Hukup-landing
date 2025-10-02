@@ -94,7 +94,6 @@ body {
   transform: scale(1.1);
 }
 .swiper {
-
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -180,11 +179,10 @@ body {
   }
 }
 @media (min-width: 426px) and (max-device-width: 639px) {
- 
   .app-text {
     font-size: 14px;
   }
-  
+
   .users {
     top: 5%;
   }

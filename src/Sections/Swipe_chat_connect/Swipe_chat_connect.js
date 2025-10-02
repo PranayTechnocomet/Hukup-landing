@@ -5,6 +5,7 @@ import circle from "../../assets/images/circle.png";
 import circlegirl from "../../assets/images/circlewomen.png";
 // import CloudImg from "../../assets/images/clouds.png";
 import CloudImg from "../../assets/images/cloud2.png";
+import { FadeInSection } from "../FadeInSection/FadeInSection";
 export default function Swipe_chat_connect() {
   return (
     <>
@@ -46,7 +47,7 @@ export default function Swipe_chat_connect() {
                 </div>
                 <div className="lg:mt-[25px] mt-[1.5rem]">
                   <button className="bg-[#FC7292] swipe-dow-btn cursor-pointer 2xl:text-[15px] 2xl:py-[11px] text-white family-reemkufi md:text-[13px] text-[12px] px-[15px] py-[7px] font-[700] rounded-[22px]">
-                   <span> Download Now</span>
+                    <span> Download Now</span>
                   </button>
                 </div>
               </div>
@@ -57,6 +58,7 @@ export default function Swipe_chat_connect() {
                     alt="girl"
                     className="w-[410px] 2xl:w-[410px]  md:w-[325px] sm:w-[270px]"
                   />
+
                   <div className="absolute top-[-25%] 2xl:w-[507px] left-[-11%] w-[500px] sm:top-[-23%] lg:top-[-26%] sm:w-[325px] md:w-[400px] md:left-[-13%]">
                     <Image
                       src={circlegirl}
@@ -68,9 +70,7 @@ export default function Swipe_chat_connect() {
               </div>
             </div>
           </div>
-          <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden">
-            
-          </div>
+          <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden"></div>
         </div>
       </div>
     </>
