@@ -2,8 +2,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation"; 
-import "swiper/css/pagination"; 
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from "next/image";
 import profile1 from "../../assets/images/Profile1.png";
 import profile2 from "../../assets/images/Profile2.png";
