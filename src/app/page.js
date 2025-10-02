@@ -17,12 +17,13 @@ export default function Home() {
   return (
     <>
       <div className="max-w-[2000px] Hukup-page">
-        
         <Dashboard />
         <FadeInSection>
           <HowItWork />
         </FadeInSection>
-        {/* <YourPerfectMatch /> */}
+        {/* <FadeInSection>
+          <YourPerfectMatch />
+        </FadeInSection> */}
         {/* <Carousel/> */}
         <FadeInSection>
           <HukupChatSmartMatch />
@@ -36,7 +37,7 @@ export default function Home() {
         <FadeInSection>
           <Meetsomeonespecial />
         </FadeInSection>
-      <Footer />
+        <Footer />
       </div>
     </>
   );

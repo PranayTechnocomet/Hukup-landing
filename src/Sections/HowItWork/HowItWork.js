@@ -43,6 +43,7 @@ export default function HowItWork() {
   };
 
   return (
+    <div className="relative z-10">
       <div className="how-it-work-bg mb-[3rem]">
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
@@ -55,47 +56,7 @@ export default function HowItWork() {
               alt="phone-image"
               className="lg:w-[300px] lg:h-[610px] md:w-[300px] md:h-[610px] 2xl:w-[350px] 2xl:h-[700px] howitwork-img"
             />
-            {/* new */}
-            {/* <div
-              className="w-[50%] absolute lg:py-[7px]  top-[28%] lg:right-[-26%] right-[-14%] family-trirong  
-    inline-block p-[6px] rounded-[12px]
-   background: radial-gradient(100% 268.25% at 0% 0%, rgba(247, 86, 133, 0.25) 0%, rgba(255, 255, 255, 0) 100%) 
-
-    backdrop-blur-[12px]"
-            >
-              <div
-                className=" 
-      flex items-center gap-[12px] px-[10px] py-[4px]
-      rounded-[7px]
-      font-semibold text-black
-
-    background: radial-gradient(100% 268.25% at 0% 0%, rgba(247, 86, 133, 0.25) 0%, rgba(255, 255, 255, 0) 100%) 
-
-      backdrop-blur-[42px]
-      shadow-[inset_-5px_-5px_250px_0px_rgba(255,255,255,0.05)]
-    "
-              >
-                <Image
-                  src={music}
-                  alt="Musicicon"
-                  className="lg:w-[18%] lg:h-[18%] w-[15%] h-[15%] "
-                />
-                <span className="lg:text-[20px] text-[15px] font-[600]">
-                  Music
-                </span>
-              </div>
-            </div> */}
-
-            {/* <div className="absolute lg:py-[10px] py-[6px] top-[28%] lg:right-[-19%] right-[-14%] family-trirong flex gap-[12px] items-center gradient-button lg:w-[45%] w-[40%] justify-center">
-              <Image
-                src={music}
-                alt="Musicicon"
-                className="lg:w-[18%] lg:h-[18%] w-[15%] h-[15%] "
-              />
-              <span className="lg:text-[20px] text-[15px] font-[600]">
-                Music
-              </span>
-            </div> */}
+          
             {/* first btn */}
             <div className="absolute top-[25%] right-[-16%]">
               <div className="stat-card-1">
@@ -123,31 +84,7 @@ export default function HowItWork() {
                 </div>
               </div>
             </div>
-            {/* 
-            <div className="absolute   2xl:px-[20px] 2xl:py-[15px]  top-[6%] left-[79%] lg:top-[16%] lg:left-[79%] -translate-x-1/2 md:translate-x-0 z-30 cursor-pointer">
-              <div className=" stat-card-1">
-                <div
-                  className="p-[5px] rounded-[11px] backdrop-blur-[30px]"
-                  style={{
-                    background:
-                      "linear-gradient(169.15deg, rgb(252 114 146 / 48%) 0%, rgba(238, 237, 237, 0.2) 100.79%);",
-                  }}
-                >
-                  <button
-                    className="flex backdrop-blur-[4px] family-reemkufi items-center gap-2 lg:px-[19px] pl-[11px] pr-[27px] py-[6px] rounded-[8px] text-black font-medium text-sm md:text-base"
-                    style={{
-
-                      background:
-                        "radial-gradient(100% 100% at 0% 0%, rgb(237 81 126 / 8%) 0%, rgb(8 4 4 / 88%) 100%)",
-                    }}
-                  >
-                    
-                    Matched
-                  </button>
-                </div>
-              </div>
-            </div> */}
-
+          
             {/* second btn */}
             <div className="absolute bottom-[28%] left-[-23%]">
               <div className="stat-card-1">
@@ -182,39 +119,20 @@ export default function HowItWork() {
               </div>
             </div>
           </div>
-          <div className="lg:py-[4rem] lg:max-w-[520px] xl:max-w-[100%] py-[2rem] col-span-3 2xl:col-span-3  lg:relative howitworkcard-container lg:mb-[3rem]">
+          <div className="lg:py-[4rem] lg:max-w-[520px] xl:max-w-[100%] py-[2rem] col-span-3 2xl:col-span-3  lg:relative  howitworkcard-container lg:mb-[3rem]">
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
-            {/* <div
-              className="howitwork-cards flex lg:hidden overflow-auto gap-[25px] ml-[1rem] md:justify-evenly"
-              ref={containerRef}
-            >
-              {repeatedCards.map((card, idx) => (
-                <div key={idx} className="lg:absolute mt-[10px] md:mt-0">
-                  <HowItWorkCard
-                    CardData={card}
-                    customewidth={
-                      card === Benefits
-                        ? "200px"
-                        : card === relatioship
-                        ? "153px"
-                        : "175px"
-                    }
-                    heartimg={card.heartimg}
-                  />
-                </div>
-              ))}
-            </div> */}
+           
 
             <div className="howitwork-cards flex lg:block overflow-auto gap-[25px] ml-[1rem] md:justify-evenly ">
-              <div className="lg:absolute mt-[10px] md:mt-0 lg:top-[12%] xl:right-[9%] z-10 lg:right-[4%] 2xl:right-[22%] first-card">
+              <div className="lg:absolute  mt-[10px] md:mt-0 lg:top-[12%] xl:right-[9%] z-10 lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard CardData={relatioship} customewidth={`153px`} />
               </div>
               <div className="lg:absolute lg:top-[34%] mt-[10px] md:mt-0 lg:left-[-8%] z-10  2xl:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="mr-[17px] lg:mr-0 mt-[10px] md:mt-0 lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
+              <div className="mr-[17px] lg:mr-0 mt-[10px] md:mt-0 lg:absolute lg:bottom-[-6%] z-10 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
                 <HowItWorkCard
                   CardData={people}
                   customewidth={`175px`}
@@ -225,5 +143,6 @@ export default function HowItWork() {
           </div>
         </div>
       </div>
+    </div>
   );
 }
