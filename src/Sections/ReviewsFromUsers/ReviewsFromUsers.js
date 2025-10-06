@@ -51,7 +51,7 @@ export default function ReviewsFromUsers() {
             modules={[Autoplay]}
             slidesPerView={1}
             autoplay={{
-              delay: 20000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             loop={true}
