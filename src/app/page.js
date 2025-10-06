@@ -22,9 +22,9 @@ export default function Home() {
           <HowItWork />
         </FadeInSection>
         {/* <FadeInSection>
-          <YourPerfectMatch />
         </FadeInSection> */}
         {/* <Carousel/> */}
+        <YourPerfectMatch />
         <FadeInSection>
           <HukupChatSmartMatch />
           <Swipe_chat_connect />
