@@ -64,11 +64,11 @@ export default function Navbar() {
                 />
               </button>
               {openMenu === "activity" && (
-                <ul className="absolute left-0 text-white mb-2 w-48 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0 z-50 text-white mb-2 w-48 bg-black rounded-lg shadow-lg p-2">
                   <li>
                     <button
                       onClick={() => handleNavClick("Recent Activity")}
-                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     >
                       Recent Activity
                     </button>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   <li>
                     <button
                       onClick={() => handleNavClick("Profile Views")}
-                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     >
                       Profile Views
                     </button>
@@ -102,11 +102,11 @@ export default function Navbar() {
                 />
               </button>
               {openMenu === "saved" && (
-                <ul className="absolute left-0 text-white mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
+                <ul className="absolute left-0 z-50 text-white mb-2 w-40 bg-black rounded-lg shadow-lg p-2">
                   <li>
                     <button
                       onClick={() => handleNavClick("Saved Profiles")}
-                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     >
                       Saved Profiles
                     </button>
@@ -114,7 +114,7 @@ export default function Navbar() {
                   <li>
                     <button
                       onClick={() => handleNavClick("Favorites")}
-                      className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                      className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     >
                       Favorites
                     </button>

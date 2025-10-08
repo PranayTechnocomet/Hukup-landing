@@ -43,7 +43,7 @@ export default function HowItWork() {
   };
 
   return (
-    <div className="relative z-10">
+    <div className="relative">
       <div className="how-it-work-bg mb-[3rem]">
         <div className="family-reemkufi heading-howitwork font-[800] text-[25px] mt-[3rem] lg:hidden md:text-[32px] block text-center">
           How It Works
@@ -154,7 +154,7 @@ export default function HowItWork() {
               </div>
             </div> */}
           </div>
-          <div className="lg:py-[4rem] lg:max-w-[520px] xl:max-w-[100%] py-[2rem] col-span-3 2xl:col-span-3  lg:relative  howitworkcard-container lg:mb-[3rem]">
+          <div className="lg:py-[4rem] lg:max-w-[520px] xl:max-w-[100%] py-[2rem] col-span-3 2xl:col-span-3 lg:relative  howitworkcard-container lg:mb-[3rem]">
             <div className="family-reemkufi heading-howitwork-md font-[600] text-[40px] 2xl:text-[45px] mt-[3rem] lg:block hidden ">
               How It Works
             </div>
@@ -166,8 +166,9 @@ export default function HowItWork() {
               <div className="lg:absolute lg:top-[34%] mt-[10px] md:mt-0 lg:left-[-8%] z-10  2xl:left-[0%]">
                 <HowItWorkCard CardData={Benefits} customewidth={`200px`} />
               </div>
-              <div className="mr-[17px] lg:mr-0 mt-[10px] md:mt-0 lg:absolute lg:bottom-[-6%] z-10 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card">
+              <div className="mr-[17px] lg:mr-0 mt-[10px] md:mt-0 lg:absolute lg:bottom-[-6%] 2xl:bottom-[-2%] xl:right-[9%] lg:right-[4%] 2xl:right-[22%] first-card z-50 ">
                 <HowItWorkCard
+                className="bg-gradient-to-br from-pink-100 to-white"
                   CardData={people}
                   customewidth={`175px`}
                   heartimg={heart}

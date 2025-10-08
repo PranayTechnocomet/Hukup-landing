@@ -11,27 +11,62 @@ import profile4 from "../../assets/images/Profile4.png";
 import profile5 from "../../assets/images/Profile5.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function YourPerfectMatch() {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    gsap.to(".preload-hidden", {
+      opacity: 1, duration: 0.5, onComplete: () => {
+        document.querySelectorAll(".preload-hidden").forEach(el => el.classList.remove("preload-hidden"));
+      }
+    });
+
+
+
     if (!containerRef.current) return; // safety check
     const container = containerRef.current;
+
+
+    // let tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     pin: true,
+    //     scrub: 1,
+    //     trigger: container,
+    //     end: () => {
+    //       const lastPanel = container.querySelector(".panel:last-child");
+    //       const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
+    //       return `+=${lastPanelRight - window.innerWidth * 0}`;
+    //     },
+
+
+    //     // end: () =>
+    //     //  `+=${
+    //     //  container.scrollWidth -
+    //     //  document.documentElement.clientWidth +
+    //     //  container.offsetWidth
+    //     //  }`,
+    //   },
+    //   defaults: { ease: "none", duration: 1 },
+    // });
 
     let tl = gsap.timeline({
       scrollTrigger: {
         pin: true,
+        //pinSpacing: false, // remove automatic extra space
         scrub: 1,
         trigger: container,
-        end: () =>
-          `+=${
-            container.scrollWidth -
-            document.documentElement.clientWidth +
-            container.offsetWidth
-          }`,
+        end: () => {
+          const lastPanel = container.querySelector(".panel:last-child");
+          const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
+          return `+=${lastPanelRight - window.innerWidth}`;
+        },
+        // markers: true, // optional for debugging
       },
       defaults: { ease: "none", duration: 1 },
     });
+
+
 
     tl.to(".parallax", { x: 300 })
       .to(
@@ -57,17 +92,22 @@ export default function YourPerfectMatch() {
         0
       );
 
-    gsap.from(".firstAn", {
-      duration: 1,
-      opacity: 0,
-      scale: 0.25,
-      scrollTrigger: {
-        trigger: container,
-        start: "top 90%",
-        end: "bottom 10%",
-        toggleActions: "play none none reverse",
-      },
-    });
+
+
+
+    // gsap.from(".firstAn", {
+    //   duration: 1,
+    //   opacity: 0,
+    //   scale: 0.25,
+    //   scrollTrigger: {
+    //     trigger: container,
+    //     start: "top 90%",
+    //     end: "bottom 10%",
+    //     toggleActions: "play none none reverse",
+    //   },
+    // });
+
+
 
     return () => {
       // cleanup ScrollTriggers on unmount
@@ -75,6 +115,7 @@ export default function YourPerfectMatch() {
       tl.kill();
     };
   }, []);
+
 
   const profiles = [
     {
@@ -139,8 +180,9 @@ export default function YourPerfectMatch() {
     },
   ];
 
+
   return (
-    <section className="your-perfect-match-section spacer">
+    <section className="your-perfect-match-section spacer pb-5 overflow-visible">
       <div className="container mx-auto">
         <div className="row justify-center ">
           <div className="col-lg-8 text-center">
@@ -151,17 +193,23 @@ export default function YourPerfectMatch() {
         </div>
       </div>
 
+
       <div className="margin"></div>
       <div
-        // className="section-wrapper"
-        // style={{
-        //   height: "700px",
-        //   overflow: "hidden",
-        // }}
+        className="section-wrapper"
+      // style={{
+      //  height: "700px",
+      //  overflow: "hidden",
+      // }}
       >
         <section className="section portfolio" ref={containerRef}>
-          <h2 className="portfolio_title fill parallax">Matches</h2>
-          <h2 className="portfolio_title stroke parallax">Matches</h2>
+
+
+          <h2 className="portfolio_title fill parallax preload-hidden mb-5">Matches</h2>
+          <h2 className="portfolio_title stroke parallax preload-hidden mb-5">Matches</h2>
+
+
+
 
           {profiles.map((profile, i) => (
             <div className="panel" key={i}>
@@ -182,10 +230,12 @@ export default function YourPerfectMatch() {
             </div>
           ))}
         </section>
+
       </div>
 
-      <div className="margin"></div>
-      <div className="spacer"></div>
+
+      {/* <div className="margin"></div>
+      <div className="spacer"></div> */} 
     </section>
   );
 }
