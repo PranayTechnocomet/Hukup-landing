@@ -30,24 +30,40 @@ export default function YourPerfectMatch() {
     const container = containerRef.current;
 
 
+    // let tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     pin: true,
+    //     scrub: 1,
+    //     trigger: container,
+    //     end: () => {
+    //       const lastPanel = container.querySelector(".panel:last-child");
+    //       const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
+    //       return `+=${lastPanelRight - window.innerWidth * 0}`;
+    //     },
+
+
+    //     // end: () =>
+    //     //  `+=${
+    //     //  container.scrollWidth -
+    //     //  document.documentElement.clientWidth +
+    //     //  container.offsetWidth
+    //     //  }`,
+    //   },
+    //   defaults: { ease: "none", duration: 1 },
+    // });
+
     let tl = gsap.timeline({
       scrollTrigger: {
         pin: true,
+        //pinSpacing: false, // remove automatic extra space
         scrub: 1,
         trigger: container,
         end: () => {
           const lastPanel = container.querySelector(".panel:last-child");
           const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
-          return `+=${lastPanelRight - window.innerWidth * 0}`;
+          return `+=${lastPanelRight - window.innerWidth}`;
         },
-
-
-        // end: () =>
-        //  `+=${
-        //  container.scrollWidth -
-        //  document.documentElement.clientWidth +
-        //  container.offsetWidth
-        //  }`,
+        // markers: true, // optional for debugging
       },
       defaults: { ease: "none", duration: 1 },
     });
@@ -168,7 +184,7 @@ export default function YourPerfectMatch() {
 
 
   return (
-    <section className="your-perfect-match-section spacer">
+    <section className="your-perfect-match-section spacer pb-5 overflow-visible">
       <div className="container mx-auto">
         <div className="row justify-center ">
           <div className="col-lg-8 text-center">
@@ -191,8 +207,10 @@ export default function YourPerfectMatch() {
         <section className="section portfolio" ref={containerRef}>
 
 
-          <h2 className="portfolio_title fill parallax preload-hidden ml-10 md:ml-15">Matches</h2>
-          <h2 className="portfolio_title stroke parallax preload-hidden ml-10 md:ml-15">Matches</h2>
+          <h2 className="portfolio_title fill parallax preload-hidden mb-5">Matches</h2>
+          <h2 className="portfolio_title stroke parallax preload-hidden mb-5">Matches</h2>
+
+
 
 
           {profiles.map((profile, i) => (
@@ -214,11 +232,12 @@ export default function YourPerfectMatch() {
             </div>
           ))}
         </section>
+
       </div>
 
 
-      <div className="margin"></div>
-      <div className="spacer"></div>
+      {/* <div className="margin"></div>
+      <div className="spacer"></div> */} 
     </section>
   );
 }

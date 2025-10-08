@@ -3,13 +3,14 @@ import Image from "next/image";
 import card_bg from "../../assets/images/card-bg.png";
 export default function Card({ CardData, customewidth, heartimg }) {
   return (
+    // bg-gradient-to-t from-white to-transparent
     <div
       className="relative feature-block
-  bg-gradient-to-t from-white to-transparent
+        bg-gradient-to-t from-[#fefcfd] via-[#fbf3f3] to-[#ece7e7]
    background-[linear-gradient(180deg, #F7E7E8 0%, #FFFFFF 100%)]
 
   rounded-[130px] overflow-hidden
-  p-4 w-[270px] md:w-[260px] h-[345px] md:h-[330px] "
+  p-4 w-[270px] md:w-[260px] h-[345px] md:h-[330px] z-50"
     >
      
       {/* <Image

@@ -12,7 +12,6 @@ import YourPerfectMatch from "@/Sections/YourPerfectMatch/YourPerfectMatch";
 import Image from "next/image";
 
 export default function Home() {
-  // const containerRef = useRef(null);
 
   return (
     <>
@@ -21,10 +20,9 @@ export default function Home() {
         <FadeInSection>
           <HowItWork />
         </FadeInSection>
-        {/* <FadeInSection>
-        </FadeInSection> */}
-        {/* <Carousel/> */}
-        <YourPerfectMatch />
+       
+          <YourPerfectMatch />
+      
         <FadeInSection>
           <HukupChatSmartMatch />
           <Swipe_chat_connect />

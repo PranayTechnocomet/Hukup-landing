@@ -155,7 +155,7 @@ export default function Dashboard() {
               <Image
                 src={couple_bgsec}
                 alt="bg-image"
-                className="w-[140px] h-[187px] sm:w-[97%] card1-img sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[290px] lg:h-[395px] xl:w-[220px] xl:h-[245px]"
+                className="w-[140px] h-[187px] sm:w-[97%] card1-img sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[290px] lg:h-[395px] xl:w-[220px] xl:h-[245px] responsive-height res-bg-height"
               />
             </div>
             {/* card */}
@@ -163,7 +163,7 @@ export default function Dashboard() {
               <Image
                 src={couple_bgfir}
                 alt="bg-image"
-                className="w-[150px] h-[216px]  sm:w-[100%] card2-img sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[233px] xl:h-[275px]"
+                className="w-[150px] h-[216px]  sm:w-[100%] card2-img sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[233px] xl:h-[275px] responsive-height"
               />
             </div>
             {/* couple-pic */}
@@ -171,7 +171,7 @@ export default function Dashboard() {
               <Image
                 src={couple_pic}
                 alt="couple_pic"
-                className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px]"
+                className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px] responsive-height"
               />
               {/* heart */}
               <div className="absolute heart1-con md:top-[10%] 2xl:top-[8%] sm:top-[12%] sm:left-[25%] 2xl:bottom-[63%] 2xl:right-[47%] left-[25%] md:bottom-[49%] md:right-[45.5%]  top-[9%] lg:right-[52.5%] lg:bottom-[56%] xl:right-[47%] xl:bottom-[49%]">
