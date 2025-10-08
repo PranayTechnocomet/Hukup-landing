@@ -6,7 +6,7 @@ export default function Card({ CardData, customewidth, heartimg }) {
     // bg-gradient-to-t from-white to-transparent
     <div
       className="relative feature-block
-        bg-gradient-to-t from-[#fefcfd] via-[#fbf3f3] to-[#ece7e7]
+        bg-gradient-to-t from-[#fefcfd] via-[#fbf3f3] to-[rgba(255,255,255,0)]/50
    background-[linear-gradient(180deg, #F7E7E8 0%, #FFFFFF 100%)]
 
   rounded-[130px] overflow-hidden

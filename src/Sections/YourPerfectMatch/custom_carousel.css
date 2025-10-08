@@ -801,6 +801,36 @@
   line-height: 1.2;
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+  .portfolio_title {
+    font-size: 5rem !important;
+    top: -1% !important;
+    left: -2rem !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+  .portfolio_title {
+    font-size: 5rem !important;
+    top: 1% !important;
+    left: -2rem !important;
+  }
+}
+@media (min-width: 425px) and (max-width: 464px){
+  .portfolio_title {
+    font-size: 5rem !important;
+    top: 3% !important;
+    left: -2rem !important;
+  }
+}
+@media (min-width: 465px) and (max-width: 574px){
+  .portfolio_title {
+    font-size: 5rem !important;
+    top: 5% !important;
+    left: -2rem !important;
+  }
+}
+
 
 @media (max-width: 575px) {
   .section.portfolio {
@@ -829,8 +859,9 @@
   
   .portfolio_title {
     font-size: 5rem;
-    top: 0;
-    left: -2rem;
+    top: -4;
+    left: 0rem !important;
+    margin: 0;
   }
 }
 
@@ -853,13 +884,13 @@
   
   .portfolio_title {
     font-size: 8rem;
-    top: -3%;
+    top: 2%;
     left: -12rem;
   }
 }
 
 
-@media (min-width: 640px) and (max-width: 767px) {
+@media (min-width: 640px) and (max-width: 688px) {
   .section.portfolio {
     height: 88vh;
     gap: 0.4rem;
@@ -877,7 +908,33 @@
   
   .portfolio_title {
     font-size: 10rem;
-    top: -0.5%;
+    top: -2%;
+    left: -12rem;
+  }
+}
+
+@media (min-width: 689px) and (max-width: 767px){
+
+  .section.portfolio {
+    height: 75vh;
+    gap: 0.4rem;
+  }
+  
+  .panel {
+    flex: 0 0 58%;
+    height: 62%;
+    padding: 0 0.4rem 0.75rem;
+  }
+
+  .panel_img {
+    height: 450px !important;
+    width: 450px !important;
+
+  }
+  
+  .portfolio_title {
+    font-size: 10rem;
+    top: 0%;
     left: -12rem;
   }
 }
@@ -901,7 +958,7 @@
   
   .portfolio_title {
     font-size: 10rem;
-    top: -1%;
+    top: 4%;
     left: -3rem;
   }
 }
@@ -926,7 +983,7 @@
   
   .portfolio_title {
     font-size: 10rem;
-    top: -4%;
+    top: -11%;
     left: -3rem;
   }
 }
@@ -950,7 +1007,7 @@
   
   .portfolio_title {
     font-size: 10rem;
-    top: -2%;
+    top: 12%;
     left: -3rem;
   }
 }
@@ -975,7 +1032,7 @@
   
   .portfolio_title {
     font-size: 13rem;
-    top: -7%;
+    top: -12%;
     left: -4rem;
   }
 }
@@ -999,7 +1056,7 @@
   
   .portfolio_title {
     font-size: 15rem;
-    top: -8%;
+    top: 3.5%;
     left: -5rem;
   }
 }
@@ -1023,7 +1080,7 @@
   
   .portfolio_title {
     font-size: 16rem;
-    top: -7%;
+    top: 5%;
     left: -5rem;
   }
 }
@@ -1047,7 +1104,7 @@
   
   .portfolio_title {
     font-size: 16rem;
-    top: 0;
+    top: 9%;
     left: -5rem;
   }
 }
@@ -1071,7 +1128,7 @@
   
   .portfolio_title {
     font-size: 18rem;
-    top: 1%;
+    top: 5%;
     left: -3rem;
   }
 }
@@ -1096,7 +1153,7 @@
   
   .portfolio_title {
     font-size: 15rem;
-    top: -6%;
+    top: -5%;
     left: -4rem;
   }
 }
@@ -1119,9 +1176,9 @@
   }
   
   .portfolio_title {
-    font-size: 24rem;
-    top: -4%;
-    left: -6rem;
+    font-size: 16rem;
+    top: 10%;
+    left: -3rem;
   }
 }
 
@@ -1143,9 +1200,9 @@
   }
   
   .portfolio_title {
-    font-size: 24rem;
-    top: -2%;
-    left: -6rem;
+    font-size: 18rem;
+    top: 12%;
+    left: -3.5rem;
   }
 }
 
@@ -1168,7 +1225,7 @@
   
   .portfolio_title {
     font-size: 20rem;
-    top: 7%;
+    top: 12%;
     left: -6rem;
   }
 }

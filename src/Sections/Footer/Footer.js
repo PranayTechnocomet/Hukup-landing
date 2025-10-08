@@ -63,7 +63,7 @@ export default function Navbar() {
               <ul className="absolute z-10 left-0 bottom-full mb-2 text-white w-40 bg-black rounded-lg shadow-lg p-2">
                 <li>
                   <button
-                    className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     onClick={() => {
                       setActiveLink("Profiles");
                       setOpenMenu(null);
@@ -74,7 +74,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <button
-                    className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     onClick={() => {
                       setActiveLink("Favorites");
                       setOpenMenu(null);
@@ -108,7 +108,7 @@ export default function Navbar() {
               <ul className="absolute z-10 left-0 bottom-full mb-2 text-white w-40 bg-black rounded-lg shadow-lg p-2">
                 <li>
                   <button
-                    className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     onClick={() => {
                       setActiveLink("Saved Profiles");
                       setOpenMenu(null);
@@ -119,7 +119,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <button
-                    className="block w-full text-left px-3 py-2 hover:bg-gray-800"
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-800 cursor-pointer"
                     onClick={() => {
                       setActiveLink("Saved Favorites");
                       setOpenMenu(null);
