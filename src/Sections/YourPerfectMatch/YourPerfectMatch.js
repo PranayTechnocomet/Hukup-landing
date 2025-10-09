@@ -70,7 +70,8 @@ export default function YourPerfectMatch() {
 
 
 
-    tl.to(".parallax", { x: 300 })
+    // tl.to(".parallax", { x: 300 })
+    tl.to(".parallax", { xPercent: 20 })
       .to(
         ".panel",
         {

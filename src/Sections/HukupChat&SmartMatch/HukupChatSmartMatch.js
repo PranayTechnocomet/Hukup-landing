@@ -55,7 +55,7 @@ export default function HukupChatSmartMatch() {
           {/* text1 */}
           <div className="absolute 2xl:left-[5%] sm:top-[31%] sm:left-[-21%]  top-[14%] lg:left-[7%]  lg:top-[25%]  md:top-[20%] md:left-[1%] left-[2%]">
             <div className="stat-card-1">
-              <div className="lg:text-[13px] 2xl:w-[100%] text-center family-reemkufi text-[9px] md:w-[100%] font-[700] lg:w-[100%] md:text-[11px] 2xl:text-[15px] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] sm:w-[100%] sm:text-[11px] w-[72%] bg-white py-[14px] px-[8px] rounded-[19px]">
+              <div className="lg:text-[13px] 2xl:w-[100%] text-center family-reemkufi text-[9px] md:w-[100%] font-[400] lg:w-[100%] md:text-[11px] 2xl:text-[15px] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)] sm:w-[100%] sm:text-[11px] w-[72%] bg-white py-[14px] px-[8px] rounded-[19px]">
                 Thanks! <br /> You seem really cool too😉
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function HukupChatSmartMatch() {
           {/* text2 */}
           <div className="absolute 2xl:right-[6%] sm:top-[58%] sm:right-[-21%]  lg:top-[54%] lg:right-[10%] md:right-[0%]  md:top-[39%] top-[13%]   right-[0%] ">
             <div className="stat-card-2">
-              <div className="text-center family-reemkufi text-[9px] 2xl:px-[17px] lg:text-[13px] px-[8px] sm:w-[100%] sm:text-[11px] font-[700] lg:w-[100%] md:text-[11px] 2xl:w-[100%] md:w-[100%] w-[72%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)]  bg-white py-[14px] rounded-[19px]">
+              <div className="text-center family-reemkufi text-[9px] 2xl:px-[17px] lg:text-[13px] px-[8px] sm:w-[100%] sm:text-[11px] font-[400] lg:w-[100%] md:text-[11px] 2xl:w-[100%] md:w-[100%] w-[72%] shadow-[0px_0px_57.7px_25px_rgba(252,114,146,0.3)]  bg-white py-[14px] rounded-[19px]">
                 Hey! <br /> Your profile looks fun ☺️
               </div>
             </div>

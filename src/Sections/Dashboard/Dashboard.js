@@ -19,7 +19,8 @@ export default function Dashboard() {
     <>
       <div>
         <div className="w-full lg:h-[100vh] md:h-[550px] lg:max-h-[100vh] max-h-[560px] h-[100vh] dashboard-bg-img text-white relative">
-          <Navbar />
+         <div className="dashboard-bg-img-layer">
+           <Navbar />
           {/* text */}
           <div className="flex absolute 2xl:left-[14%] 2xl:gap-[15%] flex-col lg:flex-row gap-[19px] lg:left-[13%] left-[3%] sm:left-[6%] sm:gap-[1rem]">
             <div className="lg:mt-[2rem] ">
@@ -293,6 +294,7 @@ border-image-source: linear-gradient(169.15deg, rgba(252,114,146,0.4) 0%, rgba(2
               </div>
             </div>
           </div>
+         </div>
         </div>
       </div>
     </>

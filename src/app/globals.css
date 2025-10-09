@@ -45,6 +45,7 @@ body {
   /* Semi-transparent color */
   background-blend-mode: overlay;
 }
+
 .family-inter {
   font-family: "Inter";
 }
@@ -390,4 +391,15 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+/* 
+@media (width: 1024px) and (height: 558px) {
+  .couple-pic-img{
+    height: 420px;
+  }
+} */
+
+.dashboard-bg-img-layer {
+  background-image: url("../assets/images/DashboardLayer.png");
+  height: 100%;
 }

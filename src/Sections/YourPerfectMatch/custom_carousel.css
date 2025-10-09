@@ -802,6 +802,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
+  .section-wrapper {
+   height: fit-content;
+  }
+  
   .portfolio_title {
     font-size: 5rem !important;
     top: -1% !important;
@@ -810,6 +814,13 @@
 }
 
 @media (min-width: 375px) and (max-width: 424px){
+  .section-wrapper {
+   height: 3300px;
+  }
+.section.portfolio {
+    height: fit-content;
+    gap: 0.25rem;
+  }
   .portfolio_title {
     font-size: 5rem !important;
     top: 1% !important;
@@ -817,6 +828,13 @@
   }
 }
 @media (min-width: 425px) and (max-width: 464px){
+  .section-wrapper {
+   height: fit-content;
+  }
+  .section.portfolio {
+    height: fit-content;
+    gap: 0.25rem;
+  }
   .portfolio_title {
     font-size: 5rem !important;
     top: 3% !important;
@@ -824,6 +842,10 @@
   }
 }
 @media (min-width: 465px) and (max-width: 574px){
+  .section-wrapper {
+   height: fit-content;
+  }
+
   .portfolio_title {
     font-size: 5rem !important;
     top: 5% !important;
@@ -867,8 +889,12 @@
 
 
 @media (min-width: 576px) and (max-width: 639px) {
+  .section-wrapper {
+   height: 4080px;
+  }
+
   .section.portfolio {
-    height: 80vh;
+    height: 90vh;
     gap: 0.3rem;
   }
   
@@ -891,6 +917,10 @@
 
 
 @media (min-width: 640px) and (max-width: 688px) {
+  .section-wrapper {
+   height: 3770px;
+  }
+
   .section.portfolio {
     height: 88vh;
     gap: 0.4rem;
@@ -914,9 +944,12 @@
 }
 
 @media (min-width: 689px) and (max-width: 767px){
+  .section-wrapper {
+   height: 4350px;
+  }
 
   .section.portfolio {
-    height: 75vh;
+    height: 160vh;
     gap: 0.4rem;
   }
   
@@ -941,8 +974,12 @@
 
 
 @media (min-width: 768px) and (max-width: 840px) {
+  .section-wrapper {
+   height: 4110px;
+  }
+
   .section.portfolio {
-    height: 92vh;
+    height: 130vh;
     gap: 0.5rem;
   }
   
@@ -965,8 +1002,12 @@
 
 
 @media (min-width: 841px) and (max-width: 991px) {
+  .section-wrapper {
+   height: 3600px;
+  }
+
   .section.portfolio {
-    height: 80vh;
+    height: 130vh;
     gap: 0.6rem;
   }
   
@@ -990,8 +1031,12 @@
 
 
 @media (min-width: 992px) and (max-width: 1023px) {
+  .section-wrapper {
+   height: 4000px;
+  }
+
   .section.portfolio {
-    height: 90vh;
+    height: 160vh;
     gap: 0.7rem;
   }
   
@@ -1014,8 +1059,12 @@
 
 
 @media (min-width: 1024px) and (max-width: 1099px) {
+  .section-wrapper {
+   height: 4300px;
+  }
+  
   .section.portfolio {
-    height: 110vh;
+    height: 160vh;
     gap: 0.75rem;
   }
   
@@ -1039,8 +1088,11 @@
 
 
 @media (min-width: 1100px) and (max-width: 1199px) {
+  .section-wrapper {
+   height: 4510px;
+  }
   .section.portfolio {
-    height: 110vh;
+    height: 160vh;
     gap: 0.8rem;
   }
   
@@ -1063,8 +1115,11 @@
 
 
 @media (min-width: 1200px) and (max-width: 1279px) {
+  .section-wrapper {
+   height: 4800px;
+  }
   .section.portfolio {
-    height: 110vh;
+    height: 160vh;
     gap: 0.85rem;
   }
   
@@ -1087,8 +1142,12 @@
 
 
 @media (min-width: 1280px) and (max-width: 1365px) {
+  .section-wrapper {
+   height: 3000px;
+  }
+
   .section.portfolio {
-    height: 100vh;
+    height: 160vh;
     gap: 0.9rem;
   }
   
@@ -1111,8 +1170,11 @@
 
 
 @media (min-width: 1366px) and (max-width: 1440px) {
+  .section-wrapper {
+   height: 4060px;
+  }
   .section.portfolio {
-    height: 125vh;
+    height: 185vh;
     gap: 1rem;
   }
   
@@ -1135,8 +1197,12 @@
 
 
 @media (min-width: 1441px) and (max-width: 1536px) {
+  .section-wrapper {
+   height: 4040px;
+  }
+
   .section.portfolio {
-    height: 110vh;
+    height: 130vh;
     gap: 1rem;
   }
   
@@ -1160,8 +1226,12 @@
 
 
 @media (min-width: 1537px) and (max-width: 1699px) {
+  .section-wrapper {
+   height: fit-content;
+  }
+
   .section.portfolio {
-    height: 150vh;
+    height: 190vh;
     gap: 1.1rem;
   }
   
@@ -1184,8 +1254,11 @@
 
 
 @media (min-width: 1700px) and (max-width: 1860px) {
+  .section-wrapper {
+   height: fit-content;
+  }
   .section.portfolio {
-    height: 118vh;
+    height: 150vh;
     gap: 1.2rem;
   }
   
@@ -1208,8 +1281,12 @@
 
 
 @media (min-width: 1861px) {
+  .section-wrapper {
+   height: fit-content;
+  }
+
   .section.portfolio {
-    height: 110vh;
+    height: fit-content;
     gap: 1.25rem;
   }
   

@@ -59,8 +59,8 @@ export default function HowItWork() {
             {/*  second btn */}
             <div className="cursor-pointer left-[-16%] bottom-[16%] sm:left-[-22%] sm:bottom-[18%] lg:left-[-25%] lg:bottom-[27%] xl:bottom-[27%] 2xl:left-[-20%] 2xl:bottom-[21%] absolute xl:left-[-23.5%]">
               <div className="stat-card-1">
-                <div className="backdrop-blur-[35px] p-[6px] rounded-[0.4rem] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4)0%,rgba(238,237,237,0.2)96.79%)] inline-block">
-                  <div className="backdrop-blur-[60px] py-[9px] 2xl:px-[8px] px-[6px] bg-[radial-gradient(100%_268.25%_at_0%_0%,rgb(255_211_224_/_85%)_0%,rgb(210_210_210_/_69%)_100%)] rounded-[5px] inline-block">
+                <div className="backdrop-blur-[135px] p-[6px] rounded-[14px] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4)0%,rgba(238,237,237,0.2)96.79%)] inline-block">
+                  <div className="backdrop-blur-[120px] py-[9px] 2xl:px-[8px] px-[6px] bg-[radial-gradient(100%_268.25%_at_0%_0%,rgb(255_211_224_/_85%)_0%,rgb(210_210_210_/_69%)_100%)] rounded-[8px] inline-block">
                     <div className="flex items-center gap-[6px] 2xl:gap-[10px] font-semibold text-black family-trirong">
                       <Image
                         src={dining}
@@ -105,8 +105,8 @@ export default function HowItWork() {
 
             <div className="cursor-pointer right-[-15%] top-[27%] xl:right-[-20%] xl:top-[25%] lg:right-[-19%] lg:top-[25%] sm:right-[-20%] sm:top-[24%]   absolute ">
               <div className="stat-card-1">
-                <div className="backdrop-blur-[35px] p-[6px] rounded-[0.5rem] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4)0%,rgba(238,237,237,0.2)96.79%)] inline-block">
-                  <div className="backdrop-blur-[60px] py-[8px] px-[8px] lg:py-[6px] lg:px-[9px] sm:py-[7px] 2xl:px-[8px] sm:px-[9px] bg-[radial-gradient(100%_268.25%_at_0%_0%,rgb(255_211_224_/_85%)_0%,rgb(210_210_210_/_69%)_100%)] rounded-[0px] inline-block">
+                <div className="backdrop-blur-[135px] p-[6px] rounded-[14px] bg-[linear-gradient(169.15deg,rgba(252,114,146,0.4)0%,rgba(238,237,237,0.2)96.79%)] inline-block">
+                  <div className="backdrop-blur-[125px] py-[8px] px-[8px] lg:py-[6px] lg:px-[9px] sm:py-[7px] 2xl:px-[8px] sm:px-[9px] bg-[radial-gradient(100%_268.25%_at_0%_0%,rgb(255_211_224_/_85%)_0%,rgb(210_210_210_/_69%)_100%)] rounded-[8px] inline-block">
                     <div className="flex items-center gap-[7px] sm:gap-3 rounded-[0px] font-semibold text-black family-trirong">
                       <Image
                         src={music}
