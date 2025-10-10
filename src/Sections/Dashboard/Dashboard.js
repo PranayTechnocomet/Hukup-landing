@@ -15,6 +15,7 @@ import couple_pic from "../../assets/images/couple_pic.png";
 import heart from "../../assets/images/Heart.png";
 import round_heart from "../../assets/images/round_heart.png";
 export default function Dashboard() {
+
   return (
     <>
       <div>
@@ -152,11 +153,12 @@ export default function Dashboard() {
           {/* couple-image */}
           {/* card */}
           <div>
-            <div className="absolute card-1 xs:right-[50%] bottom-[0%] sm:right-[52%] md:right-[43%] right-[55%] lg:right-[46%] xl:right-[42%] 2xl:right-[44%]">
+            {/* lg:right-46 */}
+            <div className="absolute card-1 xs:right-[50%] bottom-[0%] sm:right-[52%] md:right-[43%] right-[55%] lg:right-[35%] xl:right-[42%] 2xl:right-[44%]">
               <Image
                 src={couple_bgsec}
                 alt="bg-image"
-                className="w-[140px] h-[187px] sm:w-[97%] card1-img sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[290px] lg:h-[395px] xl:w-[220px] xl:h-[245px] responsive-height res-bg-height"
+                className="w-[140px] h-[187px] sm:w-[97%] card1-img sm:h-[225px] md:w-[173px] md:h-[233px] 2xl:w-[450px] 2xl:h-[590px] lg:w-[190px] lg:h-[225px] xl:w-[220px] xl:h-[245px] responsive-height res-bg-height"
               />
             </div>
             {/* card */}
@@ -164,16 +166,26 @@ export default function Dashboard() {
               <Image
                 src={couple_bgfir}
                 alt="bg-image"
-                className="w-[150px] h-[216px]  sm:w-[100%] card2-img sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[233px] xl:h-[275px] responsive-height"
+                className="w-[150px] h-[216px]  sm:w-[100%] card2-img sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[185px] lg:h-[260px] xl:w-[233px] xl:h-[275px] responsive-height"
               />
+              {/* <Image
+                src={couple_bgfir}
+                alt="bg-image"
+                className="w-[150px] h-[216px]  sm:w-[100%] card2-img sm:h-[255px] md:h-[262px] 2xl:w-[460px] 2xl:h-[630px] md:w-[160px] lg:w-[285px] lg:h-[440px] xl:w-[233px] xl:h-[275px] responsive-height"
+              /> */}
             </div>
             {/* couple-pic */}
             <div className="absolute  dashboard-couple-pic bottom-[0%]  md:right-[8%] sm:right-[60px] right-[19px] lg:right-[4%] xl:right-[15%] 2xl:right-[5%]">
               <Image
                 src={couple_pic}
                 alt="couple_pic"
-                className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px] responsive-height"
+                className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[500px] lg:h-[295px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px] responsive-height"
               />
+              {/* <Image
+                src={couple_pic}
+                alt="couple_pic"
+                className="w-[323px] sm:h-[290px] sm:w-[100%] couple-pic-img h-[240px] md:w-[430px] md:h-[300px] lg:w-[700px] lg:h-[495px] xl:w-[100%] 2xl:w-[100%] 2xl:h-[720px] xl:h-[330px] responsive-height"
+              /> */}
               {/* heart */}
               <div className="absolute heart1-con md:top-[10%] 2xl:top-[8%] sm:top-[12%] sm:left-[25%] 2xl:bottom-[63%] 2xl:right-[47%] left-[25%] md:bottom-[49%] md:right-[45.5%]  top-[9%] lg:right-[52.5%] lg:bottom-[56%] xl:right-[47%] xl:bottom-[49%]">
                 <Image
@@ -182,7 +194,7 @@ export default function Dashboard() {
                   className="relative heart-img lg:w-[32px] lg:h-[35px] md:w-[30px] md:h-[35px] w-[22px] h-[25px]  xl:w-[30px] xl:h-[35px] 2xl:w-[50px] 2xl:h-[55px]"
                 />
               </div>
-              <div className="absolute  2xl:right-[8%] right-[6%]  top-[-2%] lg:right-[9.5%] 2xl:top-[0%] xl:right-[6%] xl:top-[3%]">
+              <div className="absolute  2xl:right-[8%] right-[6%]  top-[-2%] lg:right-[7.5%] 2xl:top-[0%] xl:right-[6%] xl:top-[3%]">
                 <Image
                   src={heart}
                   alt="heartimg"

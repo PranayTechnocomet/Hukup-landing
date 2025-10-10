@@ -1,7 +1,7 @@
 "use client";
 import "./custom_carousel.css";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import profile1 from "../../assets/images/Profile1.png";
@@ -14,10 +14,57 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function YourPerfectMatch() {
   const containerRef = useRef(null);
-
-
-
+   const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const scrollTriggerRef = useRef(null);
+  const lastScrollY = useRef(0);
+  const scrollVelocity = useRef(0);
+  const isScrollingUp = useRef(false);
   useEffect(() => {
+
+     let animationFrame;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const velocity = Math.abs(currentScrollY - lastScrollY.current);
+      scrollVelocity.current = velocity;
+      
+      // Detect scroll direction
+      const scrollingUp = currentScrollY < lastScrollY.current;
+      isScrollingUp.current = scrollingUp;
+      
+      lastScrollY.current = currentScrollY;
+
+      // Check if component is in viewport
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+        // Hide if scrolling up fast OR if scrolling up and in viewport
+        if (scrollingUp && (velocity > 20 || isInViewport)) {
+          setIsVisible(false);
+          // Disable ScrollTrigger
+          if (scrollTriggerRef.current) {
+            scrollTriggerRef.current.disable();
+          }
+        } else if (!scrollingUp) {
+          setIsVisible(true);
+          // Re-enable ScrollTrigger
+          if (scrollTriggerRef.current) {
+            scrollTriggerRef.current.enable();
+          }
+        }
+      }
+    };
+
+    const smoothScroll = () => {
+      handleScroll();
+      animationFrame = requestAnimationFrame(smoothScroll);
+    };
+
+    animationFrame = requestAnimationFrame(smoothScroll);
+
+
     gsap.to(".preload-hidden", {
       opacity: 1, duration: 0.5, onComplete: () => {
         document.querySelectorAll(".preload-hidden").forEach(el => el.classList.remove("preload-hidden"));
@@ -71,7 +118,7 @@ export default function YourPerfectMatch() {
 
 
     // tl.to(".parallax", { x: 300 })
-    tl.to(".parallax", { xPercent: 20 })
+    tl.to(".parallax", { xPercent: 25 })
       .to(
         ".panel",
         {
@@ -111,9 +158,10 @@ export default function YourPerfectMatch() {
     // });
 
 
-
     return () => {
-      // cleanup ScrollTriggers on unmount
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       tl.kill();
     };
@@ -238,7 +286,7 @@ export default function YourPerfectMatch() {
 
 
       {/* <div className="margin"></div>
-      <div className="spacer"></div> */} 
+      <div className="spacer"></div> */}
     </section>
   );
 }

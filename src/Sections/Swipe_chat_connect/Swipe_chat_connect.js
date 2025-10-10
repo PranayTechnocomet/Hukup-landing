@@ -70,7 +70,8 @@ export default function Swipe_chat_connect() {
               </div>
             </div>
           </div>
-          <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden"></div>
+          {/* <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-transparent to-[#f7e7e8] overflow-hidden"></div> */}
+          <div className="absolute h-0 md:h-[10px] lg:p-[26px] text-[25px] w-[100%] bottom-0 bg-gradient-to-b from-[#fce9e9] to-[#f7e7e8] overflow-hidden"></div>
         </div>
       </div>
     </>

@@ -7,12 +7,11 @@ export default function Card({ CardData, customewidth, heartimg }) {
     <div
       className="relative feature-block
         bg-gradient-to-t from-[#fefcfd] via-[#fbf3f3] to-[#efe0e1]
-   background-[linear-gradient(180deg, #F7E7E8 0%, #FFFFFF 100%)]
-
-  rounded-[130px] overflow-hidden
-  p-4 w-[270px] md:w-[260px] h-[345px] md:h-[330px] z-50"
+        background-[linear-gradient(180deg, #F7E7E8 0%, #FFFFFF 100%)]
+        rounded-[130px] overflow-hidden
+        p-4 w-[270px] md:w-[260px] h-[345px] md:h-[330px] lg:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[330px] z-50"
     >
-     
+
       {/* <Image
         src={card_bg}
         alt="Background-card"
