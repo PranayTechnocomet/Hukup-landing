@@ -10,11 +10,12 @@ import Viewandshare from "../../assets/images/Viewandshare.png";
 import { LuDot } from "react-icons/lu";
 export default function GetintouchwithhukupPerks() {
   return (
+    <>
     <div className="xl:mt-[4rem] lg:mt-[-4rem] 2xl:mt-[7rem] xl:mb-25 mb-15 mt-[15%] sm:mt-[6rem] md:mt-[2rem] ">
       <div className="family-reemkufi heading-howitwork font-[800] md:text-[32px] text-center text-[25px] lg:text-[40px]">
         Get In Touch With Hukup Perks
       </div>
-      <div className="flex  justify-center mt-12 md:mt-15 lg:mt-22 relative max-w-[345px] md:max-w-[768px] lg:max-w-[1070px] mx-auto">
+      <div className="flex justify-center mt-12 md:mt-15 lg:mt-22 relative max-w-[345px] md:max-w-[768px] lg:max-w-[1070px] mx-auto">
         <Image
           src={Getintouchiphone}
           alt="Getintouchiphone"
@@ -82,5 +83,6 @@ export default function GetintouchwithhukupPerks() {
         </div>
       </div>
     </div>
+    </>
   );
 }

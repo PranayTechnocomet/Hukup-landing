@@ -14,110 +14,86 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function YourPerfectMatch() {
   const containerRef = useRef(null);
-   const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(true);
-  const scrollTriggerRef = useRef(null);
+  const sectionRef = useRef(null);
+  const [hideSlider, setHideSlider] = useState(false);
   const lastScrollY = useRef(0);
-  const scrollVelocity = useRef(0);
-  const isScrollingUp = useRef(false);
-  useEffect(() => {
 
-     let animationFrame;
+
+  useEffect(() => {
+    let animationFrame;
+
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const velocity = Math.abs(currentScrollY - lastScrollY.current);
-      scrollVelocity.current = velocity;
-      
-      // Detect scroll direction
       const scrollingUp = currentScrollY < lastScrollY.current;
-      isScrollingUp.current = scrollingUp;
-      
+
       lastScrollY.current = currentScrollY;
 
-      // Check if component is in viewport
+
       if (sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
         const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
 
-        // Hide if scrolling up fast OR if scrolling up and in viewport
-        if (scrollingUp && (velocity > 20 || isInViewport)) {
-          setIsVisible(false);
-          // Disable ScrollTrigger
-          if (scrollTriggerRef.current) {
-            scrollTriggerRef.current.disable();
-          }
-        } else if (!scrollingUp) {
-          setIsVisible(true);
-          // Re-enable ScrollTrigger
-          if (scrollTriggerRef.current) {
-            scrollTriggerRef.current.enable();
-          }
+
+        if (scrollingUp && velocity > 400 && isInViewport) {
+          setHideSlider(true);
+        } else if (!scrollingUp || velocity < 10) {
+          setHideSlider(false);
         }
       }
     };
+
 
     const smoothScroll = () => {
       handleScroll();
       animationFrame = requestAnimationFrame(smoothScroll);
     };
 
+
     animationFrame = requestAnimationFrame(smoothScroll);
 
 
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, []);
+
+
+  useEffect(() => {
     gsap.to(".preload-hidden", {
-      opacity: 1, duration: 0.5, onComplete: () => {
-        document.querySelectorAll(".preload-hidden").forEach(el => el.classList.remove("preload-hidden"));
+      opacity: 1,
+      duration: 0.5,
+      onComplete: () => {
+        document.querySelectorAll(".preload-hidden").forEach(el =>
+          el.classList.remove("preload-hidden")
+        );
       }
     });
 
 
-
-    if (!containerRef.current) return; // safety check
+    if (!containerRef.current) return;
     const container = containerRef.current;
 
-
-    // let tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     pin: true,
-    //     scrub: 1,
-    //     trigger: container,
-    //     end: () => {
-    //       const lastPanel = container.querySelector(".panel:last-child");
-    //       const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
-    //       return `+=${lastPanelRight - window.innerWidth * 0}`;
-    //     },
-
-
-    //     // end: () =>
-    //     //  `+=${
-    //     //  container.scrollWidth -
-    //     //  document.documentElement.clientWidth +
-    //     //  container.offsetWidth
-    //     //  }`,
-    //   },
-    //   defaults: { ease: "none", duration: 1 },
-    // });
 
     let tl = gsap.timeline({
       scrollTrigger: {
         pin: true,
-        //pinSpacing: false, // remove automatic extra space
         scrub: 1,
         trigger: container,
         end: () => {
           const lastPanel = container.querySelector(".panel:last-child");
+          if (!lastPanel) return "+=100";
           const lastPanelRight = lastPanel.offsetLeft + lastPanel.offsetWidth;
           return `+=${lastPanelRight - window.innerWidth}`;
         },
-        // markers: true, // optional for debugging
       },
       defaults: { ease: "none", duration: 1 },
     });
 
 
-
-    // tl.to(".parallax", { x: 300 })
     tl.to(".parallax", { xPercent: 25 })
       .to(
         ".panel",
@@ -143,25 +119,7 @@ export default function YourPerfectMatch() {
       );
 
 
-
-
-    // gsap.from(".firstAn", {
-    //   duration: 1,
-    //   opacity: 0,
-    //   scale: 0.25,
-    //   scrollTrigger: {
-    //     trigger: container,
-    //     start: "top 90%",
-    //     end: "bottom 10%",
-    //     toggleActions: "play none none reverse",
-    //   },
-    // });
-
-
     return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       tl.kill();
     };
@@ -233,7 +191,14 @@ export default function YourPerfectMatch() {
 
 
   return (
-    <section className="your-perfect-match-section spacer pb-5 overflow-visible">
+    <section
+      ref={sectionRef}
+      className="your-perfect-match-section spacer pb-5 overflow-visible"
+      style={{
+        opacity: hideSlider ? 0 : 1,
+        transition: 'opacity 0.1s ease-out',
+      }}
+    >
       <div className="container mx-auto">
         <div className="row justify-center ">
           <div className="col-lg-8 text-center">
@@ -246,22 +211,12 @@ export default function YourPerfectMatch() {
 
 
       <div className="margin"></div>
-      <div
-        className="section-wrapper"
-      // style={{
-      //  height: "700px",
-      //  overflow: "hidden",
-      // }}
-      >
+      <div className="section-wrapper">
         <section className="section portfolio" ref={containerRef}>
-
-
           <h2 className="portfolio_title fill parallax preload-hidden mb-5">Matches</h2>
           <h2 className="portfolio_title stroke parallax preload-hidden mb-5">Matches</h2>
 
-
-
-
+          
           {profiles.map((profile, i) => (
             <div className="panel" key={i}>
               <div className="panel_item">
@@ -281,12 +236,7 @@ export default function YourPerfectMatch() {
             </div>
           ))}
         </section>
-
       </div>
-
-
-      {/* <div className="margin"></div>
-      <div className="spacer"></div> */}
     </section>
   );
 }
