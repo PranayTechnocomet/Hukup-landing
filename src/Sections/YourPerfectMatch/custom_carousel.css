@@ -77,12 +77,10 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
   transition: left 0.5s ease;
 }
 
@@ -184,11 +182,9 @@
 /* Glassmorphism Bubbles */
 
 .glassmorphism-bubble1 {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.7) 100%);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 25px;
@@ -203,57 +199,49 @@
 .glassmorphism-bubble1:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.8) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.8) 100%);
 }
 
 .pin-spacer {
   width: 100% !important;
 }
+
 /* Fine Dining Bubble Specific Styles */
 
 .fine-dining-bubble1 {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 182, 193, 0.9) 0%,
-    rgba(255, 192, 203, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 182, 193, 0.9) 0%,
+      rgba(255, 192, 203, 0.7) 100%);
   border-color: rgba(255, 182, 193, 0.4);
 }
 
 .fine-dining-bubble1:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 182, 193, 0.95) 0%,
-    rgba(255, 192, 203, 0.8) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 182, 193, 0.95) 0%,
+      rgba(255, 192, 203, 0.8) 100%);
 }
 
 /* Music Bubble Specific Styles */
 
 .music-bubble1 {
-  background: linear-gradient(
-    135deg,
-    rgba(147, 112, 219, 0.9) 0%,
-    rgba(138, 43, 226, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(147, 112, 219, 0.9) 0%,
+      rgba(138, 43, 226, 0.7) 100%);
   border-color: rgba(147, 112, 219, 0.4);
 }
 
 .music-bubble1:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(147, 112, 219, 0.95) 0%,
-    rgba(138, 43, 226, 0.8) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(147, 112, 219, 0.95) 0%,
+      rgba(138, 43, 226, 0.8) 100%);
 }
 
 /* Responsive adjustments */
 
 @media (max-width: 768px) {
+
   /* .feature-block {
     padding: 1.25rem;
     border-radius: 25%;
@@ -263,6 +251,7 @@
     min-height: 180px;
     padding: 1.5rem;
   }
+
   .feature-block-top,
   .feature-block-bottom {
     min-height: 130px;
@@ -271,6 +260,7 @@
 }
 
 @media (max-width: 576px) {
+
   /* .feature-block {
     padding: 1rem;
     border-radius: 20%;
@@ -279,6 +269,7 @@
     min-height: 160px;
     padding: 1.25rem;
   }
+
   .feature-block-top,
   .feature-block-bottom {
     min-height: 110px;
@@ -292,6 +283,7 @@
   .hero-section {
     padding-top: 60px;
   }
+
   .display-3 {
     font-size: 2.5rem;
   }
@@ -338,10 +330,12 @@
 /* Floating Animation */
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -570,11 +564,13 @@
   .smart-match-title {
     font-size: 2.5rem;
   }
+
   .smart-match-left,
   .smart-match-right,
   .smart-match-center {
     margin-bottom: 20px;
   }
+
   .smart-match-left-bg,
   .smart-match-right-bg {
     height: 300px;
@@ -585,13 +581,16 @@
   .smart-match-title {
     font-size: 2rem;
   }
+
   .smart-match-content .lead {
     font-size: 1rem;
   }
+
   .smart-match-left-bg,
   .smart-match-right-bg {
     height: 250px;
   }
+
   .center-image {
     max-width: 150px;
     max-height: 150px;
@@ -638,17 +637,20 @@
   .get-in-touch-title {
     font-size: 2rem;
   }
+
   .portfolio_title {
     font-size: 5rem;
     position: absolute;
     top: -0.6%;
     left: -2rem;
   }
+
   .panel {
     height: 55%;
     flex: 0 0 80%;
     margin-top: 0%;
   }
+
   .profile-info h4 {
     margin: 0;
     font-size: 15px;
@@ -658,7 +660,7 @@
 
 
 .section.portfolio {
-  height: 100px; 
+  height: 100px;
   overflow: hidden;
 }
 
@@ -706,19 +708,20 @@
 
 @media (min-width: 500px) {
   .portfolio_title {
-    margin-left: 12rem; 
+    margin-left: 12rem;
   }
 }
+
 @media (min-width: 640px) {
   .portfolio_title {
-    margin-left: 12rem; 
+    margin-left: 12rem;
   }
 }
 
 
 @media (min-width: 768px) {
   .portfolio_title {
-    margin-left: 3rem; 
+    margin-left: 3rem;
   }
 }
 
@@ -732,7 +735,7 @@
 
 @media (min-width: 1280px) {
   .portfolio_title {
-    margin-left: 3rem; 
+    margin-left: 3rem;
   }
 }
 
@@ -803,9 +806,9 @@
 
 @media (min-width: 320px) and (max-width: 374px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
-  
+
   .portfolio_title {
     font-size: 5rem !important;
     top: -1% !important;
@@ -813,37 +816,43 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 424px){
+@media (min-width: 375px) and (max-width: 424px) {
   .section-wrapper {
-   height: 3400px;
+    height: 3400px;
   }
-.section.portfolio {
+
+  .section.portfolio {
     height: fit-content;
     gap: 0.25rem;
   }
+
   .portfolio_title {
     font-size: 5rem !important;
     top: 1% !important;
     left: -2rem !important;
   }
 }
-@media (min-width: 425px) and (max-width: 464px){
+
+@media (min-width: 425px) and (max-width: 464px) {
   .section-wrapper {
-   height: 3550px;
+    height: 3550px;
   }
+
   .section.portfolio {
     height: 120vh;
     gap: 0.25rem;
   }
+
   .portfolio_title {
     font-size: 5rem !important;
     top: 3% !important;
     left: -2rem !important;
   }
 }
-@media (min-width: 465px) and (max-width: 574px){
+
+@media (min-width: 465px) and (max-width: 574px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
 
   .portfolio_title {
@@ -859,26 +868,26 @@
     height: 75vh;
     gap: 0.25rem;
   }
-  
+
   .panel {
     flex: 0 0 80%;
     height: 70%;
     padding: 0 0.25rem 0.5rem;
   }
-  
+
   .panel_img {
     height: 85%;
     margin-bottom: 0.25rem;
   }
-  
+
   .profile-info h4 {
     font-size: 15px;
   }
-  
+
   .profile-info {
     margin-top: 0.25rem;
   }
-  
+
   .portfolio_title {
     font-size: 5rem;
     top: -4;
@@ -890,24 +899,24 @@
 
 @media (min-width: 576px) and (max-width: 639px) {
   .section-wrapper {
-   height: 4080px;
+    height: 4080px;
   }
 
   .section.portfolio {
     height: 90vh;
     gap: 0.3rem;
   }
-  
+
   .panel {
     flex: 0 0 67%;
     height: 65%;
     padding: 0 0.3rem 0.75rem;
   }
-  
+
   .panel_img {
     height: 86%;
   }
-  
+
   .portfolio_title {
     font-size: 8rem;
     top: 2%;
@@ -918,24 +927,24 @@
 
 @media (min-width: 640px) and (max-width: 688px) {
   .section-wrapper {
-   height: 3770px;
+    height: 3770px;
   }
 
   .section.portfolio {
     height: 88vh;
     gap: 0.4rem;
   }
-  
+
   .panel {
     flex: 0 0 58%;
     height: 62%;
     padding: 0 0.4rem 0.75rem;
   }
-  
+
   .panel_img {
     height: 87%;
   }
-  
+
   .portfolio_title {
     font-size: 10rem;
     top: -2%;
@@ -943,16 +952,16 @@
   }
 }
 
-@media (min-width: 689px) and (max-width: 768px){
+@media (min-width: 689px) and (max-width: 768px) {
   .section-wrapper {
-   height: 4420px;
+    height: 4420px;
   }
 
   .section.portfolio {
     height: 150vh;
     gap: 0.4rem;
   }
-  
+
   .panel {
     flex: 0 0 58%;
     height: 62%;
@@ -964,7 +973,7 @@
     width: 450px !important;
 
   }
-  
+
   .portfolio_title {
     font-size: 10rem;
     top: 0%;
@@ -975,24 +984,24 @@
 
 @media (min-width: 768px) and (max-width: 840px) {
   .section-wrapper {
-   height: 4110px;
+    height: 4110px;
   }
 
   .section.portfolio {
     height: 130vh;
     gap: 0.5rem;
   }
-  
+
   .panel {
     flex: 0 0 52%;
     height: 70%;
     padding: 0 0.5rem 1rem;
   }
-  
+
   .panel_img {
     height: 88%;
   }
-  
+
   .portfolio_title {
     font-size: 10rem;
     top: 4%;
@@ -1003,25 +1012,25 @@
 
 @media (min-width: 841px) and (max-width: 991px) {
   .section-wrapper {
-   height: 3730px;
+    height: 3730px;
   }
 
   .section.portfolio {
     height: 120vh;
     gap: 0.6rem;
   }
-  
+
   .panel {
     flex: 0 0 42%;
     height: 63%;
     padding: 0 0.6rem 1rem;
     margin-top: 10%;
   }
-  
+
   .panel_img {
     height: 350px;
   }
-  
+
   .portfolio_title {
     font-size: 10rem;
     top: -6%;
@@ -1032,24 +1041,24 @@
 
 @media (min-width: 992px) and (max-width: 1023px) {
   .section-wrapper {
-   height: 4000px;
+    height: 4000px;
   }
 
   .section.portfolio {
     height: 160vh;
     gap: 0.7rem;
   }
-  
+
   .panel {
     flex: 0 0 41%;
     height: 65%;
     padding: 0 0.7rem 1rem;
   }
-  
+
   .panel_img {
     height: 450px;
   }
-  
+
   .portfolio_title {
     font-size: 10rem;
     top: 7%;
@@ -1060,25 +1069,25 @@
 
 @media (min-width: 1024px) and (max-width: 1099px) {
   .section-wrapper {
-   height: 3980px;
+    height: 3980px;
   }
-  
+
   .section.portfolio {
     height: 160vh;
     gap: 0.75rem;
   }
-  
+
   .panel {
     flex: 0 0 42%;
     height: 70%;
     padding: 0 0.75rem 1rem;
     margin-top: 10%;
   }
-  
+
   .panel_img {
     height: 400px;
   }
-  
+
   .portfolio_title {
     font-size: 13rem;
     top: -8%;
@@ -1089,23 +1098,24 @@
 
 @media (min-width: 1100px) and (max-width: 1199px) {
   .section-wrapper {
-   height: fit-content;
+    height: 4400px;
   }
+
   .section.portfolio {
     height: 140vh;
     gap: 0.8rem;
   }
-  
+
   .panel {
     flex: 0 0 40%;
     height: 70%;
     padding: 0 0.8rem 1rem;
   }
-  
+
   .panel_img {
     height: 430px;
   }
-  
+
   .portfolio_title {
     font-size: 15rem;
     top: 3.5%;
@@ -1116,23 +1126,24 @@
 
 @media (min-width: 1200px) and (max-width: 1279px) {
   .section-wrapper {
-   height: 4700px;
+    height: 4700px;
   }
+
   .section.portfolio {
     height: 160vh;
     gap: 0.85rem;
   }
-  
+
   .panel {
     flex: 0 0 40%;
     height: 70%;
     padding: 0 0.85rem 1rem;
   }
-  
+
   .panel_img {
     height: 500px;
   }
-  
+
   .portfolio_title {
     font-size: 16rem;
     top: 5%;
@@ -1143,24 +1154,24 @@
 
 @media (min-width: 1280px) and (max-width: 1365px) {
   .section-wrapper {
-   height: 3000px;
+    height: 3000px;
   }
 
   .section.portfolio {
     height: 160vh;
     gap: 0.4rem;
   }
-  
+
   .panel {
     flex: 0 0 25%;
     height: 62%;
     padding: 0 0.9rem 1rem;
   }
-  
+
   .panel_img {
     height: 91%;
   }
-  
+
   .portfolio_title {
     font-size: 16rem;
     top: 4%;
@@ -1171,23 +1182,24 @@
 
 @media (min-width: 1366px) and (max-width: 1440px) {
   .section-wrapper {
-   height: 3900px;
+    height: 3900px;
   }
+
   .section.portfolio {
     height: 185vh;
     gap: 1rem;
   }
-  
+
   .panel {
     flex: 0 0 30%;
     height: 74%;
     padding: 0 1rem 1.5rem;
   }
-  
+
   .panel_img {
     height: 500px;
   }
-  
+
   .portfolio_title {
     font-size: 18rem;
     top: 5%;
@@ -1198,25 +1210,25 @@
 
 @media (min-width: 1441px) and (max-width: 1536px) {
   .section-wrapper {
-   height: 3870px;
+    height: 3870px;
   }
 
   .section.portfolio {
     height: 130vh;
     gap: 1rem;
   }
-  
+
   .panel {
     flex: 0 0 30%;
     height: 74%;
     padding: 0 1rem 1.5rem;
     margin-top: 11%;
   }
-  
+
   .panel_img {
     height: 450px;
   }
-  
+
   .portfolio_title {
     font-size: 15rem;
     top: -5%;
@@ -1227,50 +1239,51 @@
 
 @media (min-width: 1537px) and (max-width: 1691px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
 
   .section.portfolio {
     height: 150vh;
     gap: 1.1rem;
   }
-  
+
   .panel {
     flex: 0 0 30%;
     height: 74%;
     padding: 0 1.1rem 1.5rem;
   }
-  
+
   .panel_img {
     height: 500px;
   }
-  
+
   .portfolio_title {
     font-size: 16rem;
     top: 10%;
     left: -3rem;
   }
 }
+
 @media (min-width: 1692px) and (max-width: 1700px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
 
   .section.portfolio {
     height: 147vh;
     gap: 1.1rem;
   }
-  
+
   .panel {
     flex: 0 0 30%;
     height: 74%;
     padding: 0 1.1rem 1.5rem;
   }
-  
+
   .panel_img {
     height: 540px;
   }
-  
+
   .portfolio_title {
     font-size: 14rem;
     top: 10%;
@@ -1281,23 +1294,24 @@
 
 @media (min-width: 1700px) and (max-width: 1860px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
+
   .section.portfolio {
     height: 150vh;
     gap: 1.2rem;
   }
-  
+
   .panel {
     flex: 0 0 30%;
     height: 74%;
     padding: 0 1.2rem 1.5rem;
   }
-  
+
   .panel_img {
     height: 550px;
   }
-  
+
   .portfolio_title {
     font-size: 14rem;
     top: 12%;
@@ -1308,24 +1322,24 @@
 
 @media (min-width: 1861px) {
   .section-wrapper {
-   height: fit-content;
+    height: fit-content;
   }
 
   .section.portfolio {
     height: fit-content;
     gap: 1.25rem;
   }
-  
+
   .panel {
     flex: 0 0 19%;
     height: 67%;
     padding: 0 1.25rem 1.5rem;
   }
-  
+
   .panel_img {
     height: 450px;
   }
-  
+
   .portfolio_title {
     font-size: 20rem;
     top: 12%;
